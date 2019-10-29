@@ -27,10 +27,47 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   
   # Actividad 3: Análisis de requisitos funcionales. Casos de uso.
  
+
+
+
+<table style="width:100%">
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>Registro de usuario.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>El sistema le solicita datos mediante un formulario que el usuario debe rellenar con datos.</td>
+    
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td>Cliente.</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>Ser mayor de edad.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1-El cliente selecciona registrarse.<br>
+  2-El sistema le devuelve un formulario que debe rellenar.<br>
+  3-El cliente introduce los datos correctamente.<br>
+  4-El sistema le muestra un mensaje diciendo que el usuario ha sido registrado.<br> 
+  
+</td>
+  </tr>
+    <tr>
+  <td><b>Alternativas/Excepciones:</b></td>
+  <td>3.1- El cliente es menor de edad.<br>
+  3.1.2- El sistema devuelve un error indicando que debe ser mayor de edad para registrarse.
+</td>
+  </tr>
+</table>
  <table style="width:100%">
   <tr>
     <td><b>Nombre: </b></td>
-    <td>Lista de películas y series</td>
+    <td>Lista de películas y series.</td>
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
@@ -60,4 +97,4 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td><b>Alternativas/Excepciones:</b></td>
   <td>2.1- El cliente crea una nueva lista para añadir la película.</td>
   </tr>
-</table>
+  </table>
