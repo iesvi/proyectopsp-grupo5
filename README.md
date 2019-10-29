@@ -124,6 +124,36 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   </table>
 
+<table style="width:100%">
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>Subir un enlace a la página.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>En la pantalla principal aparece una opción para subir un enlace de una película.</td> 
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td>Cliente y administrador.</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>El cliente esté registrado.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1-El cliente selecciona la opción de subir un enlace e indica a qué película o serie pertenece.<br>
+      2-El administrador evalúa el enlace y lo considera apropiado.<br>
+      3-El enlace es subido.</td>
+  </tr>
+  <tr>
+    <td><b>Alternativas/Excepciones:</b></td>
+    <td>2.1-El administrador considera que el enlace no es apropiado y decide no subirlo.</td>
+  </tr>
+  </table>
+
+
  <table style="width:100%">
   <tr>
     <td><b>Nombre: </b></td>
