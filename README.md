@@ -99,6 +99,31 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
 </table>
 
+<table style="width:100%">
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>Enlaces para ver películas.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>Después de utilizar el buscador y seleccionar una película o serie aparecerán todos los enlaces.</td>
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td>Cliente.</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>El cliente esté registrado.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1- El cliente utiliza el buscador y selecciona una serie o película.<br>
+      2- Aparecen los enlaces disponibles.
+</td>
+  </tr>
+  </table>
+
  <table style="width:100%">
   <tr>
     <td><b>Nombre: </b></td>
