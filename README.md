@@ -174,7 +174,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     2-El cliente añade la película a una lista existente.
 </td>
   </tr>
-  td><b>Postcondiciónes:</b></td>
+  <td><b>Postcondiciónes:</b></td>
   <td>
     Se añade a las listas de películas/series las cuales tiene almacenadas el cliente la nueva película/serie seleccionada.
 </td>
