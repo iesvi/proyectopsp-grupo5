@@ -24,19 +24,21 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     a las cuales se podrá acceder. En caso de género saldrán las películas que pertenecen a ese género.
   </li>
   </ul>
+  
   # Actividad 3: Análisis de requisitos funcionales. Casos de uso.
-  <table style="width:100%">
+ 
+ <table style="width:100%">
   <tr>
-    <th>d</th>
-    <th>test</th>
+    <th><b>Nombre: </b></th>
+    <th>Lista de películas y series</th>
   </tr>
   <tr>
-    <td>p</td>
+    <td><b></b></td>
     <td>asd</td>
     
   </tr>
   <tr>
-    <td>s</td>
-    <td>s</td>
+    <td><b></b></td>
+    <td></td>
   </tr>
 </table>
