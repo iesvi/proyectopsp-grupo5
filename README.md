@@ -33,12 +33,31 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     <th>Lista de películas y series</th>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td>asd</td>
+    <td><b>Descripción:</b></td>
+    <td>El usuario selecciona una película y decide introducirla en la lista que desee.</td>
     
   </tr>
   <tr>
-    <td><b></b></td>
-    <td></td>
+    <td><b>Actores:</b></td>
+    <td>Cliente</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>El cliente esté registrado.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1-El cliente busca la película o serie. 
+      2-El cliente añade la película a una lista existente.
+</td>
+  </tr>
+    <tr>
+  <td><b>Postcondiciónes:</b></td>
+  <td>Se añade a las listas de películas/series las cuales tiene almacenadas 
+    el cliente la nueva película/serie seleccionada.</td>
+  </tr>
+    <tr>
+  <td><b>Alternativas/Excepciones:</b></td>
+  <td>2.1- El cliente crea una nueva lista para añadir la película.</td>
   </tr>
 </table>
