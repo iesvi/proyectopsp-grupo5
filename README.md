@@ -39,7 +39,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente</td>
+    <td>Cliente.</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
@@ -47,7 +47,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
-  <td>1-El cliente busca la película o serie. 
+  <td>1-El cliente busca la película o serie.<br> 
       2-El cliente añade la película a una lista existente.
 </td>
   </tr>
