@@ -29,8 +29,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
  
  <table style="width:100%">
   <tr>
-    <th><b>Nombre: </b></th>
-    <th>Lista de películas y series</th>
+    <td><b>Nombre: </b></td>
+    <td>Lista de películas y series</td>
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
