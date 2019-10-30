@@ -80,6 +80,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 </td>
   </tr>
 </table>
+<table style="width:100%">
+</table>
 
 <table style="width:100%">
   <tr>
