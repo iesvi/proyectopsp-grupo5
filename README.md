@@ -71,7 +71,13 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td>1-El cliente selecciona registrarse.<br>
   2-El sistema le devuelve un formulario que debe rellenar.<br>
   3-El cliente introduce los datos correctamente.<br>
-  4-El sistema le muestra un mensaje diciendo que el usuario ha sido registrado.<br></td>
+  </td>
+  </tr>
+  <tr>
+  <td><b>Postcondiciones:</b></td>
+  El sistema le muestra un mensaje diciendo que el usuario ha sido registrado.<br>
+  <td>.
+</td>
   </tr>
     <tr>
   <td><b>Alternativas/Excepciones:</b></td>
