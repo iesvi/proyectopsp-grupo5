@@ -75,8 +75,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
   <td><b>Postcondiciones:</b></td>
-  El sistema le muestra un mensaje diciendo que el usuario ha sido registrado.<br>
-  <td>.
+  <td>El sistema le muestra un mensaje diciendo que el usuario ha sido registrado.<br>
+  </td>
 </td>
   </tr>
     <tr>
