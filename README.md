@@ -9,20 +9,41 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     el usuario (nombre,DNI,teléfono,email,dirección,gustos).
   </li>
   <li>
-    <b>Buscador de películas y/o series:</b> Según los gustos que ha indicado el usuario en el formulario de registro se
-    le harán unas recomendaciones que también varian dependiendo de las películas y series que el usuario ha visto. Los gustos
-    pueden ser modificados en cualquier momento. Además también veremos las opiniones de los usuarios sobre las series y             películas.
+    <b>Iniciar sesión:</b> Para iniciar sesión tiene que haberse registrado previamente e introducir su nombre de usuario y 
+    contraseña.
   </li>
   <li>
-    <b>Enlaces para ver películas:</b> En este apartado tendremos varios links para ver películas y series online. Los propios
-    usuarios también podrán aportar enlaces para ver películas. Estos enlaces serán evaluados por un administrador, este decidirá
-    si es apropiado o no, en caso de ser apropiado, evaluarlo según la calidad de video, de audio y en caso de contar con subtítulos
-    indicarlo. Además de esto los usuarios podrán opinar sobre la calidad de los enlaces.
+    <b>Consultar lista:</b> El usuario al presionar en consultar lista accederá a las listas donde haya añadido algo.
+  </li>
+  <li>
+    <b>Ver detalles:</b> Cuando el usuario pulsa en ver detalles se le mostrará una descripción del argumento de la película o
+    serie y también los enlaces para verlas
+  </li>
+  <li>
+    <b>Reproducir:</b> La película o serie comienza a reproducirse.
+  </li>
+  <li>
+    <b>Añadir enlaces:</b> Se le abre una ventana que le permite añadir un enlace al usuario.
+  </li>
+  <li>
+    <b>Añadir a lista:</b> Cuando el usuario pulsa en añadir a lista, se añade la película o serie que ha buscado a una lista ya
+    existente o se le permite crear una nueva lista.
+  </li>
+  <li>
+    <b>Buscador de películas y/o series:</b> El usuario introduce el nombre de la película o serie que quiere ver y se mostrarán
+    los resultados de su búsqueda.
+  </li>
+  <li>
+    <b>Ver enlaces:</b> En este apartado tendremos varios links para ver películas y series online. 
   </li>
   <li>
     <b>Lista de películas y series:</b> Puedes añadir series y película a listas (pendientes,siguiendo,vistas y género)
     a las cuales se podrá acceder. En caso de género saldrán las películas que pertenecen a ese género.
   </li>
+  <li>
+    <b>Comprobar borradores:</b> El administrador puede consultar los distintos enlaces añadidos por los usuarios y evaluarlos.
+    En caso de que la evaluación sea positiva este enlace será añadido al conjunto de enlaces que pueden utilizar los usuarios.
+  <li>
   </ul>
   
   # Actividad 3: Análisis de requisitos funcionales. Casos de uso.
