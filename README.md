@@ -87,6 +87,47 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
 </table>
 <table style="width:100%">
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>Inicio de sesión.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>El cliente, si ya posee una cuenta, introduce su nombre de usuario y su contraseña y accedera a su perfil previamente   
+      personalizado.</td>
+    
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td>Cliente.</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>El cliente debe estar registrado en el sistema.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1- El sistema requerirá del cliente que introduzca su usuario y contraseña.<br>
+  2-El sistema recoge la informacion y comprueba que esta esté previamente registrada en la base de datos de usuarios.<br>
+ 
+  </td>
+  </tr>
+  <tr>
+  <td><b>Postcondiciones:</b></td>
+  <td>El usuario accede satisfactoriamente al sistema.<br>
+  </td>
+</td>
+  </tr>
+    <tr>
+  <td><b>Alternativas/Excepciones:</b></td>
+  <td>2.1 El sistema devuele un error al no ser correctos o al no existir los datos introducidos por el cliente y sugiere la opción
+    de crear usuario.
+ 
+</td>
+  </tr>
+</table>
+
+<table style="width:100%">
 </table>
 
 <table style="width:100%">
