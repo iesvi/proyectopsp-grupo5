@@ -43,7 +43,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <li>
     <b>Comprobar borradores:</b> El administrador puede consultar los distintos enlaces añadidos por los usuarios y evaluarlos.
     En caso de que la evaluación sea positiva este enlace será añadido al conjunto de enlaces que pueden utilizar los usuarios.
-  <li>
+  </li>
   </ul>
   
   # Actividad 3: Análisis de requisitos funcionales. Casos de uso.
