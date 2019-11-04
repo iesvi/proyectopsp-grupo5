@@ -234,46 +234,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </td>
   </tr>
   </table>
-  <table style="width:100%">
-  <tr>
-    <td><b>Nombre: </b></td>
-    <td>Buscador de películas y/o series.</td>
-  </tr>
-  <tr>
-    <td><b>Descripción:</b></td>
-    <td>Barra en la cual el cliente podrá realizar la búsqueda de películas y series por la introducción del nombre.</td>
-  </tr>
-  <tr>
-    <td><b>Actores:</b></td>
-    <td>Cliente.</td>
-  </tr>
-  <tr>
-  <td><b>Precondiciones:</b></td>
-  <td>El cliente haya iniciado sesión.</td>
-  </tr>
-    <tr>
-  <td><b>Curso normal del caso de uso:</b></td>
-  <td>1-El cliente selecciona la barra de buscador.<br> 
-  2-Introduce el nombre de la película en la barra del buscador.    
-</td>
-  </tr>
-    <tr>
-  <td><b>Postcondiciónes:</b></td>
-  <td>La plataforma muestra las diferentes peliculas que coincidan con el nombre previamente introducido.</td>
-  </tr>
-    <tr>
-  <td><b>Alternativas/Excepciones:</b></td>
-  <td>2.1-El nombre de la película/serie previamente introducido no coincide con ninguna película/serie registrada en el servidor.</td>
-  </tr>
-  </table>
-
-
- 
-
+  
 <table style="width:100%">
   <tr>
     <td><b>Nombre: </b></td>
-    <td>Lista de películas y series.</td>
+    <td>Añadir a lista.</td>
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
@@ -285,7 +250,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente esté registrado.</td>
+  <td>El cliente debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
@@ -305,7 +270,45 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 </td>
   </tr>
 </table>
-table style="width:100%">
+
+
+  <table style="width:100%">
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>Buscador de películas y/o series.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>Barra en la cual el cliente podrá realizar la búsqueda de películas y series por la introducción del nombre.</td>
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td>Cliente y administrador.</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>El cliente/administrador debe haber iniciado sesión..</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1-El usuario selecciona la barra de buscador.<br> 
+  2-Introduce el nombre de la película en la barra del buscador.    
+</td>
+  </tr>
+    <tr>
+  <td><b>Postcondiciónes:</b></td>
+  <td>La plataforma muestra las diferentes peliculas que coincidan con el nombre previamente introducido.</td>
+  </tr>
+    <tr>
+  <td><b>Alternativas/Excepciones:</b></td>
+  <td>2.1-El nombre de la película/serie previamente introducido no coincide con ninguna película/serie registrada en el servidor.</td>
+  </tr>
+  </table>
+
+
+ 
+
+<table style="width:100%">
   <tr>
     <td><b>Nombre: </b></td>
     <td>Enlaces para ver películas.</td>
