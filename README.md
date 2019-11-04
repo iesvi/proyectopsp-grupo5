@@ -363,6 +363,6 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </table>
 
 <div align="center">
- <img src="./recursos/unnamed.png">
+ <img src="./unnamed.png">
 </div>
 
