@@ -214,24 +214,24 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
    <table style="width:100%">
   <tr>
     <td><b>Nombre: </b></td>
-    <td>.</td>
+    <td>Añadir enlace.</td>
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
-    <td>.</td> 
+    <td>El usuario añade un enlace a la pagina.</td> 
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td></td>
+    <td>Cliente</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>.</td>
+  <td>El cliente debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
-  <td>1-.<br>
-     2-</td>
+  <td>1-El usuario añade un enlace.<br>
+  </td>
   </tr>
   </table>
   <table style="width:100%">
