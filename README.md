@@ -160,7 +160,38 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 <table style="width:100%">
 </table>
 
+
 <table style="width:100%">
+</table>
+
+
+
+<
+  
+  <table style="width:100%">
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>Ver detalles.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>Los usuarios que accedan a esta opción podrán ver los distintos detalles de la serie o película que hayan accedido       (Nombre,Dirección,Reparto,etc).</td> 
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td>Cliente y administrador</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>El cliente/administrador haya iniciado sesión.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1-El usuario pulsa en ver detalles.<br>
+      2-El sistema le devuelve los detalles de la película.</td>
+  </tr>
+  </table>
+  <table style="width:100%">
   <tr>
     <td><b>Nombre: </b></td>
     <td>Buscador de películas y/o series.</td>
@@ -190,36 +221,6 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     <tr>
   <td><b>Alternativas/Excepciones:</b></td>
   <td>2.1-El nombre de la película/serie previamente introducido no coincide con ninguna película/serie registrada en el servidor.</td>
-  </tr>
-  </table>
-<table style="width:100%">
-</table>
-
-
-
-<
-  
-  <table style="width:100%">
-  <tr>
-    <td><b>Nombre: </b></td>
-    <td>Ver detalles.</td>
-  </tr>
-  <tr>
-    <td><b>Descripción:</b></td>
-    <td>Los usuarios que accedan a esta opción podrán ver los distintos detalles de la serie o película que hayan accedido       (Nombre,Dirección,Reparto,etc).</td> 
-  </tr>
-  <tr>
-    <td><b>Actores:</b></td>
-    <td>Cliente y administrador</td>
-  </tr>
-  <tr>
-  <td><b>Precondiciones:</b></td>
-  <td>El cliente/administrador haya iniciado sesión.</td>
-  </tr>
-    <tr>
-  <td><b>Curso normal del caso de uso:</b></td>
-  <td>1-El usuario pulsa en ver detalles.<br>
-      2-El sistema le devuelve los detalles de la película.</td>
   </tr>
   </table>
 
