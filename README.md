@@ -161,12 +161,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 </table>
 
 
-<table style="width:100%">
-</table>
 
 
-
-<
   
   <table style="width:100%">
   <tr>
@@ -189,6 +185,53 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El usuario pulsa en ver detalles.<br>
       2-El sistema le devuelve los detalles de la película.</td>
+  </tr>
+  </table>
+  
+  <table style="width:100%">
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>Reproducir.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>El usuario le da al botón y la película o serie comienza a reproducirse.</td> 
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td>Cliente</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>El cliente debe haber iniciado sesión.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1-El usuario pulsa el botón reproducir.<br>
+     2-La película o serie comienza a reproducirse</td>
+  </tr>
+  </table>
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>.</td> 
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td></td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1-.<br>
+     2-</td>
   </tr>
   </table>
   <table style="width:100%">
