@@ -126,6 +126,36 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 </td>
   </tr>
 </table>
+<table style="width:100%">
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>Consultar listas.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>Al cliente se le muestran todas las listas que tiene.</td>
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td>Cliente.</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>El cliente haya iniciado sesión.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1-El cliente selecciona la opción consultar listas.<br> 
+  2-El sistema muestra las listas del cliente. 
+  3-El cliente selecciona la lista que quiere consultar.
+</td>
+  </tr>
+    <tr>
+  <td><b>Postcondiciónes:</b></td>
+  <td>El usuario puede consultar la lista que haya seleccionado.</td>
+  </tr>
+    
+  </table>
 
 <table style="width:100%">
 </table>
@@ -165,36 +195,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 <table style="width:100%">
 </table>
 
-<table style="width:100%">
-  <tr>
-    <td><b>Nombre: </b></td>
-    <td>Consultar listas.</td>
-  </tr>
-  <tr>
-    <td><b>Descripción:</b></td>
-    <td>Al cliente se le muestran todas las listas que tiene.</td>
-  </tr>
-  <tr>
-    <td><b>Actores:</b></td>
-    <td>Cliente.</td>
-  </tr>
-  <tr>
-  <td><b>Precondiciones:</b></td>
-  <td>El cliente haya iniciado sesión.</td>
-  </tr>
-    <tr>
-  <td><b>Curso normal del caso de uso:</b></td>
-  <td>1-El cliente selecciona la opción consultar listas.<br> 
-  2-El sistema muestra las listas del cliente. 
-  3-El cliente selecciona la lista que quiere consultar.
-</td>
-  </tr>
-    <tr>
-  <td><b>Postcondiciónes:</b></td>
-  <td>El usuario puede consultar la lista que haya seleccionado.</td>
-  </tr>
-    
-  </table>
+
 
 <
   
