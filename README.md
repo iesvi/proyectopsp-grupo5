@@ -287,7 +287,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente/administrador debe haber iniciado sesión..</td>
+  <td>El cliente/administrador debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
@@ -311,11 +311,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 <table style="width:100%">
   <tr>
     <td><b>Nombre: </b></td>
-    <td>Enlaces para ver películas.</td>
+    <td>Ver enlaces.</td>
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
-    <td>Después de utilizar el buscador y seleccionar una película o serie aparecerán todos los enlaces.</td>
+    <td>Después de seleccionar ver detalles, aparecerá un botón que mostrará todos los enlaces.</td>
   </tr>
   <tr>
     <td><b>Actores:</b></td>
@@ -323,7 +323,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente esté registrado.</td>
+  <td>El cliente debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
@@ -336,29 +336,29 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 <table style="width:100%">
   <tr>
     <td><b>Nombre: </b></td>
-    <td>Subir un enlace a la página.</td>
+    <td>Comprobar borradores.</td>
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
-    <td>En la pantalla principal aparece una opción para subir un enlace de una película.</td> 
+    <td>Se muestran una serie de enlaces al administrador que debe ir catalogando.</td> 
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente y administrador.</td>
+    <td>Administrador.</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente esté registrado.</td>
+  <td>El administrador debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
-  <td>1-El cliente selecciona la opción de subir un enlace e indica a qué película o serie pertenece.<br>
-      2-El administrador evalúa el enlace y lo considera apropiado.<br>
-      3-El enlace es subido.</td>
+  <td>1-El administrador selecciona la opción comprobar borradores.<br>
+      2-El sistema le muestra una serie de enlaces que han subido los usuarios.<br>
+      3-El administrador clasifica el enlace y lo añade.</td>
   </tr>
   <tr>
     <td><b>Alternativas/Excepciones:</b></td>
-    <td>2.1-El administrador considera que el enlace no es apropiado y decide no subirlo.</td>
+    <td>3.1-El administrador considera que el enlace no es apropiado y decide no subirlo.</td>
   </tr>
   </table>
 
