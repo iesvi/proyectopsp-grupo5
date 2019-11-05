@@ -370,7 +370,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 <div align="center">
   <img src="./DClases.PNG">
   </div>
-# Diagrama de entidad-relacion
+# Diagrama de clases
 <div align="center">
   <img src="./DEntidad.PNG">
   </div>
