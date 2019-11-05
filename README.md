@@ -363,16 +363,32 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </table>
 
 <div align="center">
- <img src="./unnamed.PNG">
+ <img src="./Recursos/unnamed.PNG">
 </div>
-
+# Actividad 4
 # Diagrama de clases
 <div align="center">
-  <img src="./DClases.PNG">
+  <img src="./Recursos/DClases.PNG">
   </div>
  
 # Diagrama de entidad-relación
 <div align="center">
-  <img src="./DEntidad.PNG">
+  <img src="./Recursos/DEntidad.PNG">
   </div>
             
+# Actividad 5: Actividad Gráfica
+<div align="center>
+<img src="./Recursos/VistaBuscarPelicula.PNG">
+ </div>
+<div align="center>
+<img src="./Recursos/VistaConsultarLista.PNG">
+ </div>
+ <div align="center>
+<img src="./Recursos/VistaInicioSesion.PNG">
+ </div>
+  <div align="center>
+<img src="./Recursos/VistaMenu.PNG">
+ </div>
+ <div align="center>
+<img src="./Recursos/VistaPelicula.PNG">
+ </div>
