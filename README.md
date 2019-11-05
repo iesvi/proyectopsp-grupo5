@@ -366,11 +366,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
  <img src="./unnamed.PNG">
 </div>
 
-# Diagrama de entidad-relación
+# Diagrama de clases
 <div align="center">
   <img src="./DClases.PNG">
   </div>
-# Diagrama de clases
+# Diagrama de entidad-relación
 <div align="center">
   <img src="./DEntidad.PNG">
   </div>
