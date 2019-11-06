@@ -377,18 +377,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </div>
             
 # Actividad 5: Actividad Gráfica
-
+<div align="center">
 <img src="./Recursos/VistaBuscarPelicula.PNG">
- 
-
 <img src="./Recursos/VistaConsultarLista.PNG">
-
- 
 <img src="./Recursos/VistaInicioSesion.PNG">
-
-
 <img src="./Recursos/VistaMenu.PNG">
-
-
 <img src="./Recursos/VistaPelicula.PNG">
-
+</div>
