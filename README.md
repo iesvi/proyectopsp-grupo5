@@ -363,7 +363,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </table>
 
 <div align="center">
- <img src="./Recursos/unnamed.PNG">
+ <img src="./Recursos/unnamed.png">
 </div>
 # Actividad 4
 # Diagrama de clases
