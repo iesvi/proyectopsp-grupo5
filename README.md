@@ -342,7 +342,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
-    <td>Barra en la cual el cliente podrá realizar la búsqueda de películas y series por la introducción del nombre.</td>
+    <td>Menú en el cual el cliente podrá realizar la búsqueda de películas y series por la introducción del nombre.</td>
   </tr>
   <tr>
     <td><b>Actores:</b></td>
@@ -355,7 +355,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El usuario selecciona la barra de buscador.<br> 
-  2-Introduce el nombre de la película en la barra del buscador.    
+  2-Introduce el nombre de la película en la barra del buscador. <br>
+  3- El sistema devuelve la película con el nombre que ha introducido el usuario en el buscador.<br>
 </td>
   </tr>
     <tr>
