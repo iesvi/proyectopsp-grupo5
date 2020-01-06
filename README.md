@@ -83,6 +83,9 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </td>
 </td>
   </tr>
+  <tr>
+  <td><b>Alternativas/Excepciones:</b></td>
+  <td>Ninguna.</td>
     
 </table>
 <table style="width:100%">
@@ -158,11 +161,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 </td>
   </tr>
     <tr>
-  <td><b>Postcondiciónes:</b></td>
+  <td><b>Postcondiciones:</b></td>
   <td>El usuario puede consultar la lista que haya seleccionado.</td>
   </tr>
   <tr>
-    <td>Alternativas</td>
+    <td><b>Alternativas</b></td>
     <td>Nada.</td>
   </tr>
     
@@ -202,13 +205,14 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
       2-El sistema le devuelve los detalles de la película(nombre,actores,director y duración).</td>
   </tr>
   <tr>
-    <td>Alternativas:</td>
+    <td><b>Postcondiciones</b></td>
     <td>Ninguna</td>
   </tr>
   <tr>
-    <td>Postcondiciones</td>
+    <td><b>Alternativas/Excepciones:</b></td>
     <td>Ninguna</td>
   </tr>
+  
     
    
   </table>
