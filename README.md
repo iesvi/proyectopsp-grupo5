@@ -239,6 +239,14 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td>1-El usuario pulsa el botón reproducir.<br>
      2-La película o serie comienza a reproducirse</td>
   </tr>
+  <tr>
+    <td>Postcondiciones:</td>
+    <td>Ninguna.</td>
+  </tr>
+  <tr>
+    <td>Alternativas/Excepciones:</td>
+    <td>Ninguna</td>
+    <tr>
   </table>
    <table style="width:100%">
   <tr>
@@ -265,7 +273,17 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El usuario añade un enlace.<br>
   </td>
+      
   </tr>
+  <tr>
+  <td>Postcondiciones:</td>
+  <td>Ninguna.</td>
+  </tr>
+  <tr>
+  <td>Alternativas/Excepciones:</td>
+  <td>Ninguna.</td>
+  </tr>
+  
   </table>
   
 <table style="width:100%">
