@@ -64,7 +64,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente.</td>
+    <td>Usuario.</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
@@ -72,7 +72,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
-  <td>1-El cliente selecciona registrarse.<br>
+  <td>1-El usuario selecciona registrarse.<br>
   2-El sistema le devuelve un formulario que debe rellenar.<br>
   3-El cliente introduce los datos correctamente.<br>
   </td>
@@ -85,7 +85,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
     <tr>
   <td><b>Alternativas/Excepciones:</b></td>
-  <td>3.1- El cliente es menor de edad.<br>
+  <td>3.1- El usuario es menor de edad.<br>
   3.1.2- El sistema devuelve un error indicando que debe ser mayor de edad para registrarse.
 </td>
   </tr>
@@ -101,21 +101,21 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
-    <td>El cliente, si ya posee una cuenta, introduce su nombre de usuario y su contraseña y accedera a su perfil previamente   
+    <td>El usuario, si ya posee una cuenta, introduce su nombre de usuario y su contraseña y accedera a su perfil previamente   
       personalizado.</td>
     
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente.</td>
+    <td>Usuario.</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente debe estar registrado en el sistema.</td>
+  <td>El usuario debe estar registrado en el sistema.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
-  <td>1- El sistema requerirá del cliente que introduzca su usuario y contraseña.<br>
+  <td>1- El sistema requerirá del usuario que introduzca su usuario y contraseña.<br>
   2-El sistema recoge la informacion y comprueba que esta esté previamente registrada en la base de datos de usuarios.<br>
  
   </td>
@@ -128,7 +128,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
     <tr>
   <td><b>Alternativas/Excepciones:</b></td>
-  <td>2.1 El sistema devuele un error al no ser correctos o al no existir los datos introducidos por el cliente y sugiere la opción
+  <td>2.1 El sistema devuele un error al no ser correctos o al no existir los datos introducidos por el usuario y sugiere la opción
     de crear usuario.
  
 </td>
@@ -145,21 +145,21 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
-    <td>Al cliente se le muestran todas las listas que tiene.</td>
+    <td>Al usuario se le muestran todas las listas que tiene.</td>
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente.</td>
+    <td>Usuario.</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente haya iniciado sesión.</td>
+  <td>El usuario haya iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
-  <td>1-El cliente selecciona la opción consultar listas.<br> 
-  2-El sistema muestra las listas del cliente. 
-  3-El cliente selecciona la lista que quiere consultar.
+  <td>1-El usuario selecciona la opción consultar listas.<br> 
+  2-El sistema muestra las listas del usuario. 
+  3-El usuario selecciona la lista que quiere consultar.
 </td>
   </tr>
     <tr>
@@ -191,11 +191,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente y administrador</td>
+    <td>Usuario y administrador</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente/administrador haya iniciado sesión.</td>
+  <td>El usuario/administrador haya iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
@@ -219,11 +219,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente</td>
+    <td>Usuario</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente debe haber iniciado sesión.</td>
+  <td>El usuario debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
@@ -246,11 +246,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente</td>
+    <td>Usuario</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente debe haber iniciado sesión.</td>
+  <td>El usuario debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
@@ -274,27 +274,27 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente.</td>
+    <td>Usuario.</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente debe haber iniciado sesión.</td>
+  <td>El usuario debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
   <td>
-    1-El cliente busca la película o serie.<br>
-    2-El cliente añade la película a una lista existente.
+    1-El usuario busca la película o serie.<br>
+    2-El usuario añade la película a una lista existente.
 </td>
   </tr>
   <td><b>Postcondiciónes:</b></td>
   <td>
-    Se añade a las listas de películas/series las cuales tiene almacenadas el cliente la nueva película/serie seleccionada.
+    Se añade a las listas de películas/series las cuales tiene almacenadas el usuario la nueva película/serie seleccionada.
 </td>
   </tr>
     <tr>
   <td><b>Alternativas/Excepciones:</b></td>
-  <td>2.1- El cliente crea una nueva lista para añadir la película.
+  <td>2.1- El usuario crea una nueva lista para añadir la película.
 </td>
   </tr>
 </table>
@@ -315,11 +315,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente y administrador.</td>
+    <td>Usuario y administrador.</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente/administrador debe haber iniciado sesión.</td>
+  <td>El usuario/administrador debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
@@ -355,15 +355,15 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Actores:</b></td>
-    <td>Cliente.</td>
+    <td>Usuario.</td>
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>El cliente debe haber iniciado sesión.</td>
+  <td>El usuario debe haber iniciado sesión.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
-  <td>1- El cliente utiliza el buscador y selecciona una serie o película.<br>
+  <td>1- El usuario utiliza el buscador y selecciona una serie o película.<br>
       2- Aparecen los enlaces disponibles.
 </td>
   </tr>
