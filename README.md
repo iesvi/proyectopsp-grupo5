@@ -201,6 +201,16 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td>1-El usuario pulsa en ver detalles.<br>
       2-El sistema le devuelve los detalles de la película(nombre,actores,director y duración).</td>
   </tr>
+  <tr>
+    <td>Alternativas:</td>
+    <td>Ninguna</td>
+  </tr>
+  <tr>
+    <td>Postcondiciones</td>
+    <td>Ninguna</td>
+  </tr>
+    
+   
   </table>
   
   <table style="width:100%">
