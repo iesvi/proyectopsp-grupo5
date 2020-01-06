@@ -165,7 +165,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td>El usuario puede consultar la lista que haya seleccionado.</td>
   </tr>
   <tr>
-    <td><b>Alternativas</b></td>
+    <td><b>Alternativas/Excepciones</b></td>
     <td>Nada.</td>
   </tr>
     
@@ -244,11 +244,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
      2-La película o serie comienza a reproducirse</td>
   </tr>
   <tr>
-    <td>Postcondiciones:</td>
+    <td><b>Postcondiciones:</b></td>
     <td>Ninguna.</td>
   </tr>
   <tr>
-    <td>Alternativas/Excepciones:</td>
+    <td><b>Alternativas/Excepciones:</b></td>
     <td>Ninguna</td>
     <tr>
   </table>
@@ -280,11 +280,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
       
   </tr>
   <tr>
-  <td>Postcondiciones:</td>
+  <td><b>Postcondiciones:</b></td>
   <td>Ninguna.</td>
   </tr>
   <tr>
-  <td>Alternativas/Excepciones:</td>
+  <td><b>Alternativas/Excepciones:</b></td>
   <td>Ninguna.</td>
   </tr>
   
@@ -398,6 +398,13 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
       2- Aparecen los enlaces disponibles.
 </td>
   </tr>
+  <tr>
+    <td><b>Postcondiciones:</b></td>
+    <td>Ninguna.</td>
+  </tr>
+  <tr>
+    <td><b>Alternativas/Excepciones:</b></td>
+    <td>Ninguna.</td>
   </table>
 
 <table style="width:100%">
@@ -426,6 +433,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td>1-El administrador selecciona la opción comprobar borradores.<br>
       2-El sistema le muestra una serie de enlaces que han subido los usuarios.<br>
       3-El administrador clasifica el enlace y lo añade.</td>
+  </tr>
+  <tr>
+    <td><b>Postcondiciones:</b></td>
+    <td>Ninguna.</td>
   </tr>
   <tr>
     <td><b>Alternativas/Excepciones:</b></td>
