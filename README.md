@@ -154,12 +154,16 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El usuario selecciona la opción consultar listas.<br> 
   2-El sistema muestra las listas del usuario. <br>
-  3-El usuario selecciona la lista que quiere consultar.
+  3-El usuario selecciona la lista que quiere consultar/añadir.
 </td>
   </tr>
     <tr>
   <td><b>Postcondiciónes:</b></td>
   <td>El usuario puede consultar la lista que haya seleccionado.</td>
+  </tr>
+  <tr>
+    <td>Alternativas</td>
+    <td>Nada.</td>
   </tr>
     
   </table>
