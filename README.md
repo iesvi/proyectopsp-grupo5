@@ -73,7 +73,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El usuario selecciona registrarse.<br>
-  2-El sistema le devuelve un formulario que debe rellenar.<br>
+  2-El sistema le devuelve un formulario(Nombre,Apellidos,Edad,Nombre de usuario y Contraseña) que debe rellenar.<br>
   3-El cliente introduce los datos correctamente.<br>
   </td>
   </tr>
