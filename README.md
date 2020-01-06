@@ -199,7 +199,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El usuario pulsa en ver detalles.<br>
-      2-El sistema le devuelve los detalles de la película.</td>
+      2-El sistema le devuelve los detalles de la película(nombre,actores,director y duración).</td>
   </tr>
   </table>
   
