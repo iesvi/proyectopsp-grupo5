@@ -140,8 +140,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
     <td><b>Descripción:</b></td>
-    <td>Al usuario se le muestran todas las listas que tiene.</td>
-  </tr>
+    <td>Al usuario se le muestran todas las listas de películas que tiene.</td>
+  </tr> 
   <tr>
     <td><b>Actores:</b></td>
     <td>Usuario.</td>
@@ -153,7 +153,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El usuario selecciona la opción consultar listas.<br> 
-  2-El sistema muestra las listas del usuario. 
+  2-El sistema muestra las listas del usuario. <br>
   3-El usuario selecciona la lista que quiere consultar.
 </td>
   </tr>
