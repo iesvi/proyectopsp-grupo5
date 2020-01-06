@@ -314,8 +314,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
   <td>
-    1-El usuario busca la película o serie.<br>
-    2-El usuario añade la película a una lista existente.
+    1-El usuario añade la película a una lista existente.<br>
+   
 </td>
   </tr>
   <td><b>Postcondiciónes:</b></td>
