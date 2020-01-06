@@ -50,6 +50,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
  
 <table style="width:100%">
   <tr>
+    <td><b>ID: </b></td>
+    <td>CU-1</td>
+  </tr>
+  <tr>
     <td><b>Nombre: </b></td>
     <td>Registro de usuario.</td>
   </tr>
@@ -87,6 +91,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
 </table>
 <table style="width:100%">
+  <tr>
+    <td><b>ID: </b></td>
+    <td>CU-2</td>
+  </tr>
   <tr>
     <td><b>Nombre: </b></td>
     <td>Inicio de sesión.</td>
@@ -128,6 +136,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 </table>
 <table style="width:100%">
   <tr>
+    <td><b>ID: </b></td>
+    <td>CU-3</td>
+  </tr>
+  <tr>
     <td><b>Nombre: </b></td>
     <td>Consultar listas.</td>
   </tr>
@@ -166,6 +178,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   
   <table style="width:100%">
   <tr>
+    <td><b>ID: </b></td>
+    <td>CU-4</td>
+  </tr>
+  <tr>
     <td><b>Nombre: </b></td>
     <td>Ver detalles.</td>
   </tr>
@@ -190,6 +206,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   
   <table style="width:100%">
   <tr>
+    <td><b>ID: </b></td>
+    <td>CU-5</td>
+  </tr>
+  <tr>
     <td><b>Nombre: </b></td>
     <td>Reproducir.</td>
   </tr>
@@ -212,6 +232,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   </table>
    <table style="width:100%">
+  <tr>
+    <td><b>ID: </b></td>
+    <td>CU-6</td>
+  </tr>
   <tr>
     <td><b>Nombre: </b></td>
     <td>Añadir enlace.</td>
@@ -236,6 +260,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </table>
   
 <table style="width:100%">
+  <tr>
+    <td><b>ID: </b></td>
+    <td>CU-7</td>
+  </tr>
   <tr>
     <td><b>Nombre: </b></td>
     <td>Añadir a lista.</td>
@@ -274,6 +302,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 
   <table style="width:100%">
   <tr>
+    <td><b>ID: </b></td>
+    <td>CU-8</td>
+  </tr>
+  <tr>
     <td><b>Nombre: </b></td>
     <td>Buscador de películas y/o series.</td>
   </tr>
@@ -310,6 +342,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 
 <table style="width:100%">
   <tr>
+    <td><b>ID: </b></td>
+    <td>CU-9</td>
+  </tr>
+  <tr>
     <td><b>Nombre: </b></td>
     <td>Ver enlaces.</td>
   </tr>
@@ -334,6 +370,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </table>
 
 <table style="width:100%">
+  <tr>
+    <td><b>ID: </b></td>
+    <td>CU-10</td>
+  </tr>
   <tr>
     <td><b>Nombre: </b></td>
     <td>Comprobar borradores.</td>
