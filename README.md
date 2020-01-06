@@ -68,7 +68,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
   <td><b>Precondiciones:</b></td>
-  <td>Ser mayor de edad.</td>
+  <td>Nada.</td>
   </tr>
     <tr>
   <td><b>Curso normal del caso de uso:</b></td>
@@ -83,12 +83,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </td>
 </td>
   </tr>
-    <tr>
-  <td><b>Alternativas/Excepciones:</b></td>
-  <td>3.1- El usuario es menor de edad.<br>
-  3.1.2- El sistema devuelve un error indicando que debe ser mayor de edad para registrarse.
-</td>
-  </tr>
+    
 </table>
 <table style="width:100%">
   <tr>
