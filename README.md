@@ -6,7 +6,7 @@
 </p>
 
 
-#### Author  
+#### Autor  
 &nbsp;&nbsp;&nbsp;  Este material ha sido producido por <b>Miguel Rodríguez</b> y <b>Victor Lopez</b> bajo licencia Creative Commons:  <img src="/Recursos/licencia.png" height="25" width="75"/>  
 
 </br>
