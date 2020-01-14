@@ -1,3 +1,27 @@
+# <p align="center">DAM BLINDERS</p>
+### <p align="center">DAMB: Gestión de videoclub online</p>
+### <p align="center">DAMB, Gestión de videoclub online</p>
+
+<p align="center">
+<img src="/Recursos/portada.jpg" height="600" width="800"/>
+</p>
+
+
+#### Author
+&nbsp;&nbsp;&nbsp;  Este material ha sido producido por Miguel Rodríguez y Victor Lopez bajo licencia Creative Commons:  <img src="/img/licencia.png" height="25" width="75"/>  
+&nbsp;&nbsp;&nbsp;  Este material ha sido producido por <b>Miguel Rodríguez</b> y <b>Victor Lopez</b> bajo licencia Creative Commons:  <img src="/img/Licencia-Tipo2.png" height="25" width="75"/>  
+
+</br>
+</br>
+@@ -20,9 +20,6 @@
+# <p align="center">Índice:</p>
+> **[1- Actividad 1](#1):**
+>
+> **[2- Actividad 2](#2)**
+>
+> **[3- Actividad 3](#3):**
+</br>
+</br>
 # Actividad 1: Definición del problema. Requisitos funcionales.
 # Gestión de un videoclub online DAM Blinders
 
