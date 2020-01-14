@@ -393,7 +393,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El administrador selecciona la opción comprobar borradores.<br>
       2-El sistema le muestra una serie de enlaces que han subido los usuarios.<br>
-      3-El administrador clasifica el enlace y lo añade.</td>
+      3-El administrador clasifica el enlace en función de la calidad de imagen, la pagina de la cual proviene ,el idioma y lo añade.</td>
   </tr>
   <tr>
     <td><b>Postcondiciones:</b></td>
