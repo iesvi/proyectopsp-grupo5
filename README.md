@@ -472,3 +472,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
 </a>
 
 # Fase 2 Actividad 2: Hilos
+<p>El hilo que tiene nuestra aplicación se encarga de mostrar un mensaje indicando que usuario ha iniciado sesión<br>
+  en nuestra aplicación. Está implementado en la clase AtenderCliente que se encuentra en el paquete controller.<br>
+  Este hilo imprime por pantalla un mensaje indicando el nombre de usuario que acaba de iniciar sesión.</p>
+  
