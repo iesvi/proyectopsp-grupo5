@@ -101,7 +101,6 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     <td><b>Descripción:</b></td>
     <td>El usuario, si ya posee una cuenta, introduce su nombre de usuario y su contraseña y accedera a su perfil previamente   
       personalizado.</td>
-    
   </tr>
   <tr>
     <td><b>Actores:</b></td>
@@ -120,7 +119,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
   <tr>
   <td><b>Postcondiciones:</b></td>
-  <td>El usuario accede satisfactoriamente al sistema.<br>
+  <td>El usuario accede satisfactoriamente al sistema y este le da acceso a Buscar Película y Consulta Lista.<br>
   </td>
 </td>
   </tr>
