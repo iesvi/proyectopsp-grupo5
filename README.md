@@ -156,7 +156,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El usuario selecciona la opción consultar listas.<br> 
   2-El sistema muestra las listas del usuario. <br>
-  3-El usuario selecciona la lista que quiere consultar/añadir.
+  3-El usuario selecciona la lista que quiere consultar o añadir.
 </td>
   </tr>
     <tr>
