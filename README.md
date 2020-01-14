@@ -418,7 +418,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
  
 # Diagrama de entidad-relación
 <div align="center">
-  <img src="./Recursos/DEntidad.PNG">
+  <img src="./Recursos/Entidad-Relacion.png">
   </div>
             
 # Actividad 5: Actividad Gráfica
