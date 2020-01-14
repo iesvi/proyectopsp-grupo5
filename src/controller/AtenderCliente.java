@@ -23,6 +23,10 @@ public class AtenderCliente extends Thread{
     public void run(){
         super.run();
         System.out.println("El usuario "+usuario+" ha iniciado sesión.");
+         try {
+                sleep(100);
+            } catch (InterruptedException e) { }			
+			
     
 }
 }
