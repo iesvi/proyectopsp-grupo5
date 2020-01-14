@@ -3,7 +3,7 @@
 ### <p align="center">DAMB, Gestión de videoclub online</p>
 
 <p align="center">
-<img src="/Recursos/portada.jpg" height="600" width="800"/>
+<img src="/Recursos/portada.jpg" height="450" width="800"/>
 </p>
 
 
