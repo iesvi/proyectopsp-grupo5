@@ -7,15 +7,14 @@
 </p>
 
 
-#### Author
-&nbsp;&nbsp;&nbsp;  Este material ha sido producido por Miguel Rodríguez y Victor Lopez bajo licencia Creative Commons:  <img src="/img/licencia.png" height="25" width="75"/>  
-&nbsp;&nbsp;&nbsp;  Este material ha sido producido por <b>Miguel Rodríguez</b> y <b>Victor Lopez</b> bajo licencia Creative Commons:  <img src="/img/Licencia-Tipo2.png" height="25" width="75"/>  
+#### Author  
+&nbsp;&nbsp;&nbsp;  Este material ha sido producido por <b>Miguel Rodríguez</b> y <b>Victor Lopez</b> bajo licencia Creative Commons:  <img src="/img/licencia.png" height="25" width="75"/>  
 
 </br>
 </br>
-@@ -20,9 +20,6 @@
+
 # <p align="center">Índice:</p>
-> **[1- Actividad 1](#1):**
+> **[1-Actividad](#1)**
 >
 > **[2- Actividad 2](#2)**
 >
