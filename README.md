@@ -324,7 +324,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
     <tr>
   <td><b>Alternativas/Excepciones:</b></td>
-  <td>
+  <td>Ninguna
 </td>
   </tr>
 </table>
