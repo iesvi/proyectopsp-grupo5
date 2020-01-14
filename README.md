@@ -475,5 +475,5 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 <img src="./Recursos/VistaMenu.PNG">
 </div>
 <div align="center">
-<img src="./Recursos/VistaPelicula.PNG">
+<img src="./Recursos/Pelicula.PNG">
 </div>
