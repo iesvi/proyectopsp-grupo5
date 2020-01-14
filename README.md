@@ -355,12 +355,12 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   <td><b>Curso normal del caso de uso:</b></td>
   <td>1-El usuario selecciona la barra de buscador.<br> 
   2-Introduce el nombre de la película en la barra del buscador. <br>
-  3- El sistema devuelve una lista con las peliculas o series que coinciden con dicho nombre y tendras acceso a ver detalles de dicho contenido o añadirlo a una lista con la que cuentes, como podria ser lista de pendientes.<br>
+  3- El sistema devuelve una lista con las peliculas o series que coinciden con dicho nombre.<br>
 </td>
   </tr>
     <tr>
   <td><b>Postcondiciónes:</b></td>
-  <td>La plataforma muestra las diferentes peliculas que coincidan con el nombre previamente introducido.</td>
+  <td>Tendras acceso a ver detalles de dicho contenido o añadirlo a una lista con la que cuentes, como podria ser lista de pendientes.</td>
   </tr>
     <tr>
   <td><b>Alternativas/Excepciones:</b></td>
