@@ -27,7 +27,7 @@
 # Actividad 1: Definición del problema. Requisitos funcionales.
 # Gestión de un videoclub online DAM Blinders
 
-Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa tendrá las siguientes opciones:
+Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa tendrá las siguientes opciones:
 <ul>
   <li>
     <b>Registro de usuarios:</b> Consiste en un formulario que rellenarán los usuarios que quieran registrarse,
