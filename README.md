@@ -324,7 +324,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </tr>
     <tr>
   <td><b>Alternativas/Excepciones:</b></td>
-  <td>2.1- El usuario crea una nueva lista para añadir la película.
+  <td>
 </td>
   </tr>
 </table>
