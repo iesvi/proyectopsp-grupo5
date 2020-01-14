@@ -13,9 +13,9 @@
 </br>
 
 # <p align="center">Índice:</p>
-> **[1-Actividad](#1)**
+> **[Fase 1: Actividad 1](#1)**
 >
-> **[2- Actividad 2](#2)**
+> **[Fase 1: Actividad 3](#2)**
 >
 > **[3- Actividad 3](#3):**
 </br>
@@ -70,6 +70,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
   </li>
   </ul>
   </a>
+  <a name="2">
   
   # Actividad 3: Análisis de requisitos funcionales. Casos de uso.
  
@@ -433,6 +434,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 <div align="center">
  <img src="./Recursos/unnamed.png">
 </div>
+</a>
+
 
 # Actividad 4
 
