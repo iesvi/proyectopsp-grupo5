@@ -17,7 +17,9 @@
 >
 > **[Fase 1: Actividad 3](#2)**
 >
-> **[3- Actividad 3](#3):**
+> **[Fase 1: Actividad 4](#3)**
+>
+> **[Fase 1: Actividad 5](#4)**
 </br>
 </br>
 <a name="1">
@@ -435,7 +437,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
  <img src="./Recursos/unnamed.png">
 </div>
 </a>
-
+<a name="3">
 
 # Actividad 4
 
@@ -448,7 +450,9 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 <div align="center">
   <img src="./Recursos/Entidad-Relacion.png">
   </div>
-            
+  </a>
+   <a name="4"> 
+  
 # Actividad 5: Actividad Gráfica
 <div align="center">
 <img src="./Recursos/VistaBuscarPelicula.PNG">
@@ -465,4 +469,6 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
 <div align="center">
 <img src="./Recursos/Pelicula.PNG">
 </div>
+</a>
+
 # Fase 2 Actividad 2: Hilos
