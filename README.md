@@ -20,7 +20,8 @@
 > **[3- Actividad 3](#3):**
 </br>
 </br>
-
+<a name="1">
+  
 # Actividad 1: Definición del problema. Requisitos funcionales.
 # Gestión de un videoclub online DAM Blinders
 
@@ -68,6 +69,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub, este programa te
     En caso de que la evaluación sea positiva este enlace será añadido al conjunto de enlaces que pueden utilizar los usuarios.
   </li>
   </ul>
+  </a>
   
   # Actividad 3: Análisis de requisitos funcionales. Casos de uso.
  
