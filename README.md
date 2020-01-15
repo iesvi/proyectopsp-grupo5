@@ -20,6 +20,8 @@
 > **[Fase 1: Actividad 4](#3)**
 >
 > **[Fase 1: Actividad 5](#4)**
+>
+> **[Fase 2: Actividad 2](#5)**
 </br>
 </br>
 <a name="1">
@@ -470,9 +472,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
 <img src="./Recursos/Pelicula.PNG">
 </div>
 </a>
+<a name="5">
 
 # Fase 2 Actividad 2: Hilos
 <p>El hilo que tiene nuestra aplicación se encarga de mostrar un mensaje indicando que usuario ha iniciado sesión<br>
   en nuestra aplicación. Está implementado en la clase AtenderCliente que se encuentra en el paquete controller.<br>
   Este hilo imprime por pantalla un mensaje indicando el nombre de usuario que acaba de iniciar sesión.</p>
+  </a>
   
