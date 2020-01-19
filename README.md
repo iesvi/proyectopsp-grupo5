@@ -524,7 +524,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   </a>
   <a name="6">
   
-# Fase 2 Actividad 3: Hilos
+# Fase 2 Actividad 3: Red. Análisis y diseño
   <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
@@ -557,4 +557,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
      <td><b>JButton AbrirChat</b></td>
     <td>El boton AbrirChat abre la clase Chat al ser pulsado.</td> 
   </tr>
+  
+  <img src="./Recursos/DiagramaSecuencia.png">
   </a>
+  
+  
