@@ -522,7 +522,34 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   en nuestra aplicación. Está implementado en la clase AtenderCliente que se encuentra en el paquete controller.<br>
   Este hilo imprime por pantalla un mensaje indicando el nombre de usuario que acaba de iniciar sesión.</p>
   </a>
+  <a name="6">
   
 # Fase 2 Actividad 3: Hilos
+  <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td>Chat</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>Ventana en la cual entablan una conversación cliente-administrador.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
   
-  
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td> 
+  </tr>
+  </a>
