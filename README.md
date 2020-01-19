@@ -22,6 +22,8 @@
 > **[Fase 1: Actividad 5](#4)**
 >
 > **[Fase 2: Actividad 2](#5)**
+>
+> **[Fase 2: Actividad 3](#6)**
 </br>
 </br>
 <a name="1">
