@@ -434,6 +434,47 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>3.1-El administrador considera que el enlace no es apropiado y decide no subirlo.</td>
   </tr>
   </table>
+  
+  
+  <table style="width:100%">
+  <tr>
+    <td><b>ID: </b></td>
+    <td>CU-10</td>
+  </tr>
+  <tr>
+    <td><b>Nombre: </b></td>
+    <td>Chat.</td>
+  </tr>
+  <tr>
+    <td><b>Descripción:</b></td>
+    <td>El chat permitirá comunicar al cliente con un administrador. Aquí le podrá consultar todo tipo de dudas.</td> 
+  </tr>
+  <tr>
+    <td><b>Actores:</b></td>
+    <td>Cliente y Administrador.</td>
+  </tr>
+  <tr>
+  <td><b>Precondiciones:</b></td>
+  <td>El administrador y el Cliente deben haber iniciado sesión.</td>
+  </tr>
+    <tr>
+  <td><b>Curso normal del caso de uso:</b></td>
+  <td>1-El cliente pulsa el boton "Abrir chat".<br>
+      2-El sistema le muestra una ventana con el chat.<br>
+      3-Sistema notifica al Administrador para que entre al chat.<br>
+      4-El administrador accede al chat pulsando el botón "Abrir chat".<br>
+      5-El cliente consultará sus dudas con el administrador.<br>
+      6-El cliente cierra el chat.<br></td>
+  </tr>
+  <tr>
+    <td><b>Postcondiciones:</b></td>
+    <td>Ninguna.</td>
+  </tr>
+  <tr>
+    <td><b>Alternativas/Excepciones:</b></td>
+    <td>Ninguna.</td>
+  </tr>
+  </table>
 
 <div align="center">
  <img src="./Recursos/unnamed.png">
