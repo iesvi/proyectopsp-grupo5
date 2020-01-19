@@ -488,7 +488,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
 
 # Diagrama de clases
 <div align="center">
-  <img src="./Recursos/DC.png">
+  <img src="./Recursos/DiagramaC.png">
   </div>
  
 # Diagrama de entidad-relación
