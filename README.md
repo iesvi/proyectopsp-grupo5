@@ -536,7 +536,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   </tr>
   <tr>
     <td><b>Relaciones</b></td>
-    <td></td> 
+    <td>Tiene una relación 1:1 con VistaMenu</td> 
   </tr>
   
   <table style="width:100%">
@@ -545,8 +545,12 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>-JButton ConsultarListas<br>
+    -JButton BuscarPelículas<br>
+    -JButton AbrirChat<br></td>
+    <td>El botón ConsultarListas abre la clase ConsultarListas al ser pulsado.<br>
+    El botón BuscarPeliculas abre la claseBuscarPeliculas al ser pulsado.<br>
+    El boton AbrirChat abre la clase Chat al ser pulsado</td>
   </tr>
   <tr>
     <td></td>
