@@ -585,7 +585,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   </tr>
 
   </table>
-  <table style="width:100%>
+  <table style="width:100%">
   <tr>
   <td><b>Sintaxis del método</b></td>
   <td><b>Explicación</b></td>
@@ -624,7 +624,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>Este atributo hace referencia al modelo, que nos permitirá hacer referencia a los métodos para ingresar datos a la base de datos.</td> 
   </tr>
   </table>
-    <table style="width:100%>
+    <table style="width:100%">
   <tr>
   <td><b>Sintaxis del método</b></td>
   <td><b>Explicación</b></td>
@@ -675,7 +675,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>.</td> 
   </tr>
   </table>
-    <table style="width:100%>
+     <table style="width:100%">
   <tr>
   <td><b>Sintaxis del método</b></td>
   <td><b>Explicación</b></td>
@@ -717,7 +717,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>.</td> 
   </tr>
   </table>
-    <table style="width:100%>
+    <table style="width:100%">
   <tr>
   <td><b>Sintaxis del método</b></td>
   <td><b>Explicación</b></td>
@@ -759,7 +759,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>.</td> 
   </tr>
   </table>
-    <table style="width:100%>
+    <table style="width:100%">
   <tr>
   <td><b>Sintaxis del método</b></td>
   <td><b>Explicación</b></td>
@@ -801,7 +801,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>.</td> 
   </tr>
   </table>
-    <table style="width:100%>
+    <table style="width:100%">
   <tr>
   <td><b>Sintaxis del método</b></td>
   <td><b>Explicación</b></td>
@@ -843,7 +843,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>.</td> 
   </tr>
   </table>
-    <table style="width:100%>
+    <table style="width:100%">
   <tr>
   <td><b>Sintaxis del método</b></td>
   <td><b>Explicación</b></td>
@@ -885,7 +885,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>.</td> 
   </tr>
   </table>
-    <table style="width:100%>
+    <table style="width:100%">
   <tr>
   <td><b>Sintaxis del método</b></td>
   <td><b>Explicación</b></td>
@@ -927,7 +927,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>.</td> 
   </tr>
   </table>
-    <table style="width:100%>
+    <table style="width:100%">
   <tr>
   <td><b>Sintaxis del método</b></td>
   <td><b>Explicación</b></td>
