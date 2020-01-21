@@ -518,17 +518,18 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
 <a name="5">
 
 # Fase 2 Actividad 2: Hilos
-<p>El hilo que tiene nuestra aplicación se encarga de mostrar un mensaje indicando que usuario ha iniciado sesión<br>
+<p>El hilo AtenderClientes se encarga de mostrar un mensaje indicando que usuario ha iniciado sesión<br>
   en nuestra aplicación. Está implementado en la clase AtenderCliente que se encuentra en el paquete controller.<br>
   Este hilo imprime por pantalla un mensaje indicando el nombre de usuario que acaba de iniciar sesión.</p>
+  
   </a>
   <a name="6">
   
 # Fase 2 Actividad 3: Red. Análisis y diseño
-  <table style="width:100%">
+ <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
-    <td>Chat</td>
+    <td>AtenderCliente</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
@@ -556,6 +557,379 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
    <tr>
      <td><b>JButton AbrirChat</b></td>
     <td>El boton AbrirChat abre la clase Chat al ser pulsado.</td> 
+  </tr>
+  </table>
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td>Main</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>Es la clase principal de la aplicación, instancia el controlador y la VistaInicioSesion.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td>Tiene una relación 1:1 con Controlador y tiene otra relación 1:1 VistaInicioSesion</td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b>Ninguno.</b></td>
+    <td>Ninguno.
+    </td>
+  </tr>
+
+  </table>
+  <table style="width:100%>
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td>main(String[] args)</td>
+  <td>Instancia la clase Controlador y la clase Vista e inicia nuestra aplicación</td>
+  </tr>
+  </table>
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td>.</td> 
+  </tr>
+   <tr>
+     <td><b></b></td>
+    <td>.</td> 
+  </tr>
+  </table>
+    <table style="width:100%>
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  </table>
+  
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td>.</td> 
+  </tr>
+   <tr>
+     <td><b></b></td>
+    <td>.</td> 
+  </tr>
+  </table>
+    <table style="width:100%>
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  </table>
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td>.</td> 
+  </tr>
+   <tr>
+     <td><b></b></td>
+    <td>.</td> 
+  </tr>
+  </table>
+    <table style="width:100%>
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td>.</td> 
+  </tr>
+   <tr>
+     <td><b></b></td>
+    <td>.</td> 
+  </tr>
+  </table>
+    <table style="width:100%>
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  </table>
+ <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td>.</td> 
+  </tr>
+   <tr>
+     <td><b></b></td>
+    <td>.</td> 
+  </tr>
+  </table>
+    <table style="width:100%>
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  </table>
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td>.</td> 
+  </tr>
+   <tr>
+     <td><b></b></td>
+    <td>.</td> 
+  </tr>
+  </table>
+    <table style="width:100%>
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  </table>
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td>.</td> 
+  </tr>
+   <tr>
+     <td><b></b></td>
+    <td>.</td> 
+  </tr>
+  </table>
+    <table style="width:100%>
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td>.</td> 
+  </tr>
+   <tr>
+     <td><b></b></td>
+    <td>.</td> 
+  </tr>
+  </table>
+    <table style="width:100%>
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
   </tr>
   </table>
   <img src="./Recursos/DiagramaSecuencia.png">
