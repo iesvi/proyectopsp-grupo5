@@ -794,8 +794,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td><b>Explicación</b></td>
   </tr>
   <tr>
-  <td>Ninguno.</td>
-  <td>Ninguno.</td>
+  <td>Getters y Setters.</td>
+  <td>Devuelven o modifican los atributos.</td>
   </tr>
   </table>
   <br>
@@ -804,15 +804,16 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
  <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
-    <td></td>
+    <td>VistaConsultarLista</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td>.</td>
+    <td>Se van añadiendo objetos menu conforme se creen nuevas listas, es decir, cuando<br>
+      pulsemos el boton crear lista, también podemos eliminarlas con el botón eliminar.</td>
   </tr>
   <tr>
     <td><b>Relaciones</b></td>
-    <td></td> 
+    <td>Relacion 1:1 con el controlador</td> 
   </tr>
   </table>
   <table style="width:100%">
@@ -821,16 +822,24 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td></td>
+    <td><b>JButton btnCrear</b></td>
+    <td>Este botón nos permite crear listas.</td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td>.</td> 
+    <td><b>JButton btnEliminar</b></td>
+    <td>Este botón nos permite eliminar lista.</td> 
   </tr>
    <tr>
-     <td><b></b></td>
-    <td>.</td> 
+     <td><b>jMenu Humor</b></td>
+    <td>Es una lista con la lista humor.</td> 
+  </tr>
+   <tr>
+     <td><b>jMenu Terror</b></td>
+    <td>Es una lista con la lista humor.</td> 
+  </tr>
+   <tr>
+     <td><b>jMenuItem item1</b></td>
+    <td>Cada item nos guarda un objeto película.</td> 
   </tr>
   </table>
     <table style="width:100%">
@@ -839,8 +848,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td><b>Explicación</b></td>
   </tr>
   <tr>
-  <td></td>
-  <td></td>
+  <td>Getters y Setters</td>
+  <td>Devuelven o modifican los atributos</td>
   </tr>
   </table>
   <br>
@@ -849,15 +858,16 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
-    <td></td>
+    <td>VistaInicioSesion</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td>.</td>
+    <td>En esta vista podremos iniciar sesión introduciendo nuestro usuario o contraseña. Si no estamos registrados<br>
+      podemos pulsar en el boton Registrarse para registrarnos.</td>
   </tr>
   <tr>
     <td><b>Relaciones</b></td>
-    <td></td> 
+    <td>1:1 con el Controlador</td> 
   </tr>
   </table>
   <table style="width:100%">
@@ -866,17 +876,30 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td></td>
+    <td><b>JTextField txtUsuario</b></td>
+    <td>El campo en el que introduciremos nuestro usuario.</td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td>.</td> 
+    <td><b>JTextField txtContraseña</b></td>
+    <td>El campo en el que introduciremos nuestra contraseña.</td> 
   </tr>
    <tr>
-     <td><b></b></td>
-    <td>.</td> 
+     <td><b>JLabel lblUsuario</b></td>
+    <td>Nos indica el campo en el que introduciremos el usuario.</td> 
   </tr>
+   <tr>
+     <td><b>JLabel lblContraseña</b></td>
+    <td>Nos indica el campo en el que introduciremos el contraseña.</td> 
+  </tr>
+   <tr>
+     <td><b>JButton btnAceptar</b></td>
+    <td>Nos lleva a VistaMenu cuando pulsemos.</td> 
+  </tr>
+     <tr>
+     <td><b>JButton btnRegistrarse</b></td>
+    <td>Nos lleva a VistaRegistro cuando pulsemos.</td> 
+  </tr>
+  
   </table>
     <table style="width:100%">
   <tr>
@@ -884,8 +907,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td><b>Explicación</b></td>
   </tr>
   <tr>
-  <td></td>
-  <td></td>
+  <td>Getters y Setters</td>
+  <td>Devuelven o modifican los atributos</td>
   </tr>
   </table>
   <br>
@@ -894,15 +917,16 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
-    <td></td>
+    <td>VistaMenu</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td>.</td>
+    <td>Es un menú con tres botones, "Buscar Peliculas" que nos lleva a VistaBuscarPelicula y el botón "Consultar Listas"<br>
+      que nos lleva a "VistaConsultarLista". También hay un botón salir que nos cerrará el menú.</td>
   </tr>
   <tr>
     <td><b>Relaciones</b></td>
-    <td></td> 
+    <td>Relación 1:1 con el controlador</td> 
   </tr>
   </table>
   <table style="width:100%">
@@ -911,16 +935,20 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td></td>
+    <td><b>JButton btnBuscador</b></td>
+    <td>Si lo pulsamos nos lleva a VistaBuscarPelícula</td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td>.</td> 
+    <td><b>JButton btnConsultarLista</b></td>
+    <td>Si lo pulsamos nos lleva a VistaConsultarLista.</td> 
   </tr>
    <tr>
-     <td><b></b></td>
-    <td>.</td> 
+     <td><b>JLabel lbl1</b></td>
+    <td>Nos muestra un texto con el nombre de la aplicación.</td> 
+  </tr>
+   <tr>
+     <td><b>JLabel lbl2</b></td>
+    <td>Nos muestra un texto que pregunta lo que queremos hacer.</td> 
   </tr>
   </table>
     <table style="width:100%">
@@ -929,8 +957,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td><b>Explicación</b></td>
   </tr>
   <tr>
-  <td></td>
-  <td></td>
+  <td>Getters y Setters</td>
+  <td>Devuelven o modifican los atributos</td>
   </tr>
   </table>
   <br>
@@ -939,7 +967,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
-    <td></td>
+    <td>VistaRegistro</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
