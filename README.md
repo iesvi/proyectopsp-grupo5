@@ -759,15 +759,15 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
-    <td></td>
+    <td>VistaBuscarPelícula</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td>.</td>
+    <td>Es un buscador en el que introducimos el nombre una película.</td>
   </tr>
   <tr>
     <td><b>Relaciones</b></td>
-    <td></td> 
+    <td>Relacion 1:1 controlador</td> 
   </tr>
   </table>
   <table style="width:100%">
@@ -776,16 +776,16 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td></td>
+    <td><b>JButton btnBuscar</b></td>
+    <td>Al pulsar el botón se busca en la base de datos una película con ese nombre.</td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td>.</td> 
+    <td><b>JLabel lblTexto</b></td>
+    <td>Es un label con un texto.</td> 
   </tr>
    <tr>
-     <td><b></b></td>
-    <td>.</td> 
+     <td><b>JTextField txtBuscador</b></td>
+    <td>En este textfield introduciremos el nombre de la película que queremos buscar.</td> 
   </tr>
   </table>
     <table style="width:100%">
@@ -794,8 +794,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td><b>Explicación</b></td>
   </tr>
   <tr>
-  <td></td>
-  <td></td>
+  <td>Ninguno.</td>
+  <td>Ninguno.</td>
   </tr>
   </table>
   <br>
