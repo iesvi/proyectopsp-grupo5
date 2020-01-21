@@ -559,6 +559,17 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>El boton AbrirChat abre la clase Chat al ser pulsado.</td> 
   </tr>
   </table>
+   <table style="width:100%">
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td>Ninguno.</td>
+  <td>Ninguno</td>
+  </tr>
+  </table>
+  <br>
   <br>
   <br>
    <table style="width:100%">
@@ -585,7 +596,6 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>Ninguno.
     </td>
   </tr>
-
   </table>
   <table style="width:100%">
   <tr>
@@ -597,6 +607,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td>Instancia la clase Controlador y la clase Vista e inicia nuestra aplicación</td>
   </tr>
   </table>
+   
+  <br>
+  <br>
+  <br>
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
@@ -644,7 +658,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>Este método permite capturar los eventos en ae</td>
   </tr>
   </table>
-  
+  <br>
   <br>
   <br>
    <table style="width:100%">
@@ -689,7 +703,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
-  
+  <br>
   <br>
   <br>
    <table style="width:100%">
@@ -734,7 +748,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
-  
+  <br>
   <br>
   <br>
   <table style="width:100%">
@@ -779,7 +793,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
-  
+  <br>
   <br>
   <br>
  <table style="width:100%">
@@ -824,52 +838,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
-  
   <br>
-  <br>
-   <table style="width:100%">
-  <tr>
-    <td><b>Nombre de la Clase</b></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td>.</td>
-  </tr>
-  <tr>
-    <td><b>Relaciones</b></td>
-    <td></td> 
-  </tr>
-  </table>
-  <table style="width:100%">
-  <tr>
-    <td><b>Atributos</b></td>
-    <td><b>Explicacion</b></td>
-  </tr>
-  <tr>
-    <td><b></b></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><b></b></td>
-    <td>.</td> 
-  </tr>
-   <tr>
-     <td><b></b></td>
-    <td>.</td> 
-  </tr>
-  </table>
-    <table style="width:100%">
-  <tr>
-  <td><b>Sintaxis del método</b></td>
-  <td><b>Explicación</b></td>
-  </tr>
-  <tr>
-  <td></td>
-  <td></td>
-  </tr>
-  </table>
-  
   <br>
   <br>
    <table style="width:100%">
@@ -914,7 +883,52 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
-  
+  <br>
+  <br>
+  <br>
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td></td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b></b></td>
+    <td>.</td> 
+  </tr>
+   <tr>
+     <td><b></b></td>
+    <td>.</td> 
+  </tr>
+  </table>
+    <table style="width:100%">
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  </table>
+  <br>
   <br>
   <br>
   <table style="width:100%">
