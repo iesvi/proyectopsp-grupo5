@@ -598,15 +598,16 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
-    <td></td>
+    <td>Controlador</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td>.</td>
+    <td>Esta clase se encarga de controlar los diferentes eventos que ocurren en 
+  las vistas.</td>
   </tr>
   <tr>
     <td><b>Relaciones</b></td>
-    <td></td> 
+    <td>Relacion 1:1 con Model,Pelicula,VistaBuscarPelícula,VistaConsultarLista,VistaInicioSesion,VistaMenu,VistaRegsitro.</td> 
   </tr>
   </table>
   <table style="width:100%">
@@ -615,16 +616,12 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td></td>
+    <td><b>-VistaInicioSesion view</b></td>
+    <td>Este atributo hace referencia a la VistaInicioSesion, para controlar los eventos que ocurren en la misma.</td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td>.</td> 
-  </tr>
-   <tr>
-     <td><b></b></td>
-    <td>.</td> 
+    <td><b>-Model model</b></td>
+    <td>Este atributo hace referencia al modelo, que nos permitirá hacer referencia a los métodos para ingresar datos a la base de datos.</td> 
   </tr>
   </table>
     <table style="width:100%>
@@ -633,8 +630,16 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td><b>Explicación</b></td>
   </tr>
   <tr>
-  <td></td>
-  <td></td>
+  <td>setView(VistaInicioSesion view)</td>
+  <td>Permite modificar el atributo view</td>
+  </tr>
+  <tr>
+    <td>setModel(Model model)</td>
+    <td>Permite modificar el atributo model</td>
+  </tr>
+  <tr>
+    <td>actionPerformed(ActionEvent ae)</td>
+    <td>Este método permite capturar los eventos en ae</td>
   </tr>
   </table>
   
