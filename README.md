@@ -559,6 +559,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>El boton AbrirChat abre la clase Chat al ser pulsado.</td> 
   </tr>
   </table>
+  <br>
+  <br>
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
@@ -643,6 +645,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   </tr>
   </table>
   
+  <br>
+  <br>
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
@@ -685,6 +689,9 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
+  
+  <br>
+  <br>
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
@@ -727,6 +734,9 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
+  
+  <br>
+  <br>
   <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
@@ -769,6 +779,9 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
+  
+  <br>
+  <br>
  <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
@@ -811,6 +824,9 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
+  
+  <br>
+  <br>
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
@@ -853,6 +869,9 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
+  
+  <br>
+  <br>
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
@@ -895,6 +914,9 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td></td>
   </tr>
   </table>
+  
+  <br>
+  <br>
   <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
