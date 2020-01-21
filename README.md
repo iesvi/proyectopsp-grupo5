@@ -664,15 +664,15 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
-    <td></td>
+    <td>Model</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td>.</td>
+    <td>La clase modelo nos permite acceder a la base datos.</td>
   </tr>
   <tr>
     <td><b>Relaciones</b></td>
-    <td></td> 
+    <td>Relacion 1:1 con la clase Controador y con la clase Main.</td> 
   </tr>
   </table>
   <table style="width:100%">
@@ -681,17 +681,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td></td>
+    <td><b>Ninguno</b></td>
+    <td>Ninguno</td>
   </tr>
-  <tr>
-    <td><b></b></td>
-    <td>.</td> 
-  </tr>
-   <tr>
-     <td><b></b></td>
-    <td>.</td> 
-  </tr>
+  
   </table>
      <table style="width:100%">
   <tr>
@@ -699,8 +692,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td><b>Explicación</b></td>
   </tr>
   <tr>
-  <td></td>
-  <td></td>
+  <td>Ninguno.</td>
+  <td>Ninguno.</td>
   </tr>
   </table>
   <br>
@@ -709,15 +702,15 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
    <table style="width:100%">
   <tr>
     <td><b>Nombre de la Clase</b></td>
-    <td></td>
+    <td>Pelicula</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td>.</td>
+    <td>Nos permite visualizar la carátula de la película, la descripcion, el título y el reparto.</td>
   </tr>
   <tr>
     <td><b>Relaciones</b></td>
-    <td></td> 
+    <td>Relacion 1:1 con el controlador</td> 
   </tr>
   </table>
   <table style="width:100%">
@@ -726,16 +719,28 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td></td>
+    <td><b>JButton btnVer</b></td>
+    <td>Este boton nos permite ver los enlaces de la Película</td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td>.</td> 
+    <td><b>JButton btnSubir</b></td>
+    <td>Este boton nos permite subir un enlace.</td> 
   </tr>
    <tr>
-     <td><b></b></td>
-    <td>.</td> 
+     <td><b>JButton btnDetalles</b></td>
+    <td>Este boton nos permite ver detalles de la película (director,productora,críticas,etc).</td> 
+  </tr>
+    <tr>
+    <td><b>JLabel lblTitulo</b></td>
+    <td>Es un label con el título de la película.</td> 
+  </tr>
+    <tr>
+    <td><b>JLabel lblDescripcion</b></td>
+    <td>Es un label con la descripcion de la película.</td> 
+  </tr>
+    <tr>
+    <td><b>JLabel lblReparto</b></td>
+    <td>Es un label que nos muestra el reparto.</td> 
   </tr>
   </table>
     <table style="width:100%">
@@ -744,8 +749,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td><b>Explicación</b></td>
   </tr>
   <tr>
-  <td></td>
-  <td></td>
+  <td>Getters y setters</td>
+  <td>Permiten modificar y obtener los atributos</td>
   </tr>
   </table>
   <br>
