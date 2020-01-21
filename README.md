@@ -971,11 +971,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td>.</td>
+    <td>Nos permite registrar a un nuevo usuario.</td>
   </tr>
   <tr>
     <td><b>Relaciones</b></td>
-    <td></td> 
+    <td>Relacion 1:1 con el controlador</td> 
   </tr>
   </table>
   <table style="width:100%">
@@ -984,16 +984,17 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td></td>
+    <td><b>JTextField usuario</b></td>
+    <td>Introducimos el nombre de usuario que queremos.</td>
   </tr>
   <tr>
-    <td><b></b></td>
-    <td>.</td> 
+    <td><bJTextField psswd></b></td>
+    <td>Introducimos la contraseña que queramos para nuestra cuenta.</td> 
   </tr>
    <tr>
-     <td><b></b></td>
-    <td>.</td> 
+     <td><b>JButton btnAceptar</b></td>
+    <td>Cuando lo pulsemos se registrará el usuario en la base de datos y <br>
+      volveremos a VistaInicioSesion.</td> 
   </tr>
   </table>
     <table style="width:100%">
@@ -1002,8 +1003,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td><b>Explicación</b></td>
   </tr>
   <tr>
-  <td></td>
-  <td></td>
+  <td>Getters y Setters</td>
+  <td>Devuelven o modifican los atributos</td>
   </tr>
   </table>
   <img src="./Recursos/DiagramaSecuencia.png">
