@@ -988,7 +988,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td>Introducimos el nombre de usuario que queremos.</td>
   </tr>
   <tr>
-    <td><bJTextField psswd></b></td>
+    <td><b>JTextField psswd></b></td>
     <td>Introducimos la contraseña que queramos para nuestra cuenta.</td> 
   </tr>
    <tr>
