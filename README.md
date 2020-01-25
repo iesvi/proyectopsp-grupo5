@@ -1007,7 +1007,31 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <td>Devuelven o modifican los atributos</td>
   </tr>
   </table>
-  <img src="./Recursos/DiagramaSecuencia.png">
+  <p align="center">
+  <img src="/Recursos/RegistroDeUsuario.png"/>
+  </p>
+  <p align="center">
+  <img src="/Recursos/InicioDeSesion.png"/>
+  </p>
+  <p align="center">
+  <img src="/Recursos/ConsultarListas.png"/>
+  </p>
+  <p align="center">
+  <img src="/Recursos/VerDetalles.png"/>
+  </p>
+  <p align="center">
+  <img src="/Recursos/Reproducir.png"/>
+  </p>
+  <p align="center">
+  <img src="/Recursos/AñadirEnlace.png"/>
+  </p>
+  <p align="center">
+  <img src="/Recursos/AñadirALista.png"/>
+  </p>
+  <p align="center">
+  <img src="/Recursos/BuscadorDePeliculas.png"/>
+  </p>
+ <p align="center">
+  <img src="/Recursos/Chat.png"/>
+  </p> 
   </a>
-  
-  
