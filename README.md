@@ -1029,7 +1029,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <img src="/Recursos/AñadirALista.png"/>
   </p>
   <p align="center">
-  <img src="/Recursos/BuscadorDePeliculas.png"/>
+  <img src="/Recursos/BuscadorDePeliculas.png/>
   </p>
  <p align="center">
   <img src="/Recursos/Chat.png"/>
