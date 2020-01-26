@@ -521,7 +521,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
 </div>
 <div align="center">
   <p>VistaRegistro</p>
-  <img src="./Recursos/VistaRegistro.png">
+  <img src="./Recursos/VistaRegistrarse.png">
   </div>
   <div align="center">
   <p>VistaMenuAdmin</p>
