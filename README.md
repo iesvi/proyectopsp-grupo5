@@ -500,20 +500,33 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   
 # Actividad 5: Actividad Gráfica
 <div align="center">
+  <p>VistaBuscarPelicula</p>
 <img src="./Recursos/VistaBuscarPelicula.PNG">
 </div>
 <div align="center">
+  <p>VistaConsultarLista</p>
 <img src="./Recursos/VistaConsultarLista.PNG">
 </div>
 <div align="center">
+  <p>VistaInicioSesion</p>
 <img src="./Recursos/VistaInicioSesion.PNG">
 </div>
 <div align="center">
-<img src="./Recursos/VistaMenu.PNG">
+  <p>VistaMenu</p>
+<img src="./Recursos/VistaMenuUsuario.png">
 </div>
 <div align="center">
-<img src="./Recursos/Pelicula.PNG">
+  <p>VistaPelicula</p>
+<img src="./Recursos/VistaPeli.png">
 </div>
+<div align="center">
+  <p>VistaRegistro</p>
+  <img src="./Recursos/VistaRegistro.png">
+  </div>
+  <div align="center">
+  <p>VistaMenuAdmin</p>
+  <img src="./Recursos/VistaMenuAdmin.png">
+  </div>
 </a>
 <a name="5">
 
