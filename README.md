@@ -513,19 +513,19 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
 </div>
 <div align="center">
   <p>VistaMenu</p>
-<img src="./Recursos/VistaMenuUsuario.png">
+<img src="./Recursos/VistaMenuUsuario.PNG">
 </div>
 <div align="center">
   <p>VistaPelicula</p>
-<img src="./Recursos/VistaPeli.png">
+<img src="./Recursos/VistaPeli.PNG">
 </div>
 <div align="center">
   <p>VistaRegistro</p>
-  <img src="./Recursos/VistaRegistrarse.png">
+  <img src="./Recursos/VistaRegistrarse.PNG">
   </div>
   <div align="center">
   <p>VistaMenuAdmin</p>
-  <img src="./Recursos/VistaMenuAdmin.png">
+  <img src="./Recursos/VistaMenuAdmin.PNG">
   </div>
 </a>
 <a name="5">
