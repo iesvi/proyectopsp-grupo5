@@ -509,7 +509,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
 </div>
 <div align="center">
   <p>VistaInicioSesion</p>
-<img src="./Recursos/VistaInicioSesion.PNG">
+<img src="./Recursos/VistaLogin.PNG">
 </div>
 <div align="center">
   <p>VistaMenu</p>
