@@ -30,6 +30,7 @@ public class VistaMenu extends javax.swing.JFrame {
         btnBuscador = new javax.swing.JButton();
         btnConsultarListas = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
+        chat= new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -39,10 +40,15 @@ public class VistaMenu extends javax.swing.JFrame {
         jLabel2.setText("DAM Blinders");
 
         btnBuscador.setText("Buscar Peliculas");
-
+        btnBuscador.addActionListener(controller);
+        
+        chat.setText("Pulse para abrir el chat");
+        chat.addActionListener(controller);
         btnConsultarListas.setText("Consultar listas");
+        btnConsultarListas.addActionListener(controller);
 
         btnSalir.setText("Salir");
+        btnSalir.addActionListener(controller);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -61,12 +67,18 @@ public class VistaMenu extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(btnBuscador)
+                                   
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                                 .addComponent(btnConsultarListas))))
+                        
+                         
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                          
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnSalir)))
+                        .addComponent(btnSalir)
+                         .addComponent(chat)))
                 .addGap(56, 56, 56))
+                 
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -78,10 +90,12 @@ public class VistaMenu extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuscador)
+                        
                     .addComponent(btnConsultarListas))
                 .addGap(53, 53, 53)
                 .addComponent(btnSalir)
                 .addContainerGap(62, Short.MAX_VALUE))
+                .addComponent(chat)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -109,5 +123,6 @@ public class VistaMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton chat;
     // End of variables declaration//GEN-END:variables
 }

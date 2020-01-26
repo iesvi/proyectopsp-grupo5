@@ -40,11 +40,7 @@ public class VistaInicioSesion extends javax.swing.JFrame {
 
         lblUsuario.setText("Usuario:");
 
-        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUsuarioActionPerformed(evt);
-            }
-        });
+        txtUsuario.addActionListener(controller);
 
         jLabel1.setText("Contraseña:");
 
@@ -54,7 +50,7 @@ public class VistaInicioSesion extends javax.swing.JFrame {
 
         jLabel2.setText("¿No tienes cuenta?");
 
-        btnRegistrarse.setText("Registrarse");
+        btnRegistrarse.setText("¡Registrate!");
         btnRegistrarse.addActionListener(controller);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -127,14 +123,7 @@ public class VistaInicioSesion extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUsuarioActionPerformed
-
-    private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAceptarActionPerformed
-
+  
     /**
      * @param args the command line arguments
      */
@@ -155,6 +144,13 @@ public class VistaInicioSesion extends javax.swing.JFrame {
     
 public String getUsuario(){
 return txtUsuario.getText();
+}
+public String getPswd(){
+    return txtPass.getText();
+}
+public void clear(){
+    txtUsuario.setText("");
+    txtPass.setText("");
 }
 }
 
