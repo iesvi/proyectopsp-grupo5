@@ -1271,3 +1271,61 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <br>
   <br>
   <br>
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td>Model</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>Esta clase se encarga de la conexión con el repository, utilizamos esta clase como intermediaria para<br>
+      realizar operaciones en la base de datos.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td>Relacion 1:1 con Controlador y RepositoryJDBC. Relacion 1:N con PeliculaVO y UsuarioVO</td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+ <tr>
+    <td><b>final RepositoryJDBC jdbc/td>
+    <td>Instancia RepositoryJDBC para acceder a la base de datos.</td>
+  </tr>
+  
+  </table>
+    <table style="width:100%">
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td>Model().</td>
+  <td>Constructor vacio de la clase donde llamamos al singleton para instanciar RepositoryJDBC.</td>
+  </tr>
+   <tr>
+  <td>boolean comprobarUsuario(UsuarioVO usuario).</td>
+  <td>Comprueba si el usuario que le pasamos por parámetros está en la base de datos.</td>
+  </tr>
+    <tr>
+  <td>boolean insertarCliente(UsuarioVO usuario).</td>
+  <td>Inserta un usuario en la base de datos.</td>
+  </tr>
+  <tr>
+  <td>boolean comprobarPelícula(String película).</td>
+  <td>Comprueba si hay una película con ese título en la base de datos.</td>
+  </tr>
+    <tr>
+  <td>PeliculaVO cargarPelícula(String película).</td>
+  <td>Carga en un objeto película los datos de la pelicula cuyo título se ha pasado <br>
+    por parámetros.</td>
+  </tr>
+  <tr>
+    
+  </table>
+  <br>
+  <br>
+  <br>
