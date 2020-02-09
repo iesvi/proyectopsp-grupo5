@@ -1048,3 +1048,10 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <img src="/Recursos/Chat.png"/>
   </p> 
   </a>
+  # Fase 3 Actividad 1: Revisión de la Fase 2
+  
+   <div align="center">
+  <p><b>Diagrama de Clases</b></p>
+  <img src="/Recursos/CorreccionDClases.png"/>
+  </div>
+  
