@@ -1051,7 +1051,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   # Fase 3 Actividad 1: Revisión de la Fase 2
    <div align="center">
   <p><b>Diagrama de Clases</b></p>
-  <img src="/Recursos/CorreccionDiagramaClases.png"/>
+  <img src="/Recursos/CorreccionDiagramaClasem.png"/>
   </div>
   <div align="center">
   <p><b>Diagrama de Secuencia</b></p>
@@ -1292,7 +1292,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
     <td><b>Explicacion</b></td>
   </tr>
  <tr>
-    <td><b>final RepositoryJDBC jdbc/td>
+    <td><b>final RepositoryJDBC jdbc</td>
     <td>Instancia RepositoryJDBC para acceder a la base de datos.</td>
   </tr>
   
