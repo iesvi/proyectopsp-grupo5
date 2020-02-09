@@ -1054,4 +1054,8 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <p><b>Diagrama de Clases</b></p>
   <img src="/Recursos/CorreccionDClases.png"/>
   </div>
+  <div align="center">
+  <p><b>Diagrama de Secuencia</b></p>
+  <img src="/Recursos/CorreccionDSecuencia.png"/>
+  </div>
   
