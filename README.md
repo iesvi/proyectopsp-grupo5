@@ -1058,4 +1058,4 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <p><b>Diagrama de Secuencia</b></p>
   <img src="/Recursos/CorreccionDSecuencia.png"/>
   </div>
-  
+  <p><b>Descripción de clases, atributos y métodos:</b></p>
