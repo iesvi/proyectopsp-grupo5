@@ -151,7 +151,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   </tr>
   <tr>
   <td><b>Postcondiciones:</b></td>
-  <td>El usuario accede satisfactoriamente al sistema y este le da acceso a Buscar Película y Consulta Lista.<br>
+  <td>El usuario accede satisfactoriamente al sistema y este le da acceso a VistaMenu.<br>
   </td>
 </td>
   </tr>
