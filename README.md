@@ -1163,3 +1163,111 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <br>
   <br>
   <br>
+     <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td>Controlador</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>Esta clase se encarga de controlar los diferentes eventos que ocurren en las vistas.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td>Relacion 1:1 con Main y Model. Relacion 1:N con VistaInicioSesion, VistaBuscarPelicula,<br>
+    VistaConsultarLista, VistaMenu, VistaMenuAdmin, VistaPelicula, AtenderCliente, UDPMultiChat,
+    UDPMultiChat2</td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+ <tr>
+    <td><b>VistaInicioSesion view/td>
+    <td>Este atributo hace referencia a la VistaInicioSesion, para controlar los eventos que ocurren en la misma.</td>
+  </tr>
+  <tr>
+    <td><b>Model</b></td>
+    <td>Este atributo hace referencia al modelo, que nos permitirá hacer referencia a los métodos para ingresar datos<br>
+      a la base de datos.</td> 
+  </tr>
+   <tr>
+     <td><b>VistaRegistro viewR</b></td>
+    <td>Este atributo hace referencia a la VistaRegistro, para controlar los eventos que ocurren en la misma.</td> 
+  </tr>
+   <tr>
+     <td><b>VistaMenu viewM</b></td>
+    <td>Este atributo hace referencia a la VistaMenu, para controlar los eventos que ocurren en la misma.</td> 
+  </tr>
+   <tr>
+     <td><b>VistaBuscarPelicula viewB</b></td>
+    <td>Este atributo hace referencia a la VistaBuscarPelicula, para controlar los eventos que ocurren en la misma.</td> 
+  </tr>
+     <tr>
+     <td><b>VistaMenuAdmin viewMA</b></td>
+    <td>Este atributo hace referencia a la VistaMenuAdmin, para controlar los eventos que ocurren en la misma.</td> 
+  </tr>
+       </tr>
+     <tr>
+     <td><b>VistaPelicula viewP</b></td>
+    <td>Este atributo hace referencia a la VistaPelicula, para controlar los eventos que ocurren en la misma.</td> 
+  </tr>
+   </tr>
+     <tr>
+     <td><b>PeliculaVO pelicula</b></td>
+    <td>Este atributo hace referencia a PeliculaVO, para cargar la VistaPelicula.</td> 
+  </tr>
+  </table>
+    <table style="width:100%">
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td>Controlador().</td>
+  <td>Controlador vacio donde instanciamos model.</td>
+  </tr>
+   <tr>
+  <td>setViewP(VistaPelicula viewP).</td>
+  <td>Permite editar el atributo viewP.</td>
+  </tr>
+    <tr>
+  <td>setModel(Model model).</td>
+  <td>Permite editar el atributo model.</td>
+  </tr>
+  <tr>
+  <td>setView(VistaInicioSesion view).</td>
+  <td>Permite editar el atributo view.</td>
+  </tr>
+    <tr>
+  <td>setViewR(VistaRegistro viewR).</td>
+  <td>Permite editar el atributo viewR.</td>
+  </tr>
+  <tr>
+  <td>setViewM(VistaMenu viewM).</td>
+  <td>Permite editar el atributo viewM.</td>
+  </tr>
+    <tr>
+  <td>setViewB(VistaBuscarPelicula viewB).</td>
+  <td>Permite editar el atributo viewB.</td>
+  </tr>
+  
+   <tr>
+  <td>setViewL(VistaConsultarLista viewL).</td>
+  <td>Permite editar el atributo viewL.</td>
+  </tr>
+    <tr>
+  <td>setView(VistaMenuAdmin viewMA).</td>
+  <td>Permite editar el atributoviewMA.</td>
+  </tr>
+  <tr>
+  <td>void actionPerformed(ActionEvent ae).</td>
+  <td>Permite manejar los eventos que ocurren en las vistas.</td>
+  </tr>
+    
+  </table>
+  <br>
+  <br>
+  <br>
