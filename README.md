@@ -1049,7 +1049,6 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   </p> 
   </a>
   # Fase 3 Actividad 1: Revisión de la Fase 2
-  
    <div align="center">
   <p><b>Diagrama de Clases</b></p>
   <img src="/Recursos/CorreccionDiagramaClases.png"/>
@@ -1058,4 +1057,109 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <p><b>Diagrama de Secuencia</b></p>
   <img src="/Recursos/CorreccionDSecuencia.png"/>
   </div>
-  <p><b>Descripción de clases, atributos y métodos:</b></p>
+  <p align="center"><b>Descripción de clases, atributos y métodos:</b></p>
+ <br>
+ <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td>Main</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>Es la clase principal de la aplicación, instancia el controlador y la VistaInicioSesion.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td>Relacion 1:1 con el controlador y VistaInicioSesion</td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+  <tr>
+    <td><b>Ninguno.</b></td>
+    <td>Ninguno.</td>
+  </tr>
+  </table>
+    <table style="width:100%">
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  <tr>
+  <td>Main.</td>
+  <td>Inicia nuestra aplicación.</td>
+  </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+   <table style="width:100%">
+  <tr>
+    <td><b>Nombre de la Clase</b></td>
+    <td>VistaInicioSesion</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td>En esta vista podremos iniciar sesión introduciendo nuestro usuario o contraseña. Si no estamos registrados<br>
+  podemos pulsar en el boton Registrarse para registrarnos.</td>
+  </tr>
+  <tr>
+    <td><b>Relaciones</b></td>
+    <td>Relacion 1:1 con Controlador y Main.</td> 
+  </tr>
+  </table>
+  <table style="width:100%">
+  <tr>
+    <td><b>Atributos</b></td>
+    <td><b>Explicacion</b></td>
+  </tr>
+ <tr>
+    <td><b>JTextField txtUsuario</b></td>
+    <td>El campo en el que introduciremos nuestro usuario.</td>
+  </tr>
+  <tr>
+    <td><b>JTextField txtPass</b></td>
+    <td>El campo en el que introduciremos nuestra contraseña.</td> 
+  </tr>
+   <tr>
+     <td><b>JLabel lblUsuario</b></td>
+    <td>Nos indica el campo en el que introduciremos el usuario.</td> 
+  </tr>
+   <tr>
+     <td><b>JLabel JLabel1</b></td>
+    <td>Nos indica el campo en el que introduciremos el contraseña.</td> 
+  </tr>
+   <tr>
+     <td><b>JButton btnAceptar</b></td>
+    <td>Nos lleva a VistaMenu cuando pulsemos.</td> 
+  </tr>
+     <tr>
+     <td><b>JButton btnRegistrarse</b></td>
+    <td>Nos lleva a VistaRegistro cuando pulsemos.</td> 
+  </tr>
+  </table>
+    <table style="width:100%">
+  <tr>
+  <td><b>Sintaxis del método</b></td>
+  <td><b>Explicación</b></td>
+  </tr>
+  
+  <tr>
+  <td>String getUsuario().</td>
+  <td>Devuelve el texto introducido en txtUsuario.</td>
+  </tr>
+   <tr>
+  <td>String getPswd().</td>
+  <td>Devuelve el texto introducido en txtPass.</td>
+  </tr>
+    <tr>
+  <td>void clear().</td>
+  <td>Elimina el contenido de txtUsuario y txtPass.</td>
+  </tr>
+  </table>
+  <br>
+  <br>
+  <br>
