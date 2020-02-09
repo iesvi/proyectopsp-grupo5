@@ -1052,7 +1052,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   
    <div align="center">
   <p><b>Diagrama de Clases</b></p>
-  <img src="/Recursos/CorreccionDClases.png"/>
+  <img src="/Recursos/CorreccionDiagramaClases.png"/>
   </div>
   <div align="center">
   <p><b>Diagrama de Secuencia</b></p>
