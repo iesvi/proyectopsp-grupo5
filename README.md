@@ -1051,7 +1051,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   # Fase 3 Actividad 1: Revisión de la Fase 2
    <div align="center">
   <p><b>Diagrama de Clases</b></p>
-  <img src="/Recursos/CorreccionDiagramaClase.png"/>
+  <img src="/Recursos/CorrecionDiagramaClase.png"/>
   </div>
   <div align="center">
   <p><b>Diagrama de Secuencia</b></p>
