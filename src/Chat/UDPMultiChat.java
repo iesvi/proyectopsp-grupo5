@@ -1,4 +1,5 @@
-package EjemplosTema3.ChatUDP;
+
+package Chat;
 
 import java.awt.event.*;
 import java.io.*;
@@ -108,4 +109,5 @@ public class UDPMultiChat extends JFrame implements ActionListener, Runnable {
 			System.out.println("El nombre est� vac�o....");
 		}
 	}// main
+
 }// ..MultiChatUDP

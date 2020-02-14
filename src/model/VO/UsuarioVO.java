@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package model.VO;
 
 /**
@@ -12,13 +8,14 @@ package model.VO;
 public class UsuarioVO {
     private String nombreUsuario;
     private String pwsd;
-    
-    public UsuarioVO(){
-       
+
+    public UsuarioVO() {
+
     }
-    public UsuarioVO(String nombreUsuario, String pwsd){
-        this.nombreUsuario=nombreUsuario;
-        this.pwsd=pwsd;
+
+    public UsuarioVO(String nombreUsuario, String pwsd) {
+        this.nombreUsuario = nombreUsuario;
+        this.pwsd = pwsd;
     }
 
     public String getNombreUsuario() {
@@ -36,6 +33,6 @@ public class UsuarioVO {
     public void setPwsd(String pwsd) {
         this.pwsd = pwsd;
     }
-    
-    
+
+
 }

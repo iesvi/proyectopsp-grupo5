@@ -4,6 +4,7 @@ package view;
 import controller.Controlador;
 import javax.swing.JLabel;
 
+
 /**
  *
  * @author usuario
