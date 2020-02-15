@@ -1,5 +1,4 @@
-
-package Chat;
+package EjemplosTema3.ChatUDP;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -95,23 +94,48 @@ public class UDPMultiChat2 extends JFrame implements ActionListener, Runnable {
 		}	 
 	}// run
 
-	public static void main(String args[]) throws IOException {
-		String nombre = JOptionPane
-				.showInputDialog("Introduce tu nombre o nick:");
-		// Se crea el socket multicast
-		ms = new MulticastSocket(Puerto);
-		grupo = InetAddress.getByName("225.0.0.1");// Grupo
-		// Nos unimos al grupo
-		ms.joinGroup(grupo);
-		if (!nombre.trim().equals("")) {
-			UDPMultiChat2 server = new UDPMultiChat2(nombre);
-			server.setBounds(0, 0, 540, 400);
-			server.setVisible(true);
-			new Thread(server).start();
+        
+        
+	// main
 
-		} else {
-			System.out.println("El nombre est� vac�o....");
-		}
-	}// main
+    public static InetAddress getGrupo() {
+        return grupo;
+    }
 
+    public static void setGrupo(InetAddress grupo) {
+        UDPMultiChat2.grupo = grupo;
+    }
+
+    public static int getPuerto() {
+        return Puerto;
+    }
+
+    public static void setPuerto(int Puerto) {
+        UDPMultiChat2.Puerto = Puerto;
+    }
+
+    public static JTextField getMensaje() {
+        return mensaje;
+    }
+
+    public static void setMensaje(JTextField mensaje) {
+        UDPMultiChat2.mensaje = mensaje;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public static MulticastSocket getMs() {
+        return ms;
+    }
+
+    public static void setMs(MulticastSocket ms) {
+        UDPMultiChat2.ms = ms;
+    }
+    
 }// ..MultiChatUDP
