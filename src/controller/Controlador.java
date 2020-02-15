@@ -1,9 +1,14 @@
 package controller;
 
-import EjemplosTema3.ChatUDP.UDPMultiChat;
+
 import EjemplosTema3.ChatUDP.UDPMultiChat2;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import model.Model;
 import model.VO.PeliculaVO;
@@ -149,13 +154,68 @@ public class Controlador implements ActionListener{
         }else if(nombre=="Desconectarse"){
             viewMA.dispose();
         }else if(nombre=="Chat administrador"){
-            System.out.println("Entra chat admin");
-            UDPMultiChat chatadmin = new UDPMultiChat("admin");
-            chatadmin.run();
+            try {
+                System.out.println("Entra chat admin");
+                UDPMultiChat2 chatadmin = new UDPMultiChat2("admin");
+                
+                String nombrechat = "admin";
+                // Se crea el socket multicast
+                chatadmin.setMs(new MulticastSocket(12345));
+                chatadmin.setGrupo(InetAddress.getByName("225.0.0.1"));// Grupo
+                // Nos unimos al grupo
+                chatadmin.getMs().joinGroup(chatadmin.getGrupo());
+                if (!nombrechat.trim().equals("")) {
+                    UDPMultiChat2 server = new UDPMultiChat2(nombrechat);
+                    server.setBounds(0, 0, 540, 400);
+                    server.setVisible(true);
+                    new Thread(server).start();
+                    
+                } 
+                
+                /*
+                    System.out.println("Entra chat usuario");
+                UDPMultiChat2 chatuser= new UDPMultiChat2("user");
+                
+                String nombrechat = view.getUsuario();
+                // Se crea el socket multicast
+                chatuser.setMs(new MulticastSocket(12345));
+                chatuser.setGrupo(InetAddress.getByName("225.0.0.1"));// Grupo
+                // Nos unimos al grupo
+                chatuser.getMs().joinGroup(chatuser.getGrupo());
+                if (!nombrechat.trim().equals("")) {
+                    UDPMultiChat2 server = new UDPMultiChat2(nombrechat);
+                    server.setBounds(0, 0, 540, 400);
+                    server.setVisible(true);
+                    new Thread(server).start();
+                    
+                } 
+                */
+            } catch (IOException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+            }
+           
+       
         }else if(nombre=="Pulse para abrir el chat"){
-            System.out.println("Entra chat usuario");
-            UDPMultiChat2 chatuser= new UDPMultiChat2("user");
-            chatuser.run();
+            try {
+                System.out.println("Entra chat usuario");
+                UDPMultiChat2 chatuser= new UDPMultiChat2("user");
+                
+                String nombrechat = view.getUsuario();
+                // Se crea el socket multicast
+                chatuser.setMs(new MulticastSocket(12345));
+                chatuser.setGrupo(InetAddress.getByName("225.0.0.1"));// Grupo
+                // Nos unimos al grupo
+                chatuser.getMs().joinGroup(chatuser.getGrupo());
+                if (!nombrechat.trim().equals("")) {
+                    UDPMultiChat2 server = new UDPMultiChat2(nombrechat);
+                    server.setBounds(0, 0, 540, 400);
+                    server.setVisible(true);
+                    new Thread(server).start();
+                    
+                } 
+            } catch (IOException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
