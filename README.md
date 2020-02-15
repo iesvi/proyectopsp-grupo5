@@ -1329,3 +1329,15 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <br>
   <br>
   <br>
+  
+  <p><b>Manual de la aplicacion:</b></p>
+  <br>
+  <p>La aplicación consta de un menú en el que debes introducir tu nombre de usuario<br>
+  y tu contraseña. Si no tiene un usuario puede registrarse pulsando el botón Registrarse<br>
+  Una vez nos logueamos con nuestro usuario y contraseña podemos consultar listas de películas<br>
+  o buscar una película, también tenemos la función del chat pero todavía no está implementada.<br>
+  A la hora de buscar película introducimos el nombre de la película que queremos consultar y pulsamos<br>
+  buscar, entonces se nos abrirá la VistaPelicula en la que podemos ver los detalles de las películas y<br>
+  También la aplicación tiene un menú para el administrador, para acceder a este debe introducir un usuario<br>
+  "admin" con la contraseña "admin", también puede acceder al chat para hablar con el usuario o revisar <br>
+  los enlaces que los usuarios han subido a la aplicación.</p>
