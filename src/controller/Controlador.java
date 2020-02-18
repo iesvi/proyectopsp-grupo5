@@ -1,6 +1,7 @@
 package controller;
 
 
+import ClienteFTP.ClienteFTP;
 import EjemplosTema3.ChatUDP.UDPMultiChat2;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -213,6 +214,12 @@ public class Controlador implements ActionListener{
                     new Thread(server).start();
                     
                 } 
+            } catch (IOException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }else if(nombre=="ClienteFTP"){
+            try {
+                ClienteFTP cliente = new ClienteFTP();
             } catch (IOException ex) {
                 Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }

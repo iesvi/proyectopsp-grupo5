@@ -3,21 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/model/Model.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/model/VO/PeliculaVO.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/view/VistaMenuAdmin.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/view/VistaInicioSesion.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/view/VistaMenu.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/view/VistaBuscarPelicula.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/model/impl/ConexionJDBC.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/view/VistaPelicula.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/Chat/UDPMultiChat2.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/model/impl/RepositoryJDBC.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/model/VO/UsuarioVO.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/main/Main.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/view/VistaRegistro.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/controller/Controlador.java</file>
-            <file>file:/F:/2º%20DAM/PSP/proyectopsp-grupo5-develop/src/Chat/UDPMultiChat.java</file>
+            <file>file:/C:/Users/usuario/IdeaProjects/proyectopsp-grupo5/src/view/VistaMenu.java</file>
+            <file>file:/C:/Users/usuario/IdeaProjects/proyectopsp-grupo5/src/controller/Controlador.java</file>
+            <file>file:/C:/Users/usuario/IdeaProjects/proyectopsp-grupo5/src/ClienteFTP/ClienteFTP.java</file>
         </group>
     </open-files>
 </project-private>

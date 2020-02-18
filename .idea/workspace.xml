@@ -1,52 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d70940f-045f-4da7-be20-633962e8947e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/proyectopsp-grupo5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Chat/UDPMultiChat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Chat/UDPMultiChat2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/META-INF/proyectopsp-grupo5.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Main/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/controller/AtenderCliente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/controller/Controlador.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/Model.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/VO/PeliculaVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/VO/UsuarioVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/impl/ConexionJDBC.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/impl/RepositoryJDBC.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/mysql_connector_java_8_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/recursos/dostontos.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/Película$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/Película.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaBucarPelicula$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaBucarPelicula.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaBuscarPelicula.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaConsultarLista$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaConsultarLista.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaInicioSesion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaMenu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaMenuAdmin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaPelicula.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaRegistro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/built-clean.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-clean.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/Chat/UDPMultiChat.rs" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/Chat/UDPMultiChat.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/Chat/UDPMultiChat2.rs" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/Chat/UDPMultiChat2.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/README.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/dist/README.TXT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chat/UDPMultiChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/UDPMultiChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chat/UDPMultiChat2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/UDPMultiChat2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/VO/PeliculaVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/VO/PeliculaVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/VO/UsuarioVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/VO/UsuarioVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/impl/ConexionJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/impl/ConexionJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/impl/RepositoryJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/impl/RepositoryJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/VistaPelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VistaPelicula.java" afterDir="false" />
+    <list default="true" id="7d70940f-045f-4da7-be20-633962e8947e" name="Default Changelist" comment="Correccion">
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.12.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/proyectopsp-grupo5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/proyectopsp-grupo5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Chat/UDPMultiChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Chat/UDPMultiChat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Chat/UDPMultiChat2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Chat/UDPMultiChat2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/java.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/VO/PeliculaVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/VO/PeliculaVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/VO/UsuarioVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/VO/UsuarioVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/impl/ConexionJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/impl/ConexionJDBC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/impl/RepositoryJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/model/impl/RepositoryJDBC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/mysql_connector_java_8_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaPelicula.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaPelicula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/VistaBucarPelicula.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/VistaConsultarLista.form" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +33,7 @@
   </component>
   <component name="ProjectId" id="1XhXHtXNTIICvF7mWbfDOqzwOb4" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/2º DAM/DIU/PracticaReact/DIU" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43103448" />
@@ -72,6 +42,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\usuario\IdeaProjects\proyectopsp-grupo5\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\usuario\IdeaProjects\proyectopsp-grupo5\lib" />
@@ -89,7 +62,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="proyectopsp-grupo5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="proyectopsp-grupo5" />
@@ -116,6 +102,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -128,6 +119,14 @@
       <option name="presentableId" value="Default" />
       <updated>1581499215979</updated>
     </task>
+    <task id="LOCAL-00001" summary="Correccion">
+      <created>1581672269228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581672269228</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +141,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correccion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/proyectopsp_grupo5$Main.ic" NAME="Main Coverage Results" MODIFIED="1581501338537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

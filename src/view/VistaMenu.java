@@ -31,6 +31,7 @@ public class VistaMenu extends javax.swing.JFrame {
         btnConsultarListas = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         chat= new javax.swing.JButton();
+        btnClienteFTP=new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,6 +39,9 @@ public class VistaMenu extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("DAM Blinders");
+        
+        btnClienteFTP.setText("ClienteFTP");
+        btnClienteFTP.addActionListener(controller);
 
         btnBuscador.setText("Buscar Peliculas");
         btnBuscador.addActionListener(controller);
@@ -69,7 +73,9 @@ public class VistaMenu extends javax.swing.JFrame {
                                 .addComponent(btnBuscador)
                                    
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                                .addComponent(btnConsultarListas))))
+                                .addComponent(btnConsultarListas)
+                            .addComponent(btnClienteFTP))))
+                                
                         
                          
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -91,7 +97,8 @@ public class VistaMenu extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuscador)
                         
-                    .addComponent(btnConsultarListas))
+                    .addComponent(btnConsultarListas)
+                    .addComponent(btnClienteFTP))
                 .addGap(53, 53, 53)
                 .addComponent(btnSalir)
                 .addContainerGap(62, Short.MAX_VALUE))
@@ -120,6 +127,7 @@ public class VistaMenu extends javax.swing.JFrame {
     private javax.swing.JButton btnBuscador;
     private javax.swing.JButton btnConsultarListas;
     private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnClienteFTP;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
