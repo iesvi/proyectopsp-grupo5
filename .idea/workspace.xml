@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d70940f-045f-4da7-be20-633962e8947e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/commons-net-3.6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/proyectopsp-grupo5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/proyectopsp-grupo5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Chat/UDPMultiChat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/Chat/UDPMultiChat2.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_net_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12__2_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/controller/Controlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/controller/Controlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/Película$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/Película.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaBucarPelicula$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaBucarPelicula.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/view/VistaMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClienteFTP/ClienteFTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClienteFTP/ClienteFTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/VistaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VistaMenu.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +30,7 @@
   </component>
   <component name="ProjectId" id="1XhXHtXNTIICvF7mWbfDOqzwOb4" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="D:/2º DAM/DIU/PracticaReact/DIU" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -40,13 +38,13 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\usuario\IdeaProjects\proyectopsp-grupo5\lib" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\usuario\IdeaProjects\proyectopsp-grupo5\lib" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\usuario\IdeaProjects\proyectopsp-grupo5\lib" />
     </key>
   </component>
@@ -63,7 +61,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (1)" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="proyectopsp-grupo5" />
       <extension name="coverage">
@@ -102,6 +100,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
@@ -140,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582029833013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Añadida libreria commons">
+      <created>1582029958761</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582029958761</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +168,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correccion" />
     <MESSAGE value="Subido clienteFTP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subido clienteFTP" />
+    <MESSAGE value="Añadida libreria commons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadida libreria commons" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/proyectopsp_grupo5$Main.ic" NAME="Main Coverage Results" MODIFIED="1581501338537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

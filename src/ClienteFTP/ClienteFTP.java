@@ -425,7 +425,10 @@ public class ClienteFTP extends JFrame {
 
 		return ok;
 	}// SubirFichero
-		
+
+	public static void setCab2(String cab2) {
+		ClienteFTP.cab2.setText("Usuario: "+cab2);
+	}
 	// main---------------------------------------------------------------------
 	// ..FIN main
 

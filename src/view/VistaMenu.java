@@ -70,11 +70,14 @@ public class VistaMenu extends javax.swing.JFrame {
                                 .addComponent(jLabel1)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnBuscador)
+                                    .addGap(65, 65, 65)
+                                    .addComponent(btnBuscador)
                                    
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                                 .addComponent(btnConsultarListas)
+                                    .addGap(65, 65, 65)
                             .addComponent(btnClienteFTP))))
+
                                 
                         
                          

@@ -220,6 +220,7 @@ public class Controlador implements ActionListener{
         }else if(nombre=="ClienteFTP"){
             try {
                 ClienteFTP cliente = new ClienteFTP();
+                cliente.setCab2(view.getUsuario());
             } catch (IOException ex) {
                 Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }
