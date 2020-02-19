@@ -55,18 +55,21 @@ public class ClienteFTP extends JFrame {
 	public ClienteFTP() throws IOException {
 		super("CLIENTE FTP");		
 		System.out.println("Conectandose a " + servidor);
-		
-		cliente.addProtocolCommandListener(new PrintCommandListener (new PrintWriter (System.out) )); 
+		//Se muestra lo que va sucediendo en el servidor por la consola del IDE.
+		cliente.addProtocolCommandListener(new PrintCommandListener (new PrintWriter (System.out) ));
+		//Conecta con el servidor en modo pasivo para evitar errores con posibles cortafuegos
 		cliente.connect(servidor);
 		cliente.enterLocalPassiveMode();
 		login = cliente.login(user, pasw);
-		
-		cliente.changeWorkingDirectory(direcInicial);		
-		
+
+		//Directorio de trabajo inicial
+		cliente.changeWorkingDirectory(direcInicial);
+		//Obtiene ficheros y directorios
 		FTPFile[] files = cliente.listFiles();		
 		//Construyendo arbol de directorios, espere un momento	
 		llenarLista(files, direcInicial);
-	
+
+		//Prepara los campos de la vista
 		campo.setBounds(new Rectangle(3, 485, 485, 30));
 		campo.setForeground(Color.blue);
 		campo.setFont(new Font("Verdana", Font.BOLD, 12));
@@ -101,7 +104,7 @@ public class ClienteFTP extends JFrame {
 		botonDelDir.setBounds(new Rectangle(350, 300, 140, 30));
 		botonSalir.setBounds(new Rectangle(350, 350, 140, 30));
 
-		//PREPARACION DE LA LISTA
+		//Preparacion de la lista para seleccionar solo un elemento
 		listaDirec.setSelectionMode(ListSelectionModel.SINGLE_SELECTION );//SINGLE_INTERVAL_SELECTION);
 		JScrollPane barraDesplazamiento = new JScrollPane(listaDirec);
 		barraDesplazamiento.setPreferredSize(new Dimension(335, 420));
@@ -120,7 +123,7 @@ public class ClienteFTP extends JFrame {
 		setSize(510, 600);
 		setVisible(true);
 
-		//--clic en un elemento de la lista
+		//Controla los click en los elementos de la lista
 		listaDirec.addListSelectionListener(new ListSelectionListener() {	
 			  public void valueChanged(ListSelectionEvent lse) {
 			    if (lse.getValueIsAdjusting()) {
@@ -133,12 +136,13 @@ public class ClienteFTP extends JFrame {
 			      if (listaDirec.getSelectedIndex() == 0) {
 			          //Se hace clic en el primer elemento del JList
 			          if (!fic.equals(direcInicial)) {	
-			              //si no estamos en el dictorio inicial, hay que 
-			              //subir al directorio padre
+			              //si no estamos en el dictorio inicial, hay que subir al directorio padre
 					  try {
 						cliente.changeToParentDirectory();
-						direcSelec = cliente.printWorkingDirectory();					
+						direcSelec = cliente.printWorkingDirectory();
+						//directorio de trabajo actual =directorio padre
 						cliente.changeWorkingDirectory(direcSelec);
+						//Obtiene ficheros y directorios
 						FTPFile[] ff2 = cliente.listFiles();
 						campo.setText("");
 			                  //se llena la lista con fich. del directorio padre
@@ -146,7 +150,7 @@ public class ClienteFTP extends JFrame {
 						} catch (IOException e) {e.printStackTrace();}
 			          }
 			      }
-			      //No se hace clic en el primer elemento del JList
+			      //No se hace clic en el primer elemento de la lista
 			      //Puede ser un fichero o un directorio
 			      else {
 			            if (fic.substring(0, 6).equals("(DIR) ")) {
@@ -175,15 +179,15 @@ public class ClienteFTP extends JFrame {
 						   campo.setText("FICHERO seleccionado:" + 
 			                                                   ficheroSelec);
 			                     ficheroSelec=fic;
-			              }//fin else
-			       }//else de fichero o directorio
+			              }
+			       }
 				 campo2.setText("DIRECTORIO ACTUAL: " + direcSelec);
-			    }//fin if inicial				
+			    }
 			  }
-			});// fin lista
+			});
 
 		
-		// --al hacer clic en el botón Salir
+		//Controla los click en el boton salir
 		botonSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -194,8 +198,8 @@ public class ClienteFTP extends JFrame {
 				System.exit(0);
 			}
 		});
-		
-		//CREAR CARPETA
+
+		 //Controla los click en el boton Crear directorio
 		botonCreaDir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String nombreCarpeta = JOptionPane.showInputDialog(null,
@@ -225,8 +229,8 @@ public class ClienteFTP extends JFrame {
 					}
 				}
 			}
-		});//..botonCreaDir
-		//
+		});
+		//Controla los click en el boton Borrar directorio
 		botonDelDir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String nombreCarpeta = JOptionPane.showInputDialog(null,
@@ -256,9 +260,9 @@ public class ClienteFTP extends JFrame {
 							}
 						}
 			}
-		});//..botonDelDir
-		
-		// --al hacer clic en el botón Subir
+		});
+
+		//Controla los click en el boton cargar fichero
 		botonCargar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JFileChooser f = new JFileChooser();				
@@ -276,9 +280,9 @@ public class ClienteFTP extends JFrame {
 					}
 				}
 			}
-		});// Fin boon subir
+		});
 
-		// --al hacer clic en el botón Descargar
+		//Controla los click en el boton descargar fichero
 		botonDescargar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String directorio=direcSelec;
@@ -289,8 +293,8 @@ public class ClienteFTP extends JFrame {
 					DescargarFichero(directorio + ficheroSelec ,ficheroSelec);
 				}
 			}
-		});// Fin boton descargar
-
+		});
+		//Controla los click en el boton borrar directorio
 		botonBorrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//System.out.println("borrar");
@@ -301,43 +305,51 @@ public class ClienteFTP extends JFrame {
 					BorrarFichero(directorio + ficheroSelec ,ficheroSelec);
 				
 			}
-		});//boton borrar
-	}// ..FIN CONSTRUCTOR
+		});
+	}
 	
-	// -----------------------------------------------------------------------------
 
+	//Se encarga de llenar la lista con los nombres de ficheros y directorios
 	private static void llenarLista(FTPFile[] files, String direc2) {
 		if (files == null)	return;
 		DefaultListModel modeloLista = new DefaultListModel();
-		
+		//Propiedades de la lista
 		listaDirec.setForeground(Color.blue);
 		Font fuente = new Font("Courier", Font.PLAIN, 12);
-		listaDirec.setFont(fuente);		
+		listaDirec.setFont(fuente);
+		//Eliminar elementos de la lista
 		listaDirec.removeAll();
 		
 		try {
+			//Cambia a el directorio actual
 			cliente.changeWorkingDirectory(direc2);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		//Directorio actual
 		direcSelec = direc2;
 		modeloLista.addElement(direc2);
+		//recorre el array con los directorios y ficheros
 		for (int i = 0; i < files.length; i++) {
 			if (!(files[i].getName()).equals(".")
 					&& !(files[i].getName()).equals("..")) {
-				String f = files[i].getName();				
+				//Obtienen nombre de fichero y directorio
+				String f = files[i].getName();
+				//En caso de ser directorio se le añade antes del nombre "(DIR)"
 				if (files[i].isDirectory()) 
-					f = "(DIR) " + f;				
+					f = "(DIR) " + f;
+				//Nombre del fichero/directorio es añadido a la lista
 				modeloLista.addElement(f);				
-			}//if
-		}// fin for
-		try {	
+			}
+		}
+		try {
+			//Listmodel es añadido a la lista
 			listaDirec.setModel(modeloLista);		
 		} catch (NullPointerException n) {
 			//Al llegar al último aparece excepcion
 			;System.out.println("linea 334 - llega al ultimo");
 		}
-	}//Fin llenarLista
+	}
 
 	private void DescargarFichero(String NombreCompleto, String nombreFichero) {
 		
