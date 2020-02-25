@@ -9,26 +9,29 @@ import java.security.UnrecoverableKeyException;
 import java.security.spec.InvalidKeySpecException;
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.KeyManagerFactory;
+
 import org.apache.commons.net.smtp.*;
 
 public class ClienteSMTP {
-    public static void main(String[] args) throws NoSuchAlgorithmException, UnrecoverableKeyException,
-            KeyStoreException, InvalidKeyException, InvalidKeySpecException {
 
-        // se crea cliente SMTP seguro
-        AuthenticatingSMTPClient client = new AuthenticatingSMTPClient();
+    // se crea cliente SMTP seguro
+    AuthenticatingSMTPClient client = new AuthenticatingSMTPClient();
 
-        // datos del usuario y del servidor
-        String server = "smtp.gmail.com";
-        String username = "correo@gmail.com";
-        String password = "claveusuario";
-        int puerto = 587;
-        String remitente = "correo@gmail.com";
+    // datos del usuario y del servidor
+    String server = "smtp.gmail.com";
+    String username = "damblinders@gmail.com";
+    String password = "_doraemon123_";
+    int puerto = 587;
+    String remitente = "damblinders@gmail.com";
+
+
+
+    public void enviarCorreo(String asunto, String mensaje, String destinatario) {
 
         try {
             int respuesta;
 
-            // Creaci�n de la clave para establecer un canal seguro
+            // Creación de la clave para establecer un canal seguro
             KeyManagerFactory kmf = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
             kmf.init(null, null);
             KeyManager km = kmf.getKeyManagers()[0];
@@ -36,37 +39,37 @@ public class ClienteSMTP {
             // nos conectamos al servidor SMTP
             client.connect(server, puerto);
             System.out.println("1 - " + client.getReplyString());
-            // se establece la clave para la comunicaci�n segura
+            // se establece la clave para la comunicación segura
             client.setKeyManager(km);
 
             respuesta = client.getReplyCode();
             if (!SMTPReply.isPositiveCompletion(respuesta)) {
                 client.disconnect();
-                System.err.println("CONEXI�N RECHAZADA.");
+                System.err.println("CONEXIÓN RECHAZADA.");
                 System.exit(1);
             }
 
-            // se env�a el commando EHLO
+            // se envía el commando EHLO
             client.ehlo(server);// necesario
             System.out.println("2 - " + client.getReplyString());
 
-            // NECESITA NEGOCIACI�N TLS - MODO NO IMPLICITO
+            // NECESITA NEGOCIACIÓN TLS - MODO NO IMPLICITO
             // Se ejecuta el comando STARTTLS y se comprueba si es true
             if (client.execTLS()) {
                 System.out.println("3 - " + client.getReplyString());
 
-                // se realiza la autenticaci�n con el servidor
+                // se realiza la autenticación con el servidor
                 if (client.auth(AuthenticatingSMTPClient.AUTH_METHOD.LOGIN, username, password)) {
                     System.out.println("4 - " + client.getReplyString());
-                    String destino1 = "mariajesusramos@brianda.net";
-                    String asunto = "Prueba de SMTPClient con GMAIL";
-                    String mensaje = "Hola. \nEnviando saludos.\nUsando  GMAIL.\nChao.";
+
+
+
                     // se crea la cabecera
-                    SimpleSMTPHeader cabecera = new SimpleSMTPHeader(remitente, destino1, asunto);
+                    SimpleSMTPHeader cabecera = new SimpleSMTPHeader(remitente, destinatario, asunto);
 
                     // el nombre de usuario y el email de origen coinciden
                     client.setSender(remitente);
-                    client.addRecipient(destino1);
+                    client.addRecipient(destinatario);
                     System.out.println("5 - " + client.getReplyString());
 
                     // se envia DATA
@@ -85,7 +88,7 @@ public class ClienteSMTP {
                     System.out.println("7 - " + client.getReplyString());
 
                     if (!exito) { // fallo
-                        System.out.println("FALLO AL FINALIZAR TRANSACCI�N.");
+                        System.out.println("FALLO AL FINALIZAR TRANSACCIÓN.");
                         System.exit(1);
                     } else
                         System.out.println("MENSAJE ENVIADO CON EXITO......");
@@ -99,6 +102,16 @@ public class ClienteSMTP {
             System.err.println("Could not connect to server.");
             e.printStackTrace();
             System.exit(1);
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (UnrecoverableKeyException e) {
+            e.printStackTrace();
+        } catch (InvalidKeyException e) {
+            e.printStackTrace();
+        } catch (InvalidKeySpecException e) {
+            e.printStackTrace();
+        } catch (KeyStoreException e) {
+            e.printStackTrace();
         }
         try {
             client.disconnect();
@@ -106,7 +119,7 @@ public class ClienteSMTP {
             f.printStackTrace();
         }
 
-        System.out.println("Fin de env�o.");
-        System.exit(0);
-    }// main
+        System.out.println("Fin de envío.");
+
+    }
 }// ..ClienteSMTP3

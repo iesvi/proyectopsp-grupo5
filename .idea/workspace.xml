@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d70940f-045f-4da7-be20-633962e8947e" name="Default Changelist" comment="" />
+    <list default="true" id="7d70940f-045f-4da7-be20-633962e8947e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/proyectopsp-grupo5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/proyectopsp-grupo5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/controller/Controlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyectopsp-grupo5/controller/Controlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SMTP/ClienteSMTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTP/ClienteSMTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,6 +16,13 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="165" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -23,7 +36,7 @@
   <component name="ProjectId" id="1XhXHtXNTIICvF7mWbfDOqzwOb4" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/PSP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PSP" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43103448" />

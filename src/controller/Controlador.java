@@ -8,9 +8,12 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
+import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+
+import SMTP.ClienteSMTP;
 import model.Model;
 import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
@@ -81,6 +84,20 @@ public class Controlador implements ActionListener{
             if(model.comprobarUsuario(usuario)==true){
                      AtenderCliente h1 = new AtenderCliente(view.getUsuario());
                      h1.run();
+                     //Envia correo
+                Calendar calendario=Calendar.getInstance();
+                int hora=calendario.get(Calendar.HOUR_OF_DAY);
+                int minutos=calendario.get(Calendar.MINUTE);
+                int segundos=calendario.get(Calendar.SECOND);
+                int dia= calendario.get(Calendar.DAY_OF_MONTH);
+                     String nomUser=view.getUsuario();
+                     String mensaje="El usuario: "+nomUser+" ha iniciado sesion a las "+hora+":"+minutos+":"+segundos+" el dia "+dia+".";
+                     String asunto="Inicio de sesión";
+                     String destinatario="damblinders@gmail.com";
+                     ClienteSMTP smtp=  new ClienteSMTP();
+                     smtp.enviarCorreo(asunto,mensaje,destinatario);
+
+
                      VistaMenu vista = new VistaMenu(this);
                      vista.setVisible(true); 
                      this.setViewM(vista);
@@ -126,7 +143,20 @@ public class Controlador implements ActionListener{
             this.setViewL(viewL);
         }else if (nombre=="Salir"){
             viewM.dispose();
-            
+
+            //Envia correo
+            Calendar calendario=Calendar.getInstance();
+            int hora=calendario.get(Calendar.HOUR_OF_DAY);
+            int minutos=calendario.get(Calendar.MINUTE);
+            int segundos=calendario.get(Calendar.SECOND);
+            int dia= calendario.get(Calendar.DAY_OF_MONTH);
+            String nomUser=view.getUsuario();
+            String mensaje="El usuario: "+nomUser+" ha salido  de la aplicación a las "+hora+":"+minutos+":"+segundos+" el dia "+dia+".";
+            String asunto="Fin de sesión";
+            String destinatario="damblinders@gmail.com";
+            ClienteSMTP smtp=  new ClienteSMTP();
+            smtp.enviarCorreo(asunto,mensaje,destinatario);
+
         }else if(nombre=="Buscar"){
                 if(model.comprobarPelicula(viewB.getBusqueda())==true){
                     //Cargar vista pelicula con datos
