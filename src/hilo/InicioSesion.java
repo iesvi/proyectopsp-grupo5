@@ -13,6 +13,7 @@ public class InicioSesion implements Runnable{
     @Override
     public void run() {
         model.aumentarVisitas();
+        model.obtenerVisitas();
         System.out.println("El usuario:"+usuario+" ha sido la visita número "+model.obtenerVisitas());
     }
 

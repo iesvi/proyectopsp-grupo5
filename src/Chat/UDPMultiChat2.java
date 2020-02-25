@@ -1,4 +1,4 @@
-package EjemplosTema3.ChatUDP;
+package Chat;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -77,7 +77,7 @@ public class UDPMultiChat2 extends JFrame implements ActionListener, Runnable {
 		}
 	}//
 
-	// DESDE EL M�TODO RUN SE RECIBEN LOS MENSAJES
+	// DESDE EL MÉTODO RUN SE RECIBEN LOS MENSAJES
 	//Y SE PINTAN EN LA PANTALLA
 	public void run() {	
 	 while (repetir) {

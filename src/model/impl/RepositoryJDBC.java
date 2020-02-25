@@ -4,6 +4,8 @@ package model.impl;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.Clock;
+
 import model.VO.PeliculaVO;
 import model.VO.*;
 
@@ -119,11 +121,11 @@ public class RepositoryJDBC {
         try {
             ConexionJDBC conex = new ConexionJDBC();
             Statement comando = conex.getConnection().createStatement();
-            comando.executeUpdate("update visitas set iniciosesion=inicisesion+1;");
+            int id=1;
+            comando.executeUpdate("update visitas set iniciosesion = iniciosesion+1 where visitas.id = "+id+"; ");
             conex.desconectar();
             return true;
         } catch (SQLException ex) {
-
             ex.printStackTrace();
             return false;
         }
