@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 import SMTP.ClienteSMTP;
+import hilo.InicioSesion;
 import model.Model;
 import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
@@ -91,12 +92,14 @@ public class Controlador implements ActionListener{
                 int segundos=calendario.get(Calendar.SECOND);
                 int dia= calendario.get(Calendar.DAY_OF_MONTH);
                      String nomUser=view.getUsuario();
-                     String mensaje="El usuario: "+nomUser+" ha iniciado sesion a las "+hora+":"+minutos+":"+segundos+" el dia "+dia+".";
+                int numVisitas=model.obtenerVisitas();
+                     String mensaje="El usuario: "+nomUser+" ha iniciado sesion a las "+hora+":"+minutos+":"+segundos+" el dia "+dia+". El total de inicios de sesion a la aplicacion es de "+numVisitas+".";
                      String asunto="Inicio de sesión";
                      String destinatario="damblinders@gmail.com";
                      ClienteSMTP smtp=  new ClienteSMTP();
                      smtp.enviarCorreo(asunto,mensaje,destinatario);
-
+//Iniciar hilo
+                InicioSesion hilo= new InicioSesion(model,view.getUsuario());
 
                      VistaMenu vista = new VistaMenu(this);
                      vista.setVisible(true); 
@@ -150,9 +153,11 @@ public class Controlador implements ActionListener{
             int minutos=calendario.get(Calendar.MINUTE);
             int segundos=calendario.get(Calendar.SECOND);
             int dia= calendario.get(Calendar.DAY_OF_MONTH);
+
             String nomUser=view.getUsuario();
             String mensaje="El usuario: "+nomUser+" ha salido  de la aplicación a las "+hora+":"+minutos+":"+segundos+" el dia "+dia+".";
             String asunto="Fin de sesión";
+
             String destinatario="damblinders@gmail.com";
             ClienteSMTP smtp=  new ClienteSMTP();
             smtp.enviarCorreo(asunto,mensaje,destinatario);
