@@ -10,7 +10,6 @@ import model.VO.PeliculaVO;
 import model.VO.*;
 
 /**
- *
  * @author usuario
  */
 public class RepositoryJDBC {
@@ -121,8 +120,8 @@ public class RepositoryJDBC {
         try {
             ConexionJDBC conex = new ConexionJDBC();
             Statement comando = conex.getConnection().createStatement();
-            int id=1;
-            comando.executeUpdate("update visitas set iniciosesion = iniciosesion+1 where visitas.id = "+id+"; ");
+            int id = 1;
+            comando.executeUpdate("update visitas set iniciosesion = iniciosesion+1 where visitas.id = " + id + "; ");
             conex.desconectar();
             return true;
         } catch (SQLException ex) {
@@ -145,6 +144,20 @@ public class RepositoryJDBC {
             ex.printStackTrace();
             return -1;
 
+        }
+    }
+
+    public boolean disminuirVisitas() {
+        try {
+            ConexionJDBC conex = new ConexionJDBC();
+            Statement comando = conex.getConnection().createStatement();
+            int id = 1;
+            comando.executeUpdate("update visitas set iniciosesion = iniciosesion-1 where visitas.id = " + id + "; ");
+            conex.desconectar();
+            return true;
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            return false;
         }
     }
 }

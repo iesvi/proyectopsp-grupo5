@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 import SMTP.ClienteSMTP;
+import hilo.FinalizarSesion;
 import hilo.InicioSesion;
 import model.Model;
 import model.VO.PeliculaVO;
@@ -155,6 +156,10 @@ public class Controlador implements ActionListener {
             this.setViewL(viewL);
         } else if (nombre == "Salir") {
             viewM.dispose();
+
+//Iniciar hilo
+            FinalizarSesion hilo = new FinalizarSesion(model, view.getUsuario());
+            hilo.run();
 
             //Envia correo
             Calendar calendario = Calendar.getInstance();
