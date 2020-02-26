@@ -6,13 +6,16 @@ import ClienteFTP.ClienteFTP;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 import SMTP.ClienteSMTP;
 import hilo.FinalizarSesion;
@@ -20,6 +23,9 @@ import hilo.InicioSesion;
 import model.Model;
 import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
+import servidor.EstructuraFicheros;
+import servidor.HiloServidor;
+import servidor.Servidor;
 import view.VistaBuscarPelicula;
 import view.VistaConsultarLista;
 import view.VistaInicioSesion;
@@ -273,6 +279,48 @@ public class Controlador implements ActionListener {
             } catch (IOException ex) {
                 Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }
+        }else if(nombre=="Servidor de archivos"){
+            Servidor servidor1= new Servidor();
+            String Directorio = "";
+            JFileChooser f = new JFileChooser();
+            f.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+            f.setDialogTitle("SELECCIONA EL DIRECTORIO DONDE ESTÁN LOS FICHEROS");
+            int returnVal = f.showDialog(f, "Seleccionar");
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                File file = f.getSelectedFile();
+                Directorio = file.getAbsolutePath();
+                System.out.println(Directorio);
+            }
+            //si no se selecciona nada salir
+
+            if (Directorio.equals("")) {
+                System.out.println("Debe seleccionar un directorio.");
+                System.exit(1);
+            }
+            ServerSocket servidor = null;
+            try {
+                servidor = new ServerSocket(servidor1.getPUERTO());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            servidor1.setServidor(servidor);
+            System.out.println(("Servidor iniciado en Puerto: " + servidor1.getPUERTO()));
+            while (true) {
+                try {
+                    Socket cliente = servidor.accept();
+                    System.out.println("Bienvenido al cliente");
+
+                  EstructuraFicheros  NF = new EstructuraFicheros(Directorio);
+                 servidor1.setNF(NF);
+                    HiloServidor hilo = new HiloServidor(cliente, NF);
+                    hilo.start(); //Ejecutamos el hilo
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                    System.exit(0);
+                }
+            }
+        }else if(nombre=="Calculadora"){
+
         }
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
