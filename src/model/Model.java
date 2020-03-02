@@ -32,5 +32,11 @@ public class Model {
     public PeliculaVO cargarPelicula(String pelicula){
         return jdbc.cargarPelicula(pelicula);
     }
+    public boolean aumentarVisitas(){
+        return jdbc.aumentarVisitas();
+    }
+    public int obtenerVisitas(){
+        return jdbc.obtenerVisitas();
+    }
     
 }
