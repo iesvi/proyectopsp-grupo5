@@ -6,8 +6,7 @@ import ClienteFTP.ClienteFTP;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 import java.net.ServerSocket;
@@ -320,7 +319,27 @@ public class Controlador implements ActionListener {
                 }
             }
         }else if(nombre=="Calculadora"){
+Runtime r=Runtime.getRuntime();
+String comando[]={"calc"};
+Process p =null;
+for (int i=0;i<comando.length;i++){
+    System.out.println("************************************");
+    System.out.println("Comando: "+comando[i]);
+    System.out.println("************************************");
+    try {
+        p=r.exec(comando[i]);
+        InputStream is = p.getInputStream();
+        BufferedReader br = new BufferedReader( new InputStreamReader(is));
+        String linea;
+        while ((linea=br.readLine())!=null)
+            //lee una linea del fichero
+            System.out.println(linea);
+        br.close();
+    }catch (Exception e){
+        e.printStackTrace();
+    }
 
+}
         }
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

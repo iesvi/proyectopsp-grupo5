@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1126c0dd-4602-4776-b4fe-eabef839ccc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/servidor/EnviaFichero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/EstructuraFicheros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/HiloServidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/ObtieneFichero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/PideFichero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/Servidor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/VistaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VistaMenu.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,17 +19,22 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="cucharro99 &lt;48246582+cucharro99@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YL4yPvvzmw55ygJEuTcNQ9PTrF" />
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582655809394" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EjemploFTP" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -105,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582712195163</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AñadidoServer">
+      <created>1583235240609</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583235240609</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hilos2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hilos2.0" />
+    <MESSAGE value="AñadidoServer" />
+    <option name="LAST_COMMIT_MESSAGE" value="AñadidoServer" />
   </component>
 </project>
