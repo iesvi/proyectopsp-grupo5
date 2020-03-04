@@ -1330,7 +1330,7 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   <br>
   <br>
   
-  <p><b>Manual de la aplicacion:</b></p>
+  # Manual de la aplicacion:
   <br>
   <p>La aplicación consta de un menú en el que debes introducir tu nombre de usuario<br>
   y tu contraseña. Si no tiene un usuario puede registrarse pulsando el botón Registrarse<br>
