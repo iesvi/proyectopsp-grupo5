@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1126c0dd-4602-4776-b4fe-eabef839ccc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/hilo/HiloPelicula.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor/EnviaFichero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor/EstructuraFicheros.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor/HiloServidor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor/ObtieneFichero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor/PideFichero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor/Servidor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583335023336</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Corregido Server">
+      <created>1583335339317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583335339317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,5 +147,16 @@
     <MESSAGE value="AñadidoServer" />
     <MESSAGE value="Corregido Server" />
     <option name="LAST_COMMIT_MESSAGE" value="Corregido Server" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/Controlador.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

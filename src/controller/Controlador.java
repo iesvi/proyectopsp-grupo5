@@ -18,6 +18,7 @@ import javax.swing.*;
 
 import SMTP.ClienteSMTP;
 import hilo.FinalizarSesion;
+import hilo.HiloPelicula;
 import hilo.InicioSesion;
 import model.Model;
 import model.VO.PeliculaVO;
@@ -184,14 +185,9 @@ public class Controlador implements ActionListener {
         } else if (nombre == "Buscar") {
             if (model.comprobarPelicula(viewB.getBusqueda()) == true) {
                 //Cargar vista pelicula con datos
-                pelicula = model.cargarPelicula(viewB.getBusqueda());
-                VistaPelicula vistaP = new VistaPelicula(this);
-                vistaP.setLblDirector(vistaP.getLblDirector() + pelicula.getDirector());
-                vistaP.setLblReparto(vistaP.getLblReparto() + "\n" + pelicula.getReparto());
-                vistaP.setLblTitulo(pelicula.getNombre());
-                vistaP.setVisible(true);
+                HiloPelicula h1 = new HiloPelicula(model,view.getUsuario(),viewB.getBusqueda(),this);
+                h1.run();
 
-                this.setViewP(viewP);
 
             } else {
                 JOptionPane.showMessageDialog(null, "No hay ninguna película con ese nombre");
