@@ -32,7 +32,8 @@ public class VistaMenu extends javax.swing.JFrame {
         btnSalir = new javax.swing.JButton();
         chat= new javax.swing.JButton();
         btnClienteFTP=new javax.swing.JButton();
-
+        calculadora= new javax.swing.JButton();
+        servidor= new javax.swing.JButton();
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("¿Que desea hacer? ");
@@ -42,6 +43,12 @@ public class VistaMenu extends javax.swing.JFrame {
         
         btnClienteFTP.setText("ClienteFTP");
         btnClienteFTP.addActionListener(controller);
+
+        calculadora.setText("Calculadora");
+        calculadora.addActionListener(controller);
+
+        servidor.setText("Servidor de archivos");
+        servidor.addActionListener(controller);
 
         btnBuscador.setText("Buscar Peliculas");
         btnBuscador.addActionListener(controller);
@@ -72,7 +79,11 @@ public class VistaMenu extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addGap(65, 65, 65)
                                     .addComponent(btnBuscador)
-                                   
+                                    .addGap(65, 65, 65)
+                                    .addComponent(calculadora)
+                                    .addGap(65, 65, 65)
+                                    .addComponent(servidor)
+
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                                 .addComponent(btnConsultarListas)
                                     .addGap(65, 65, 65)
@@ -85,6 +96,7 @@ public class VistaMenu extends javax.swing.JFrame {
                           
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(btnSalir)
+
                          .addComponent(chat)))
                 .addGap(56, 56, 56))
                  
@@ -99,8 +111,13 @@ public class VistaMenu extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuscador)
-                        
+                        .addGap(53, 53, 53)
+                        .addComponent(calculadora)
+                        .addGap(53, 53, 53)
+                        .addComponent(servidor)
+                        .addGap(53, 53, 53)
                     .addComponent(btnConsultarListas)
+                        .addGap(53, 53, 53)
                     .addComponent(btnClienteFTP))
                 .addGap(53, 53, 53)
                 .addComponent(btnSalir)
@@ -135,5 +152,7 @@ public class VistaMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton chat;
+    private javax.swing.JButton servidor;
+    private javax.swing.JButton calculadora;
     // End of variables declaration//GEN-END:variables
 }

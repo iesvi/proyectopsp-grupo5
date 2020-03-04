@@ -35,6 +35,9 @@ public class Model {
     public boolean aumentarVisitas(){
         return jdbc.aumentarVisitas();
     }
+    public boolean disminuirVisitas(){
+        return jdbc.disminuirVisitas();
+    }
     public int obtenerVisitas(){
         return jdbc.obtenerVisitas();
     }
