@@ -1344,11 +1344,11 @@ Nuestro proyecto consistirá sobre la gestión de un videoclub. Este programa te
   
   # Manual de USUARIO
 
-# Iniciar aplicación
+<b>Iniciar aplicación</b>
 Nuestra aplicacion, para iniciarla debes tener iniciado WampServer con la base de datos que encuentra en el repositorio. Debes abrir la aplicacion con IntelliJ o cualquier IDE.
 
-# Funcionalidades no disponibles
-El aprobado.
+<b>Funcionalidades no disponibles</b>
+El synchronized del HiloPelicula da un fallo y se tiene que comentar el wait().
 
-# Configuraciones necesarias
+<b>Configuraciones necesarias</b>
 Las librerias necesarias son commons-net-3.6.jar y mysql-connector-java-8.0.12.jar las cuales se encuentran en la carpeta del proyecto en GitHub proyectopsp-grupo5/lib. La versión de Java Development Kit es la 11.04.
