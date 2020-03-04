@@ -9,7 +9,7 @@ import java.net.Socket;
 public class Servidor {
 
     static Integer PUERTO = 44441;
-    static public EstructuraFicheros NF;
+    static public servidor.EstructuraFicheros NF;
     static ServerSocket servidor;
 
     public Servidor(){

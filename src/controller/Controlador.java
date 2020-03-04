@@ -215,10 +215,10 @@ public class Controlador implements ActionListener {
 
                 String nombrechat = "admin";
                 // Se crea el socket multicast
-                chatadmin.setMs(new MulticastSocket(12345));
-                chatadmin.setGrupo(InetAddress.getByName("225.0.0.1"));// Grupo
+                UDPMultiChat2.setMs(new MulticastSocket(12345));
+                UDPMultiChat2.setGrupo(InetAddress.getByName("225.0.0.1"));// Grupo
                 // Nos unimos al grupo
-                chatadmin.getMs().joinGroup(chatadmin.getGrupo());
+                UDPMultiChat2.getMs().joinGroup(UDPMultiChat2.getGrupo());
                 if (!nombrechat.trim().equals("")) {
                     UDPMultiChat2 server = new UDPMultiChat2(nombrechat);
                     server.setBounds(0, 0, 540, 400);
@@ -257,10 +257,10 @@ public class Controlador implements ActionListener {
 
                 String nombrechat = view.getUsuario();
                 // Se crea el socket multicast
-                chatuser.setMs(new MulticastSocket(12345));
-                chatuser.setGrupo(InetAddress.getByName("225.0.0.1"));// Grupo
+                UDPMultiChat2.setMs(new MulticastSocket(12345));
+                UDPMultiChat2.setGrupo(InetAddress.getByName("225.0.0.1"));// Grupo
                 // Nos unimos al grupo
-                chatuser.getMs().joinGroup(chatuser.getGrupo());
+                UDPMultiChat2.getMs().joinGroup(UDPMultiChat2.getGrupo());
                 if (!nombrechat.trim().equals("")) {
                     UDPMultiChat2 server = new UDPMultiChat2(nombrechat);
                     server.setBounds(0, 0, 540, 400);
@@ -274,7 +274,7 @@ public class Controlador implements ActionListener {
         } else if (nombre == "ClienteFTP") {
             try {
                 ClienteFTP cliente = new ClienteFTP();
-                cliente.setCab2(view.getUsuario());
+                ClienteFTP.setCab2(view.getUsuario());
             } catch (IOException ex) {
                 Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -298,19 +298,19 @@ public class Controlador implements ActionListener {
             }
             ServerSocket servidor = null;
             try {
-                servidor = new ServerSocket(servidor1.getPUERTO());
+                servidor = new ServerSocket(Servidor.getPUERTO());
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            servidor1.setServidor(servidor);
-            System.out.println(("Servidor iniciado en Puerto: " + servidor1.getPUERTO()));
+            Servidor.setServidor(servidor);
+            System.out.println(("Servidor iniciado en Puerto: " + Servidor.getPUERTO()));
             while (true) {
                 try {
                     Socket cliente = servidor.accept();
                     System.out.println("Bienvenido al cliente");
 
                   EstructuraFicheros  NF = new EstructuraFicheros(Directorio);
-                 servidor1.setNF(NF);
+                 Servidor.setNF(NF);
                     HiloServidor hilo = new HiloServidor(cliente, NF);
                     hilo.start(); //Ejecutamos el hilo
                 } catch (IOException e) {
@@ -320,7 +320,7 @@ public class Controlador implements ActionListener {
             }
         }else if(nombre=="Calculadora"){
 Runtime r=Runtime.getRuntime();
-String comando[]={"calc"};
+String[] comando ={"calc"};
 Process p =null;
 for (int i=0;i<comando.length;i++){
     System.out.println("************************************");
