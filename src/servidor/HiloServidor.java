@@ -3,6 +3,7 @@ package servidor;
 import java.io.*;
 import java.net.Socket;
 
+
 public class HiloServidor extends Thread {
     Socket socket;
     ObjectOutputStream outObjeto;
