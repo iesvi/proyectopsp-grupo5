@@ -23,6 +23,9 @@ import hilo.InicioSesion;
 import model.Model;
 import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
+import productorconsumidor.Cola;
+import productorconsumidor.Consumidor;
+import productorconsumidor.Productor;
 import servidor.EstructuraFicheros;
 import servidor.HiloServidor;
 import servidor.Servidor;
@@ -192,6 +195,84 @@ public class Controlador implements ActionListener {
             } else {
                 JOptionPane.showMessageDialog(null, "No hay ninguna película con ese nombre");
             }
+        }else if(nombre=="Productor Consumidor"){
+            Cola cola = new Cola();
+
+            Productor p = new Productor(cola, 1);
+            Consumidor c = new Consumidor(cola, 1);
+
+            p.start();
+            c.start();
+
+        }else if(nombre=="ServidorTCP"){
+            int numeroPuerto = 6000;// Puerto
+            ServerSocket servidor = null;
+            try {
+                servidor = new ServerSocket(numeroPuerto);
+
+            Socket clienteConectado = null;
+            System.out.println("Esperando al cliente.....");
+            clienteConectado = servidor.accept();
+
+            // CREO FLUJO DE ENTRADA DEL CLIENTE
+            InputStream entrada = null;
+            entrada = clienteConectado.getInputStream();
+            DataInputStream flujoEntrada = new DataInputStream(entrada);
+
+            // EL CLIENTE ME ENVIA UN MENSAJE
+            System.out.println("Recibiendo del CLIENTE: \n\t" +
+                    flujoEntrada.readUTF());
+
+            // CREO FLUJO DE SALIDA AL CLIENTE
+            OutputStream salida = null;
+            salida = clienteConectado.getOutputStream();
+            DataOutputStream flujoSalida = new DataOutputStream(salida);
+
+            // ENVIO UN SALUDO AL CLIENTE
+            flujoSalida.writeUTF("Hola cliente");
+
+            // CERRAR STREAMS Y SOCKETS
+            entrada.close();
+            flujoEntrada.close();
+            salida.close();
+            flujoSalida.close();
+            clienteConectado.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }else if(nombre=="ClienteTCP"){
+            String Host = "localhost";
+            int Puerto = 6000;//puerto remoto
+
+            System.out.println("PROGRAMA CLIENTE INICIADO....");
+            Socket Cliente = null;
+            try {
+                Cliente = new Socket(Host, Puerto);
+
+
+            // CREO FLUJO DE SALIDA AL SERVIDOR
+            DataOutputStream flujoSalida = new
+                    DataOutputStream(Cliente.getOutputStream());
+
+            // ENVIO UN SALUDO AL SERVIDOR
+            flujoSalida.writeUTF("Hola servidor");
+
+            // CREO FLUJO DE ENTRADA AL SERVIDOR
+            DataInputStream flujoEntrada = new
+                    DataInputStream(Cliente.getInputStream());
+
+            // EL SERVIDOR ME ENVIA UN MENSAJE
+            System.out.println("Recibiendo del SERVIDOR: \n\t" +
+                    flujoEntrada.readUTF());
+
+            // CERRAR STREAMS Y SOCKETS
+            flujoEntrada.close();
+            flujoSalida.close();
+            Cliente.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         } else if (nombre == "Ver enlaces") {
             JOptionPane.showMessageDialog(null, pelicula.getEnlace());
         } else if (nombre == "Subir enlace") {

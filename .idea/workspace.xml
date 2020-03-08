@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1126c0dd-4602-4776-b4fe-eabef839ccc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hilo/HiloPelicula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/productorconsumidor/Cola.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/productorconsumidor/Consumidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/productorconsumidor/Productor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hilo/HiloPelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hilo/HiloPelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/VistaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VistaMenu.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,10 +40,15 @@
   <component name="ProjectId" id="1YL4yPvvzmw55ygJEuTcNQ9PTrF" />
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582655809394" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EjemploFTP" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/PSP" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="productorconsumidor" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -126,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583335339317</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="El wait da error y por eso esta comentado">
+      <created>1583338638511</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583338638511</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,17 +162,7 @@
     <MESSAGE value="Hilos2.0" />
     <MESSAGE value="AñadidoServer" />
     <MESSAGE value="Corregido Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corregido Server" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/Controlador.java</url>
-          <line>193</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="El wait da error y por eso esta comentado" />
+    <option name="LAST_COMMIT_MESSAGE" value="El wait da error y por eso esta comentado" />
   </component>
 </project>

@@ -27,18 +27,18 @@ public class HiloPelicula implements Runnable{
     public void run() {
         synchronized (pelicula){
 
-            pelicula.notify();
+            pelicula.notifyAll();
 
                 verPelicula v = new verPelicula();
                 v.verVistaPelicula();
 
-              /* try {
+             /*try {
                     pelicula.wait();
-                    pelicula.notify();
+                    pelicula.notifyAll();
                 } catch (InterruptedException e) {
 
-                }*/
-                pelicula.notify();
+               }
+                pelicula.notify();*/
             }
 
     }

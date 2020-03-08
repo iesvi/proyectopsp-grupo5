@@ -34,18 +34,30 @@ public class VistaMenu extends javax.swing.JFrame {
         btnClienteFTP=new javax.swing.JButton();
         calculadora= new javax.swing.JButton();
         servidor= new javax.swing.JButton();
+        productorconsumidor=new javax.swing.JButton();
+        clienteTCP = new javax.swing.JButton();
+        servidorTCP= new javax.swing.JButton();
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("¿Que desea hacer? ");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("DAM Blinders");
-        
+
+        clienteTCP.setText("ClienteTCP");
+        clienteTCP.addActionListener(controller);
+
+        servidorTCP.setText("ServidorTCP");
+        servidorTCP.addActionListener(controller);
+
         btnClienteFTP.setText("ClienteFTP");
         btnClienteFTP.addActionListener(controller);
 
         calculadora.setText("Calculadora");
         calculadora.addActionListener(controller);
+
+        productorconsumidor.setText("Productor Consumidor");
+        productorconsumidor.addActionListener(controller);
 
         servidor.setText("Servidor de archivos");
         servidor.addActionListener(controller);
@@ -81,6 +93,12 @@ public class VistaMenu extends javax.swing.JFrame {
                                     .addComponent(btnBuscador)
                                     .addGap(65, 65, 65)
                                     .addComponent(calculadora)
+                                    .addGap(65,65,65)
+                                    .addComponent(productorconsumidor)
+                                    .addGap(65,65,65)
+                                    .addComponent(clienteTCP)
+                                    .addGap(65,65,65)
+                                    .addComponent(servidorTCP)
                                     .addGap(65, 65, 65)
                                     .addComponent(servidor)
 
@@ -113,6 +131,12 @@ public class VistaMenu extends javax.swing.JFrame {
                     .addComponent(btnBuscador)
                         .addGap(53, 53, 53)
                         .addComponent(calculadora)
+                        .addGap(53,53,53)
+                        .addComponent(productorconsumidor)
+                        .addGap(53,53,53)
+                        .addComponent(servidorTCP)
+                        .addGap(53,53,53)
+                        .addComponent(clienteTCP)
                         .addGap(53, 53, 53)
                         .addComponent(servidor)
                         .addGap(53, 53, 53)
@@ -154,5 +178,8 @@ public class VistaMenu extends javax.swing.JFrame {
     private javax.swing.JButton chat;
     private javax.swing.JButton servidor;
     private javax.swing.JButton calculadora;
+    private javax.swing.JButton productorconsumidor;
+    private javax.swing.JButton servidorTCP;
+    private javax.swing.JButton clienteTCP;
     // End of variables declaration//GEN-END:variables
 }
