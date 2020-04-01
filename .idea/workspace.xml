@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1126c0dd-4602-4776-b4fe-eabef839ccc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/productorconsumidor/Cola.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/productorconsumidor/Consumidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/productorconsumidor/Productor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hilo/HiloPelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hilo/HiloPelicula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/VistaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VistaMenu.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582655809394" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/PSP" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -142,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583338638511</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Añadido funciones TCP y ProductorConsumidor">
+      <created>1583703523966</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583703523966</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +164,7 @@
     <MESSAGE value="AñadidoServer" />
     <MESSAGE value="Corregido Server" />
     <MESSAGE value="El wait da error y por eso esta comentado" />
-    <option name="LAST_COMMIT_MESSAGE" value="El wait da error y por eso esta comentado" />
+    <MESSAGE value="Añadido funciones TCP y ProductorConsumidor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadido funciones TCP y ProductorConsumidor" />
   </component>
 </project>

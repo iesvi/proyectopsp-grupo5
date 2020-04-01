@@ -32,13 +32,13 @@ public class HiloPelicula implements Runnable{
                 verPelicula v = new verPelicula();
                 v.verVistaPelicula();
 
-             /*try {
+             try {
                     pelicula.wait();
                     pelicula.notifyAll();
                 } catch (InterruptedException e) {
 
                }
-                pelicula.notify();*/
+                pelicula.notify();
             }
 
     }
