@@ -23,6 +23,9 @@ import hilo.InicioSesion;
 import model.Model;
 import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
+import productor_consumidor.Cola_2;
+import productor_consumidor.Consumidor_2;
+import productor_consumidor.Productor_2;
 import productorconsumidor.Cola;
 import productorconsumidor.Consumidor;
 import productorconsumidor.Productor;
@@ -56,6 +59,7 @@ public class Controlador implements ActionListener {
     VistaMenuAdmin viewMA;
     VistaPelicula viewP;
     PeliculaVO pelicula;
+    Cola_2 cola;
 
     public Controlador() {
         model = new Model();
@@ -92,10 +96,14 @@ public class Controlador implements ActionListener {
     public void setViewMA(VistaMenuAdmin viewMA) {
         this.viewMA = viewMA;
     }
+    public Model getModel(){
+        return this.model;
+    }
 
     @Override
     public void actionPerformed(ActionEvent ae) {
         String nombre = ae.getActionCommand();
+
         if (nombre == "Aceptar") {
             UsuarioVO usuario = new UsuarioVO();
             usuario.setNombreUsuario(view.getUsuario());
@@ -105,6 +113,7 @@ public class Controlador implements ActionListener {
                 //Iniciar hilo
                 InicioSesion hilo = new InicioSesion(model, view.getUsuario());
                 hilo.run();
+
 
                 //Envia correo
                 Calendar calendario = Calendar.getInstance();
@@ -159,6 +168,12 @@ public class Controlador implements ActionListener {
             VistaBuscarPelicula viewB = new VistaBuscarPelicula(this);
             viewB.setVisible(true);
             this.setViewB(viewB);
+
+            UsuarioVO usuario = new UsuarioVO();
+            usuario.setNombreUsuario(view.getUsuario());
+            usuario.setPwsd(view.getPswd());
+            cola=  new Cola_2(usuario,this,viewB.getBusqueda());
+
         } else if (nombre == "Consultar listas") {
             VistaConsultarLista viewL = new VistaConsultarLista();
             viewL.setVisible(true);
@@ -186,23 +201,34 @@ public class Controlador implements ActionListener {
             smtp.enviarCorreo(asunto, mensaje, destinatario);
 
         } else if (nombre == "Buscar") {
+
+            cola.setBusqueda(viewB.getBusqueda());
             if (model.comprobarPelicula(viewB.getBusqueda()) == true) {
                 //Cargar vista pelicula con datos
-                HiloPelicula h1 = new HiloPelicula(model,view.getUsuario(),viewB.getBusqueda(),this);
-                h1.run();
+               // HiloPelicula h1 = new HiloPelicula(model,view.getUsuario(),viewB.getBusqueda(),this);
+               // h1.run();
+                UsuarioVO usuariocola = new UsuarioVO();
+                usuariocola.setNombreUsuario(view.getUsuario());
+                usuariocola.setPwsd(view.getPswd());
+
+                Productor_2 p = new Productor_2(usuariocola,cola);
+                Consumidor_2 c = new Consumidor_2(cola,this);
+                p.start();
+                c.start();
 
 
             } else {
                 JOptionPane.showMessageDialog(null, "No hay ninguna película con ese nombre");
             }
         }else if(nombre=="Productor Consumidor"){
-            Cola cola = new Cola();
+            //Cola cola = new Cola();
 
-            Productor p = new Productor(cola, 1);
-            Consumidor c = new Consumidor(cola, 1);
+            //Productor p = new Productor(cola, 1);
+            //Consumidor c = new Consumidor(cola, 1);
 
-            p.start();
-            c.start();
+            //p.start();
+            //c.start();
+
 
         }else if(nombre=="ServidorTCP"){
             int numeroPuerto = 6000;// Puerto
