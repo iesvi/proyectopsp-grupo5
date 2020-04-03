@@ -18,17 +18,13 @@ import javax.swing.*;
 
 import SMTP.ClienteSMTP;
 import hilo.FinalizarSesion;
-import hilo.HiloPelicula;
 import hilo.InicioSesion;
 import model.Model;
 import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
-import productor_consumidor.Cola_2;
-import productor_consumidor.Consumidor_2;
-import productor_consumidor.Productor_2;
-import productorconsumidor.Cola;
-import productorconsumidor.Consumidor;
-import productorconsumidor.Productor;
+import productor_consumidor.Cola;
+import productor_consumidor.Consumidor;
+import productor_consumidor.Productor;
 import servidor.EstructuraFicheros;
 import servidor.HiloServidor;
 import servidor.Servidor;
@@ -59,7 +55,7 @@ public class Controlador implements ActionListener {
     VistaMenuAdmin viewMA;
     VistaPelicula viewP;
     PeliculaVO pelicula;
-    Cola_2 cola;
+    Cola cola;
 
     public Controlador() {
         model = new Model();
@@ -172,7 +168,7 @@ public class Controlador implements ActionListener {
             UsuarioVO usuario = new UsuarioVO();
             usuario.setNombreUsuario(view.getUsuario());
             usuario.setPwsd(view.getPswd());
-            cola=  new Cola_2(usuario,this,viewB.getBusqueda());
+            cola=  new Cola(usuario,this,viewB.getBusqueda());
 
         } else if (nombre == "Consultar listas") {
             VistaConsultarLista viewL = new VistaConsultarLista();
@@ -211,8 +207,8 @@ public class Controlador implements ActionListener {
                 usuariocola.setNombreUsuario(view.getUsuario());
                 usuariocola.setPwsd(view.getPswd());
 
-                Productor_2 p = new Productor_2(usuariocola,cola);
-                Consumidor_2 c = new Consumidor_2(cola,this);
+                Productor p = new Productor(usuariocola,cola);
+                Consumidor c = new Consumidor(cola,this);
                 p.start();
                 c.start();
 
@@ -220,14 +216,7 @@ public class Controlador implements ActionListener {
             } else {
                 JOptionPane.showMessageDialog(null, "No hay ninguna película con ese nombre");
             }
-        }else if(nombre=="Productor Consumidor"){
-            //Cola cola = new Cola();
 
-            //Productor p = new Productor(cola, 1);
-            //Consumidor c = new Consumidor(cola, 1);
-
-            //p.start();
-            //c.start();
 
 
         }else if(nombre=="ServidorTCP"){

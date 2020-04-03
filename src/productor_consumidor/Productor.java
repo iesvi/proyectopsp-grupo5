@@ -1,14 +1,14 @@
 package productor_consumidor;
 
 import model.VO.UsuarioVO;
-import productorconsumidor.Productor;
 
-public class Productor_2 extends Thread{
-    private Cola_2 cola;
+
+public class Productor extends Thread{
+    private Cola cola;
     private UsuarioVO usuario;
-    private boolean disponible;
 
-    public Productor_2(UsuarioVO usuario,Cola_2 cola){
+
+    public Productor(UsuarioVO usuario, Cola cola){
         this.usuario=usuario;
         this.cola=cola;
     }

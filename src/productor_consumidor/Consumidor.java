@@ -2,17 +2,17 @@ package productor_consumidor;
 
 import controller.Controlador;
 import model.VO.UsuarioVO;
-import productorconsumidor.Consumidor;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Consumidor_2 extends Thread{
-    private Cola_2 cola;
+public class Consumidor extends Thread{
+    private Cola cola;
     private Controlador controller;
     private List<UsuarioVO> listaUsuarios= new ArrayList<>();
 
-    public Consumidor_2(Cola_2 cola, Controlador controller){
+    public Consumidor(Cola cola, Controlador controller){
         this.cola=cola;
         this.controller=controller;
         System.out.println("Entra constructor consumidor");

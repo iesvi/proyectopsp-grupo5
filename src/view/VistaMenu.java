@@ -93,8 +93,7 @@ public class VistaMenu extends javax.swing.JFrame {
                                     .addComponent(btnBuscador)
                                     .addGap(65, 65, 65)
                                     .addComponent(calculadora)
-                                    .addGap(65,65,65)
-                                    .addComponent(productorconsumidor)
+
                                     .addGap(65,65,65)
                                     .addComponent(clienteTCP)
                                     .addGap(65,65,65)
@@ -131,8 +130,6 @@ public class VistaMenu extends javax.swing.JFrame {
                     .addComponent(btnBuscador)
                         .addGap(53, 53, 53)
                         .addComponent(calculadora)
-                        .addGap(53,53,53)
-                        .addComponent(productorconsumidor)
                         .addGap(53,53,53)
                         .addComponent(servidorTCP)
                         .addGap(53,53,53)

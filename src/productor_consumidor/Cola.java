@@ -9,14 +9,14 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cola_2 {
+public class Cola {
     private List<UsuarioVO> listaUsuarios= new ArrayList<>();
     private boolean disponible = false; //inicialmente cola vacia
     private int numeroUsuarios = 1;
     private UsuarioVO usuario;
     private Controlador controller;
     private String pelicula;
-    public Cola_2(UsuarioVO usuario, Controlador controller, String pelicula){
+    public Cola(UsuarioVO usuario, Controlador controller, String pelicula){
         this.usuario=usuario;
         this.controller=controller;
         this.pelicula=pelicula;

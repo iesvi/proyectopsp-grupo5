@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1126c0dd-4602-4776-b4fe-eabef839ccc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/productor_consumidor/Cola_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/productor_consumidor/Consumidor_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/productor_consumidor/Productor_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hilo/HiloPelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hilo/HiloPelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Cola_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Cola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Consumidor_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Consumidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Productor_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Productor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/productorconsumidor/Cola.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/productorconsumidor/Consumidor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/productorconsumidor/Productor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/VistaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VistaMenu.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +28,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="victorlopez00 &lt;victorlopezarenal@gmail.com&gt;" />
         <option value="cucharro99 &lt;48246582+cucharro99@users.noreply.github.com&gt;" />
+        <option value="victorlopez00 &lt;victorlopezarenal@gmail.com&gt;" />
       </list>
     </option>
     <option name="PUSH_TAGS">
@@ -45,7 +48,7 @@
   <component name="ProjectId" id="1YL4yPvvzmw55ygJEuTcNQ9PTrF" />
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582655809394" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/PSP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -168,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585733725711</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implementado Productor Consumidor">
+      <created>1585823324276</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585823324276</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +201,7 @@
     <MESSAGE value="El wait da error y por eso esta comentado" />
     <MESSAGE value="Añadido funciones TCP y ProductorConsumidor" />
     <MESSAGE value="Editado HiloPelicula" />
-    <option name="LAST_COMMIT_MESSAGE" value="Editado HiloPelicula" />
+    <MESSAGE value="Implementado Productor Consumidor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementado Productor Consumidor" />
   </component>
 </project>
