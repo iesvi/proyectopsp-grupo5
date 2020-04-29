@@ -12,7 +12,9 @@ public class HiloCliente implements Runnable {
     int puerto=6000;
     ObjectOutputStream userSal;
     ObjectInputStream entraObj;
+    ObjectOutputStream salAccion;
     UsuarioVO usuario;
+    String accion;
     String recibido;
     @Override
     public void run() {
@@ -22,8 +24,10 @@ public class HiloCliente implements Runnable {
             cliente = new Socket(host, puerto);
 
         userSal = new ObjectOutputStream(cliente.getOutputStream());
+        salAccion = new ObjectOutputStream(cliente.getOutputStream());
 
-
+        salAccion.writeObject(accion);
+        System.out.println("Accion enviada: "+accion);
         userSal.writeObject(usuario);
         System.out.println("Objeto enviado: " + usuario.getNombreUsuario() + ".");
         entraObj = new ObjectInputStream(cliente.getInputStream());
@@ -82,6 +86,22 @@ public class HiloCliente implements Runnable {
 
     public void setRecibido(String recibido) {
         this.recibido = recibido;
+    }
+
+    public ObjectOutputStream getSalAccion() {
+        return salAccion;
+    }
+
+    public void setSalAccion(ObjectOutputStream salAccion) {
+        this.salAccion = salAccion;
+    }
+
+    public String getAccion() {
+        return accion;
+    }
+
+    public void setAccion(String accion) {
+        this.accion = accion;
     }
     /*
 

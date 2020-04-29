@@ -149,7 +149,7 @@ public class Controlador implements ActionListener {
         } catch (IOException ex) {
             ex.printStackTrace();
         }*/
-
+            h1.setAccion("Comprobar");
             h1.run();
 
 

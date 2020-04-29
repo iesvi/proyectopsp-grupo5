@@ -19,6 +19,7 @@ public class ServidorTCP {
 
         int contador=0;
 
+        ObjectInputStream accion = new ObjectInputStream(cliente.getInputStream());
         ObjectInputStream entraObj = new ObjectInputStream(cliente.getInputStream());
         ObjectOutputStream outObjeto = new ObjectOutputStream(cliente.getOutputStream());
 
@@ -26,8 +27,9 @@ public class ServidorTCP {
 
 
 
-        if(contador ==0) {
-            contador++;
+        if(accion.readObject().equals("Comprobar")) {
+            System.out.println("Pipi estrada es mi amigooo");
+        //    contador++;
             UsuarioVO recibido = (UsuarioVO) entraObj.readObject();
 
             System.out.println("Recibo: " + recibido.getNombreUsuario() + ".");
@@ -39,7 +41,7 @@ public class ServidorTCP {
             outObjeto.writeObject(holo);
             System.out.println("Envio: " + holo + ".");
 
-        }else if(contador==1){
+        }else if(accion.readUTF().equals("Somos familia")){
             PeliculaVO pelirecibido=(PeliculaVO) entraObj.readObject();
             System.out.println("Recibo: " + pelirecibido.getNombre() + ".");
             if(model.comprobarPelicula(pelirecibido.getNombre())==true){
