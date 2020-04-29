@@ -1,11 +1,13 @@
 
 package model.VO;
 
+import java.io.Serializable;
+
 /**
  *
  * @author usuario
  */
-public class UsuarioVO {
+public class UsuarioVO implements Serializable {
     private String nombreUsuario;
     private String pwsd;
 

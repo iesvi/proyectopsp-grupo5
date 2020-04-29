@@ -10,15 +10,16 @@ public class PeliculaVO {
     private String director;
     private String reparto;
     private String enlace;
-    
+    private boolean fav;
     public PeliculaVO(){
         
     }
-    public PeliculaVO(String nombre, String director, String reparto,String enlace){
+    public PeliculaVO(String nombre, String director, String reparto,String enlace, boolean fav){
         this.nombre=nombre;
         this.director=director;
         this.reparto=reparto;
         this.enlace=enlace;
+        this.fav=fav;
     }
 
     public String getNombre() {
@@ -52,7 +53,15 @@ public class PeliculaVO {
     public void setEnlace(String enlace) {
         this.enlace = enlace;
     }
-    
+
+    public boolean isFav() {
+        return fav;
+    }
+
+    public void setFav(Boolean fav) {
+        this.fav = fav;
+    }
+
     
     
     

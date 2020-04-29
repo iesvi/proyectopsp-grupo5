@@ -1,21 +1,22 @@
 package productor_consumidor;
 
+import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
 
 
 public class Productor extends Thread{
     private Cola cola;
-    private UsuarioVO usuario;
+    private PeliculaVO pelicula;
 
 
-    public Productor(UsuarioVO usuario, Cola cola){
-        this.usuario=usuario;
+    public Productor(PeliculaVO pelicula, Cola cola){
+        this.pelicula=pelicula;
         this.cola=cola;
     }
 
     public void run() {
         System.out.println("Entra run productor");
-        boolean hueco = cola.put(usuario);
+        boolean hueco = cola.put(pelicula);
         System.out.println("Cola put return =>" + hueco);
 
         try {

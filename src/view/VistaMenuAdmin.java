@@ -37,6 +37,7 @@ public class VistaMenuAdmin extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnChatAdmin.setText("Chat administrador");
+        btnChatAdmin.addActionListener(controller);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("DAM BLINDERS ADMIN");

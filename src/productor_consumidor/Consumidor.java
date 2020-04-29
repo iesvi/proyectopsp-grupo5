@@ -1,6 +1,7 @@
 package productor_consumidor;
 
 import controller.Controlador;
+import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
 
 
@@ -10,7 +11,7 @@ import java.util.List;
 public class Consumidor extends Thread{
     private Cola cola;
     private Controlador controller;
-    private List<UsuarioVO> listaUsuarios= new ArrayList<>();
+    private List<PeliculaVO> listaPeliculas= new ArrayList<>();
 
     public Consumidor(Cola cola, Controlador controller){
         this.cola=cola;
@@ -19,11 +20,12 @@ public class Consumidor extends Thread{
     }
     public void run(){
         System.out.println("Entra run consumidor");
-        listaUsuarios.clear();
-        listaUsuarios.addAll(cola.get());
+        listaPeliculas.clear();
+        listaPeliculas.addAll(cola.get());
+
 
     }
     public void clear(){
-        listaUsuarios.clear();
+        listaPeliculas.clear();
     }
 }

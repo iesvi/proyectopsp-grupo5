@@ -18,6 +18,7 @@ import javax.swing.*;
 
 import SMTP.ClienteSMTP;
 import hilo.FinalizarSesion;
+import hilo.HiloCliente;
 import hilo.InicioSesion;
 import model.Model;
 import model.VO.PeliculaVO;
@@ -56,9 +57,13 @@ public class Controlador implements ActionListener {
     VistaPelicula viewP;
     PeliculaVO pelicula;
     Cola cola;
+    ObjectOutputStream userSal;
+    DataInputStream flujoEntrada;
+    DataOutputStream flujoSalida;
 
     public Controlador() {
         model = new Model();
+
     }
 
     public void setViewP(VistaPelicula viewP) {
@@ -96,49 +101,97 @@ public class Controlador implements ActionListener {
         return this.model;
     }
 
+
     @Override
     public void actionPerformed(ActionEvent ae) {
         String nombre = ae.getActionCommand();
+       /* String host = "localhost";
+
+        int puerto = 6000;
+        System.out.println("Cliente iniciado...");
+        Socket cliente = null;
+        try {
+            cliente = new Socket(host, puerto);
+
+
+
+        userSal = new ObjectOutputStream(cliente.getOutputStream());
+
+
+
+
+        ObjectInputStream entraObj = new ObjectInputStream(cliente.getInputStream());
+        String recibido = (String) entraObj.readObject();
+        System.out.println("Recibo: " + recibido + ".");
+        entraObj.close();
+        userSal.close();
+        cliente.close();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }*/
 
         if (nombre == "Aceptar") {
-            UsuarioVO usuario = new UsuarioVO();
-            usuario.setNombreUsuario(view.getUsuario());
-            usuario.setPwsd(view.getPswd());
-            if (model.comprobarUsuario(usuario) == true) {
+            HiloCliente h1 = new HiloCliente();
+            UsuarioVO usuario1 = new UsuarioVO();
+            usuario1.setNombreUsuario(view.getUsuario());
+            usuario1.setPwsd(view.getPswd());
+            h1.setUsuario(usuario1);
 
-                //Iniciar hilo
-                InicioSesion hilo = new InicioSesion(model, view.getUsuario());
-                hilo.run();
+            //try {
+                //flujoSalida.writeUTF("Comprobar usuario");
+
+                //System.out.println("Mensaje enviado");
 
 
-                //Envia correo
-                Calendar calendario = Calendar.getInstance();
-                int hora = calendario.get(Calendar.HOUR_OF_DAY);
-                int minutos = calendario.get(Calendar.MINUTE);
-                int segundos = calendario.get(Calendar.SECOND);
-                int dia = calendario.get(Calendar.DAY_OF_MONTH);
-                String nomUser = view.getUsuario();
-                int numVisitas = model.obtenerVisitas();
-                String mensaje = "El usuario: " + nomUser + " ha iniciado sesion a las " + hora + ":" + minutos + ":" + segundos + " el dia " + dia + ". El total de inicios de sesion a la aplicacion es de " + numVisitas + ".";
-                String asunto = "Inicio de sesión";
-                String destinatario = "damblinders@gmail.com";
-                ClienteSMTP smtp = new ClienteSMTP();
-                smtp.enviarCorreo(asunto, mensaje, destinatario);
 
-                VistaMenu vista = new VistaMenu(this);
-                vista.setVisible(true);
-                this.setViewM(vista);
+            /*userSal.writeObject(usuario);
+                System.out.println("Objeto enviado: " + usuario.getNombreUsuario() + ".");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }*/
 
-            } else if (view.getUsuario().equalsIgnoreCase("admin") && view.getPswd().equalsIgnoreCase("admin")) {
-                VistaMenuAdmin vistaMA = new VistaMenuAdmin(this);
-                vistaMA.setVisible(true);
-                this.setViewMA(vistaMA);
+            h1.run();
 
-            } else {
-                JOptionPane.showMessageDialog(null, "El usuario y/o contraseña no son correctos");
 
-                view.clear();
-            }
+
+                if (h1.getRecibido().equals("true")) {
+
+
+                        //Iniciar hilo
+                        InicioSesion hilo = new InicioSesion(model, view.getUsuario());
+                        hilo.run();
+
+
+                        //Envia correo
+                        Calendar calendario = Calendar.getInstance();
+                        int hora = calendario.get(Calendar.HOUR_OF_DAY);
+                        int minutos = calendario.get(Calendar.MINUTE);
+                        int segundos = calendario.get(Calendar.SECOND);
+                        int dia = calendario.get(Calendar.DAY_OF_MONTH);
+                        String nomUser = view.getUsuario();
+                        int numVisitas = model.obtenerVisitas();
+                        String mensaje = "El usuario: " + nomUser + " ha iniciado sesion a las " + hora + ":" + minutos + ":" + segundos + " el dia " + dia + ". El total de inicios de sesion a la aplicacion es de " + numVisitas + ".";
+                        String asunto = "Inicio de sesión";
+                        String destinatario = "damblinders@gmail.com";
+                        ClienteSMTP smtp = new ClienteSMTP();
+                        smtp.enviarCorreo(asunto, mensaje, destinatario);
+
+                        VistaMenu vista = new VistaMenu(this);
+                        vista.setVisible(true);
+                        this.setViewM(vista);
+
+                    } else if (view.getUsuario().equalsIgnoreCase("admin") && view.getPswd().equalsIgnoreCase("admin")) {
+                        VistaMenuAdmin vistaMA = new VistaMenuAdmin(this);
+                        vistaMA.setVisible(true);
+                        this.setViewMA(vistaMA);
+
+                    } else {
+                        JOptionPane.showMessageDialog(null, "El usuario y/o contraseña no son correctos");
+
+                        view.clear();
+                    }
+
+
 
         } else if (nombre == "¡Registrate!") {
             VistaRegistro view = new VistaRegistro(this);
@@ -168,7 +221,7 @@ public class Controlador implements ActionListener {
             UsuarioVO usuario = new UsuarioVO();
             usuario.setNombreUsuario(view.getUsuario());
             usuario.setPwsd(view.getPswd());
-            cola=  new Cola(usuario,this,viewB.getBusqueda());
+            cola=  new Cola(this,viewB.getBusqueda());
 
         } else if (nombre == "Consultar listas") {
             VistaConsultarLista viewL = new VistaConsultarLista();
@@ -203,11 +256,13 @@ public class Controlador implements ActionListener {
                 //Cargar vista pelicula con datos
                // HiloPelicula h1 = new HiloPelicula(model,view.getUsuario(),viewB.getBusqueda(),this);
                // h1.run();
-                UsuarioVO usuariocola = new UsuarioVO();
-                usuariocola.setNombreUsuario(view.getUsuario());
-                usuariocola.setPwsd(view.getPswd());
+                PeliculaVO peli =model.cargarPelicula(viewB.getBusqueda());
 
-                Productor p = new Productor(usuariocola,cola);
+                //UsuarioVO usuariocola = new UsuarioVO();
+               // usuariocola.setNombreUsuario(view.getUsuario());
+                //usuariocola.setPwsd(view.getPswd());
+
+                Productor p = new Productor(peli,cola);
                 Consumidor c = new Consumidor(cola,this);
                 p.start();
                 c.start();
@@ -220,73 +275,9 @@ public class Controlador implements ActionListener {
 
 
         }else if(nombre=="ServidorTCP"){
-            int numeroPuerto = 6000;// Puerto
-            ServerSocket servidor = null;
-            try {
-                servidor = new ServerSocket(numeroPuerto);
 
-            Socket clienteConectado = null;
-            System.out.println("Esperando al cliente.....");
-            clienteConectado = servidor.accept();
-
-            // CREO FLUJO DE ENTRADA DEL CLIENTE
-            InputStream entrada = null;
-            entrada = clienteConectado.getInputStream();
-            DataInputStream flujoEntrada = new DataInputStream(entrada);
-
-            // EL CLIENTE ME ENVIA UN MENSAJE
-            System.out.println("Recibiendo del CLIENTE: \n\t" +
-                    flujoEntrada.readUTF());
-
-            // CREO FLUJO DE SALIDA AL CLIENTE
-            OutputStream salida = null;
-            salida = clienteConectado.getOutputStream();
-            DataOutputStream flujoSalida = new DataOutputStream(salida);
-
-            // ENVIO UN SALUDO AL CLIENTE
-            flujoSalida.writeUTF("Hola cliente");
-
-            // CERRAR STREAMS Y SOCKETS
-            entrada.close();
-            flujoEntrada.close();
-            salida.close();
-            flujoSalida.close();
-            clienteConectado.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }else if(nombre=="ClienteTCP"){
-            String Host = "localhost";
-            int Puerto = 6000;//puerto remoto
 
-            System.out.println("PROGRAMA CLIENTE INICIADO....");
-            Socket Cliente = null;
-            try {
-                Cliente = new Socket(Host, Puerto);
-
-
-            // CREO FLUJO DE SALIDA AL SERVIDOR
-            DataOutputStream flujoSalida = new
-                    DataOutputStream(Cliente.getOutputStream());
-
-            // ENVIO UN SALUDO AL SERVIDOR
-            flujoSalida.writeUTF("Hola servidor");
-
-            // CREO FLUJO DE ENTRADA AL SERVIDOR
-            DataInputStream flujoEntrada = new
-                    DataInputStream(Cliente.getInputStream());
-
-            // EL SERVIDOR ME ENVIA UN MENSAJE
-            System.out.println("Recibiendo del SERVIDOR: \n\t" +
-                    flujoEntrada.readUTF());
-
-            // CERRAR STREAMS Y SOCKETS
-            flujoEntrada.close();
-            flujoSalida.close();
-            Cliente.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
 
         } else if (nombre == "Ver enlaces") {
             JOptionPane.showMessageDialog(null, pelicula.getEnlace());
@@ -301,6 +292,7 @@ public class Controlador implements ActionListener {
         } else if (nombre == "Desconectarse") {
             viewMA.dispose();
         } else if (nombre == "Chat administrador") {
+            System.out.println("Entra chat admin");
             try {
                 System.out.println("Entra chat admin");
                 UDPMultiChat2 chatadmin = new UDPMultiChat2("admin");
@@ -320,9 +312,9 @@ public class Controlador implements ActionListener {
                 } 
                 
                 /*
-                    System.out.println("Entra chat usuario");
-                UDPMultiChat2 chatuser= new UDPMultiChat2("user");
-                
+                     System.out.println("Entra chat usuario");
+                UDPMultiChat2 chatuser = new UDPMultiChat2("user");
+
                 String nombrechat = view.getUsuario();
                 // Se crea el socket multicast
                 chatuser.setMs(new MulticastSocket(12345));
@@ -334,8 +326,11 @@ public class Controlador implements ActionListener {
                     server.setBounds(0, 0, 540, 400);
                     server.setVisible(true);
                     new Thread(server).start();
-                    
-                } 
+
+                }
+            } catch (IOException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+            }
                 */
             } catch (IOException ex) {
                 Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
@@ -365,8 +360,8 @@ public class Controlador implements ActionListener {
             }
         } else if (nombre == "ClienteFTP") {
             try {
-                ClienteFTP cliente = new ClienteFTP();
-                cliente.setCab2(view.getUsuario());
+                ClienteFTP clienteftp = new ClienteFTP();
+                clienteftp.setCab2(view.getUsuario());
             } catch (IOException ex) {
                 Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -398,13 +393,13 @@ public class Controlador implements ActionListener {
             System.out.println(("Servidor iniciado en Puerto: " + servidor1.getPUERTO()));
             while (true) {
                 try {
-                    Socket cliente = servidor.accept();
+                   // Socket cliente = servidor.accept();
                     System.out.println("Bienvenido al cliente");
 
                   EstructuraFicheros  NF = new EstructuraFicheros(Directorio);
                  servidor1.setNF(NF);
-                    HiloServidor hilo = new HiloServidor(cliente, NF);
-                    hilo.start(); //Ejecutamos el hilo
+                   // HiloServidor hilo = new HiloServidor(cliente, NF);
+                   // hilo.start(); //Ejecutamos el hilo
                 } catch (IOException e) {
                     System.out.println(e.getMessage());
                     System.exit(0);
