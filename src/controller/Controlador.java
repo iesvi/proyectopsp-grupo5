@@ -201,8 +201,17 @@ public class Controlador implements ActionListener {
             UsuarioVO usuario = new UsuarioVO();
             usuario.setNombreUsuario(viewR.getUsuario());
             usuario.setPwsd(viewR.getPsswd());
-            if (model.comprobarUsuario(usuario) == false) {
-                model.insertarCliente(usuario);
+            HiloCliente h2 = new HiloCliente();
+            h2.setAccion("Comprobar");
+            h2.setUsuario(usuario);
+            h2.run();
+
+            if (h2.getRecibido().equals("false")) {
+                HiloCliente h3 = new HiloCliente();
+                h3.setAccion("Insertar usuario");
+                h3.setUsuario(usuario);
+                h3.run();
+              //  model.insertarCliente(usuario);
 
                 System.out.println("El usuario" + usuario.getNombreUsuario() + " ha sido registrado exitosamente");
                 viewR.setVisible(false);
@@ -252,7 +261,14 @@ public class Controlador implements ActionListener {
         } else if (nombre == "Buscar") {
 
             cola.setBusqueda(viewB.getBusqueda());
-            if (model.comprobarPelicula(viewB.getBusqueda()) == true) {
+
+            HiloCliente hpe= new HiloCliente();
+            hpe.setAccion("Comprobar pelicula");
+            PeliculaVO pelic = new PeliculaVO();
+            pelic.setNombre(viewB.getBusqueda());
+            hpe.setPelicula(pelic);
+            hpe.run();
+            if (hpe.getRecibido().equals("true")) {
                 //Cargar vista pelicula con datos
                // HiloPelicula h1 = new HiloPelicula(model,view.getUsuario(),viewB.getBusqueda(),this);
                // h1.run();

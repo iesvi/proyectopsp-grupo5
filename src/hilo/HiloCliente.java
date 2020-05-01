@@ -1,5 +1,6 @@
 package hilo;
 
+import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
 
 import java.io.IOException;
@@ -16,6 +17,7 @@ public class HiloCliente implements Runnable {
     UsuarioVO usuario;
     String accion;
     String recibido;
+    PeliculaVO pelicula;
     @Override
     public void run() {
         System.out.println("Cliente iniciado...");
@@ -28,8 +30,13 @@ public class HiloCliente implements Runnable {
 
         salAccion.writeObject(accion);
         System.out.println("Accion enviada: "+accion);
-        userSal.writeObject(usuario);
-        System.out.println("Objeto enviado: " + usuario.getNombreUsuario() + ".");
+        if(usuario==null){
+            userSal.writeObject(pelicula);
+            System.out.println("Objeto enviado: " + pelicula.getNombre() + ".");
+        }else {
+            userSal.writeObject(usuario);
+            System.out.println("Objeto enviado: " + usuario.getNombreUsuario() + ".");
+        }
         entraObj = new ObjectInputStream(cliente.getInputStream());
          recibido = (String) entraObj.readObject();
         System.out.println("Recibo: " + recibido + ".");
@@ -103,6 +110,15 @@ public class HiloCliente implements Runnable {
     public void setAccion(String accion) {
         this.accion = accion;
     }
+
+    public PeliculaVO getPelicula() {
+        return pelicula;
+    }
+
+    public void setPelicula(PeliculaVO pelicula) {
+        this.pelicula = pelicula;
+    }
+
     /*
 
 

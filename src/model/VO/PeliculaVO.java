@@ -1,11 +1,13 @@
 
 package model.VO;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Usuario
  */
-public class PeliculaVO {
+public class PeliculaVO implements Serializable {
     private String nombre;
     private String director;
     private String reparto;
