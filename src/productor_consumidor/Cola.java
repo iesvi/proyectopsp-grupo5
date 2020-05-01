@@ -23,37 +23,42 @@ public class Cola {
         this.pelicula = pelicula;
     }
 
-    public synchronized List<PeliculaVO> get() {
+    public synchronized int get() {
+        System.out.println("get Favoritos:"+favoritos);
         while (favoritos >= 3) {
             try {
-
+                JOptionPane.showMessageDialog(null, "Error, se ha marcado 3 veces como favorita.");
                 wait();
-                JOptionPane.showMessageDialog(null, "Error, ya hay un usuario en la cola, inténtelo mas tarde");
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
         }
         notify();
-        System.out.println("La lista de películas favoritas es: ");
+        System.out.println("Peliculas favoritas:");
         for(int i=0;i<listaPeliculas.size();i++) {
-            System.out.println("-" + listaPeliculas.get(i).getNombre());
+            System.out.println(listaPeliculas.get(i).getNombre());
         }
-        return listaPeliculas;
-
+        return favoritos;
     }
 
-    public synchronized boolean put(PeliculaVO pelicula1) {
+    public synchronized void put(PeliculaVO pelicula1) {
+
         getFavoritos(pelicula1);
+
         while (favoritos >= 3) {
             try {
+
                 wait();
-                JOptionPane.showMessageDialog(null, "Error, ya hay un usuario en la cola, inténtelo mas tarde");
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
         }
 
-        listaPeliculas.add(pelicula1);
+
         System.out.println("Añadida pelicula " + pelicula1.getNombre());
         controller.getModel().incrementarFav(pelicula1.getNombre());
 
@@ -70,7 +75,7 @@ public class Cola {
 
 
         notify();
-        return disponible;
+
 
     }
 

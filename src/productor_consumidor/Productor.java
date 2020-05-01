@@ -16,11 +16,10 @@ public class Productor extends Thread{
 
     public void run() {
         System.out.println("Entra run productor");
-        boolean hueco = cola.put(pelicula);
-        System.out.println("Cola put return =>" + hueco);
+        cola.put(pelicula);
 
         try {
-            Thread.sleep(1500);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

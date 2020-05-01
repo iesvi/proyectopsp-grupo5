@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1126c0dd-4602-4776-b4fe-eabef839ccc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/VO/PeliculaVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/VO/PeliculaVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/impl/RepositoryJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/impl/RepositoryJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Cola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Cola.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servidortcp/HiloServidorTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servidortcp/HiloServidorTCP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/VistaPelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VistaPelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Consumidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Consumidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Productor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Productor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588328495667</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Modificaciones Productor-Consumidor">
+      <created>1588332863211</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588332863211</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +251,7 @@
     <MESSAGE value="Añadido login mediante ServidorTCP" />
     <MESSAGE value="Añadido acción al ServidorTCP" />
     <MESSAGE value="Implementado ServidorTCP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementado ServidorTCP" />
+    <MESSAGE value="Modificaciones Productor-Consumidor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificaciones Productor-Consumidor" />
   </component>
 </project>
