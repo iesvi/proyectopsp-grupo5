@@ -33,6 +33,8 @@ public class VistaPelicula extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        btnQuitarFav=new javax.swing.JButton();
+
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -42,6 +44,11 @@ public class VistaPelicula extends javax.swing.JFrame {
         lblDirector.setText("Director:");
 
         lblReparto.setText("Reparto:");
+
+
+        btnQuitarFav.setText("Eliminar de favoritos");
+        btnQuitarFav.addActionListener(controller);
+
 
         btnDetalles.setText("Ver detalles");
         btnDetalles.addActionListener(controller);
@@ -67,7 +74,9 @@ public class VistaPelicula extends javax.swing.JFrame {
                         .addComponent(jButton3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnDetalles)
-                        .addGap(24, 24, 24))
+                        .addGap(24, 24, 24)
+                    .addComponent(btnQuitarFav)
+                    .addGap(24,24,24))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(lblDirector, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -96,6 +105,7 @@ public class VistaPelicula extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnDetalles)
+                        .addComponent(btnQuitarFav)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
                 .addGap(58, 58, 58))
@@ -117,6 +127,7 @@ public class VistaPelicula extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lblDirector;
     private javax.swing.JLabel lblTitulo;
+    private javax.swing.JButton btnQuitarFav;
     // End of variables declaration//GEN-END:variables
 
     public String getLblReparto() {

@@ -12,11 +12,11 @@ public class PeliculaVO implements Serializable {
     private String director;
     private String reparto;
     private String enlace;
-    private boolean fav;
+    private int fav;
     public PeliculaVO(){
         
     }
-    public PeliculaVO(String nombre, String director, String reparto,String enlace, boolean fav){
+    public PeliculaVO(String nombre, String director, String reparto,String enlace, int fav){
         this.nombre=nombre;
         this.director=director;
         this.reparto=reparto;
@@ -56,11 +56,11 @@ public class PeliculaVO implements Serializable {
         this.enlace = enlace;
     }
 
-    public boolean isFav() {
+    public int getFav() {
         return fav;
     }
 
-    public void setFav(Boolean fav) {
+    public void setFav(int fav) {
         this.fav = fav;
     }
 

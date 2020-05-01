@@ -106,6 +106,7 @@ public class RepositoryJDBC {
                 pel.setDirector(rs.getString(2));
                 pel.setReparto(rs.getString(3));
                 pel.setEnlace(rs.getString(4));
+                pel.setFav(rs.getInt(5));
 
 
             }
@@ -160,6 +161,36 @@ public class RepositoryJDBC {
             return false;
         }
     }
+    public boolean incrementarFav(String nombre){
+        try{ConexionJDBC conex = new ConexionJDBC();
+            Statement comando = conex.getConnection().createStatement();
+            System.out.println("update peliculas set favorita = favorita+1 where nombre = '" + nombre + "'; ");
+            comando.executeUpdate("update peliculas set favorita = favorita+1 where peliculas.nombre = '" + nombre + "'; ");
+            conex.desconectar();
+            return true;
+
+
+        }catch(SQLException ex){
+            ex.printStackTrace();
+            return false;
+        }
+    }
+    public boolean quitarFav(String nombre){
+        try{ConexionJDBC conex = new ConexionJDBC();
+            Statement comando = conex.getConnection().createStatement();
+
+            comando.executeUpdate("update peliculas set favorita = favorita-1 where peliculas.nombre = '" + nombre + "'; ");
+            conex.desconectar();
+            return true;
+
+
+        }catch(SQLException ex){
+            ex.printStackTrace();
+            return false;
+        }
+    }
+
+
 }
 
 

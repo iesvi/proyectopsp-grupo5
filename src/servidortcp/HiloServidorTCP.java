@@ -77,6 +77,15 @@ public class HiloServidorTCP implements Runnable {
                 System.out.println("Envio: " + holo + ".");
 
            break;
+
+
+            case"Eliminar fav":
+                PeliculaVO pelicula = (PeliculaVO) entraObj.readObject();
+                System.out.println("Recibo: " + pelicula.getNombre() + ".");
+                model.quitarFav(pelicula.getNombre());
+                System.out.println("La película ha sido eliminada de favoritos");
+
+            break;
         }
             } catch (IOException e) {
                 e.printStackTrace();

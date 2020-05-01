@@ -269,14 +269,10 @@ public class Controlador implements ActionListener {
             hpe.setPelicula(pelic);
             hpe.run();
             if (hpe.getRecibido().equals("true")) {
-                //Cargar vista pelicula con datos
-               // HiloPelicula h1 = new HiloPelicula(model,view.getUsuario(),viewB.getBusqueda(),this);
-               // h1.run();
+
                 PeliculaVO peli =model.cargarPelicula(viewB.getBusqueda());
 
-                //UsuarioVO usuariocola = new UsuarioVO();
-               // usuariocola.setNombreUsuario(view.getUsuario());
-                //usuariocola.setPwsd(view.getPswd());
+
 
                 Productor p = new Productor(peli,cola);
                 Consumidor c = new Consumidor(cola,this);
@@ -443,6 +439,14 @@ for (int i=0;i<comando.length;i++){
     }
 
 }
+        }else if(nombre.equals("Eliminar de favoritos")){
+            HiloCliente heliminar = new HiloCliente();
+            PeliculaVO peliculaelim= new PeliculaVO();
+            peliculaelim.setNombre(viewB.getBusqueda());
+            heliminar.setPelicula(peliculaelim);
+            heliminar.setAccion("Eliminar fav");
+            heliminar.run();
+
         }
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
