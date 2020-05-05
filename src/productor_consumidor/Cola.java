@@ -11,12 +11,11 @@ import java.util.List;
 
 public class Cola {
     private List<PeliculaVO> listaPeliculas = new ArrayList<>();
-    private boolean disponible = false; //inicialmente cola vacia
+
     int favoritos;
 
     private Controlador controller;
     private String pelicula;
-    private ArrayList<PeliculaVO> peliculas;
 
     public Cola(Controlador controller, String pelicula) {
         this.controller = controller;
@@ -65,6 +64,8 @@ public class Cola {
 
         listaPeliculas.add(pelicula1);
         System.out.println(listaPeliculas.size());
+
+        //Se carga VistaPelicula
         PeliculaVO pelicula2 = controller.getModel().cargarPelicula(pelicula1.getNombre());
         VistaPelicula vistaP = new VistaPelicula(controller);
         vistaP.setLblDirector(vistaP.getLblDirector() + pelicula2.getDirector());

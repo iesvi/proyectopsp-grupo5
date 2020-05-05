@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1126c0dd-4602-4776-b4fe-eabef839ccc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Cola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Cola.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Consumidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Consumidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Productor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Productor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -223,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588332863211</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Productor-Consumidor operativo">
+      <created>1588334097718</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1588334097718</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +258,7 @@
     <MESSAGE value="Añadido acción al ServidorTCP" />
     <MESSAGE value="Implementado ServidorTCP" />
     <MESSAGE value="Modificaciones Productor-Consumidor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificaciones Productor-Consumidor" />
+    <MESSAGE value="Productor-Consumidor operativo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Productor-Consumidor operativo" />
   </component>
 </project>

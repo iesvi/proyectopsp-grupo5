@@ -351,13 +351,15 @@ public class Controlador implements ActionListener {
 
         } else if (nombre == "Pulse para abrir el chat") {
             try {
-                System.out.println("Entra chat usuario");
+
                 UDPMultiChat2 chatuser = new UDPMultiChat2("user");
 
                 String nombrechat = view.getUsuario();
                 // Se crea el socket multicast
                 chatuser.setMs(new MulticastSocket(12345));
-                chatuser.setGrupo(InetAddress.getByName("225.0.0.1"));// Grupo
+                chatuser.setGrupo(InetAddress.getByName("225.0.0.1"));
+
+                // Grupo
                 // Nos unimos al grupo
                 chatuser.getMs().joinGroup(chatuser.getGrupo());
                 if (!nombrechat.trim().equals("")) {
