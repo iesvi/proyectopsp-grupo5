@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 13-02-2020 a las 22:03:45
+-- Tiempo de generación: 05-05-2020 a las 10:09:38
 -- Versión del servidor: 10.4.10-MariaDB
 -- Versión de PHP: 7.3.12
 
@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS `peliculas` (
   `director` varchar(30) NOT NULL,
   `reparto` varchar(30) NOT NULL,
   `enlace` varchar(70) NOT NULL,
+  `favorita` int(11) NOT NULL,
   PRIMARY KEY (`nombre`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -41,8 +42,8 @@ CREATE TABLE IF NOT EXISTS `peliculas` (
 -- Volcado de datos para la tabla `peliculas`
 --
 
-INSERT INTO `peliculas` (`nombre`, `director`, `reparto`, `enlace`) VALUES
-('Dos tontos muy tontos', 'Peter Farrelly', 'Jim Carrey y Jeff Daniels', 'https://es.wikipedia.org/wiki/Dumb_and_Dumber');
+INSERT INTO `peliculas` (`nombre`, `director`, `reparto`, `enlace`, `favorita`) VALUES
+('Dos tontos muy tontos', 'Peter Farrelly', 'Jim Carrey y Jeff Daniels', 'https://es.wikipedia.org/wiki/Dumb_and_Dumber', 3);
 
 -- --------------------------------------------------------
 
@@ -62,7 +63,8 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 
 INSERT INTO `usuarios` (`nombre`, `password`) VALUES
-('usuario', 'usuario');
+('usuario', 'usuario'),
+('pipi', 'estrada');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
