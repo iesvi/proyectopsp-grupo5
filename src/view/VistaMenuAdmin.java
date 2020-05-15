@@ -33,11 +33,19 @@ public class VistaMenuAdmin extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         btnComprobar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
+        btnLeerCorreo = new javax.swing.JButton();
+        servidor = new javax.swing.JButton();
+
+        servidor.setText("Servidor de archivos");
+        servidor.addActionListener(controller);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnChatAdmin.setText("Chat administrador");
         btnChatAdmin.addActionListener(controller);
+
+        btnLeerCorreo.setText("Leer correo");
+        btnLeerCorreo.addActionListener(controller);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("DAM BLINDERS ADMIN");
@@ -59,7 +67,11 @@ public class VistaMenuAdmin extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(btnComprobar)))
+                        .addComponent(btnComprobar)
+                        .addContainerGap()
+                            .addComponent(servidor)
+                            .addContainerGap()
+                        .addComponent(btnLeerCorreo)))
                 .addContainerGap(72, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -77,6 +89,10 @@ public class VistaMenuAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(61, 61, 61)
                 .addComponent(btnComprobar)
+                    .addGap(61,61,61)
+                    .addComponent(btnLeerCorreo)
+                    .addGap(61,61,61)
+                    .addComponent(servidor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                 .addComponent(btnSalir)
                 .addContainerGap())
@@ -104,8 +120,11 @@ public class VistaMenuAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnChatAdmin;
     private javax.swing.JButton btnComprobar;
+    private javax.swing.JButton btnLeerCorreo;
+    private javax.swing.JButton servidor;
     private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+
     // End of variables declaration//GEN-END:variables
 }

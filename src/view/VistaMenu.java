@@ -33,10 +33,10 @@ public class VistaMenu extends javax.swing.JFrame {
         chat= new javax.swing.JButton();
         btnClienteFTP=new javax.swing.JButton();
         calculadora= new javax.swing.JButton();
-        servidor= new javax.swing.JButton();
+
         productorconsumidor=new javax.swing.JButton();
-        clienteTCP = new javax.swing.JButton();
-        servidorTCP= new javax.swing.JButton();
+        btnCliente = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("¿Que desea hacer? ");
@@ -44,11 +44,9 @@ public class VistaMenu extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("DAM Blinders");
 
-        clienteTCP.setText("ClienteTCP");
-        clienteTCP.addActionListener(controller);
+        btnCliente.setText("Cliente de archivos");
+        btnCliente.addActionListener(controller);
 
-        servidorTCP.setText("ServidorTCP");
-        servidorTCP.addActionListener(controller);
 
         btnClienteFTP.setText("ClienteFTP");
         btnClienteFTP.addActionListener(controller);
@@ -59,8 +57,7 @@ public class VistaMenu extends javax.swing.JFrame {
         productorconsumidor.setText("Productor Consumidor");
         productorconsumidor.addActionListener(controller);
 
-        servidor.setText("Servidor de archivos");
-        servidor.addActionListener(controller);
+
 
         btnBuscador.setText("Buscar Peliculas");
         btnBuscador.addActionListener(controller);
@@ -95,11 +92,8 @@ public class VistaMenu extends javax.swing.JFrame {
                                     .addComponent(calculadora)
 
                                     .addGap(65,65,65)
-                                    .addComponent(clienteTCP)
-                                    .addGap(65,65,65)
-                                    .addComponent(servidorTCP)
-                                    .addGap(65, 65, 65)
-                                    .addComponent(servidor)
+                                    .addComponent(btnCliente)
+
 
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                                 .addComponent(btnConsultarListas)
@@ -130,12 +124,9 @@ public class VistaMenu extends javax.swing.JFrame {
                     .addComponent(btnBuscador)
                         .addGap(53, 53, 53)
                         .addComponent(calculadora)
+
                         .addGap(53,53,53)
-                        .addComponent(servidorTCP)
-                        .addGap(53,53,53)
-                        .addComponent(clienteTCP)
-                        .addGap(53, 53, 53)
-                        .addComponent(servidor)
+                        .addComponent(btnCliente)
                         .addGap(53, 53, 53)
                     .addComponent(btnConsultarListas)
                         .addGap(53, 53, 53)
@@ -173,10 +164,10 @@ public class VistaMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton chat;
-    private javax.swing.JButton servidor;
+
     private javax.swing.JButton calculadora;
     private javax.swing.JButton productorconsumidor;
-    private javax.swing.JButton servidorTCP;
-    private javax.swing.JButton clienteTCP;
+
+    private javax.swing.JButton btnCliente;
     // End of variables declaration//GEN-END:variables
 }

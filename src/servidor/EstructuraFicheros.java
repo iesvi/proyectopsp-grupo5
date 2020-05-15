@@ -34,7 +34,7 @@ public class EstructuraFicheros implements Serializable {
         this.numFitch = numF;
     }
 
-    public int getNumFitch(){
+    public int getNumeFich(){
         return numFitch;
     }
     public boolean isDir(){
@@ -93,4 +93,6 @@ public class EstructuraFicheros implements Serializable {
         }
         return lista;
     }
+
+
 }

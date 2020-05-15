@@ -23,12 +23,15 @@ import hilo.InicioSesion;
 import model.Model;
 import model.VO.PeliculaVO;
 import model.VO.UsuarioVO;
+import org.apache.commons.net.pop3.POP3MessageInfo;
+import org.apache.commons.net.pop3.POP3SClient;
 import productor_consumidor.Cola;
 import productor_consumidor.Consumidor;
 import productor_consumidor.Productor;
 import servidor.EstructuraFicheros;
 import servidor.HiloServidor;
 import servidor.Servidor;
+import servidor.clienteFicheros;
 import view.VistaBuscarPelicula;
 import view.VistaConsultarLista;
 import view.VistaInicioSesion;
@@ -36,6 +39,7 @@ import view.VistaMenu;
 import view.VistaMenuAdmin;
 import view.VistaPelicula;
 import view.VistaRegistro;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -173,8 +177,10 @@ public class Controlador implements ActionListener {
                         String mensaje = "El usuario: " + nomUser + " ha iniciado sesion a las " + hora + ":" + minutos + ":" + segundos + " el dia " + dia + ". El total de inicios de sesion a la aplicacion es de " + numVisitas + ".";
                         String asunto = "Inicio de sesión";
                         String destinatario = "damblinders@gmail.com";
+                        String destinatario2="damblinders@gmail.com";
                         ClienteSMTP smtp = new ClienteSMTP();
-                        smtp.enviarCorreo(asunto, mensaje, destinatario);
+                        smtp.enviarCorreo(asunto, mensaje, destinatario,destinatario2);
+
 
                         VistaMenu vista = new VistaMenu(this);
                         vista.setVisible(true);
@@ -255,8 +261,9 @@ public class Controlador implements ActionListener {
             String asunto = "Fin de sesión";
 
             String destinatario = "damblinders@gmail.com";
+            String destinatario2="damblinders@gmail.com";
             ClienteSMTP smtp = new ClienteSMTP();
-            smtp.enviarCorreo(asunto, mensaje, destinatario);
+            smtp.enviarCorreo(asunto, mensaje, destinatario,destinatario2);
 
         } else if (nombre == "Buscar") {
 
@@ -286,11 +293,21 @@ public class Controlador implements ActionListener {
 
 
 
-        }else if(nombre=="ServidorTCP"){
 
-        }else if(nombre=="ClienteTCP"){
+        }else if(nombre=="Cliente de archivos"){
+            try {
+            int puerto = 44441;
+            //"192.168.0.195" localhost
+                Socket s = new Socket("localhost", puerto);
 
+                clienteFicheros hiloC = new clienteFicheros(s);
+            hiloC.setBounds(0, 0, 540, 500);
+            hiloC.setVisible(true);
+            new Thread(hiloC).start();
 
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else if (nombre == "Ver enlaces") {
             JOptionPane.showMessageDialog(null, pelicula.getEnlace());
         } else if (nombre == "Subir enlace") {
@@ -323,27 +340,7 @@ public class Controlador implements ActionListener {
 
                 } 
                 
-                /*
-                     System.out.println("Entra chat usuario");
-                UDPMultiChat2 chatuser = new UDPMultiChat2("user");
 
-                String nombrechat = view.getUsuario();
-                // Se crea el socket multicast
-                chatuser.setMs(new MulticastSocket(12345));
-                chatuser.setGrupo(InetAddress.getByName("225.0.0.1"));// Grupo
-                // Nos unimos al grupo
-                chatuser.getMs().joinGroup(chatuser.getGrupo());
-                if (!nombrechat.trim().equals("")) {
-                    UDPMultiChat2 server = new UDPMultiChat2(nombrechat);
-                    server.setBounds(0, 0, 540, 400);
-                    server.setVisible(true);
-                    new Thread(server).start();
-
-                }
-            } catch (IOException ex) {
-                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                */
             } catch (IOException ex) {
                 Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -407,13 +404,13 @@ public class Controlador implements ActionListener {
             System.out.println(("Servidor iniciado en Puerto: " + servidor1.getPUERTO()));
             while (true) {
                 try {
-                   // Socket cliente = servidor.accept();
+                    Socket cliente = servidor.accept();
                     System.out.println("Bienvenido al cliente");
 
                   EstructuraFicheros  NF = new EstructuraFicheros(Directorio);
                  servidor1.setNF(NF);
-                   // HiloServidor hilo = new HiloServidor(cliente, NF);
-                   // hilo.start(); //Ejecutamos el hilo
+                    HiloServidor hilo = new HiloServidor(cliente, NF);
+                    hilo.start(); //Ejecutamos el hilo
                 } catch (IOException e) {
                     System.out.println(e.getMessage());
                     System.exit(0);
@@ -449,9 +446,60 @@ for (int i=0;i<comando.length;i++){
             heliminar.setAccion("Eliminar fav");
             heliminar.run();
 
+        }else if(nombre.equals("Leer correo")){
+            String server="localhost";
+            String username="usu1";
+            String password="usu1";
+            int puerto=110;
+            POP3SClient pop3= new POP3SClient();
+            try{
+                //nos conectamos al servidor
+                pop3.connect(server,puerto);
+                System.out.println("Conexión realizada al servidor POP3 "+server);
+               //iniciamos sesion
+                if(!pop3.login(username,password)){
+                    System.err.println("Error al hacer login");
+                }else {
+                    //obtenemos todos los mensajes en un array
+                    POP3MessageInfo[] men = pop3.listMessages();
+                    for (int i = 0; i < men.length; i++) {
+                        if (men[i] == null) {
+                            System.out.println("Imposible recuperar mensajes");
+                        } else {
+                            System.out.println("Nº de mensajes: " + men.length);
+                            System.out.println("");
+                            System.out.println("Listado de mensajes:");
+                            Recuperarmensajes(men, pop3);
+                            //finalizar sesión
+                            pop3.logout();
+                        }
+                    }
+
+                }
+
+            }catch(IOException e){
+                System.err.println(e.getMessage());
+                e.printStackTrace();
+                System.exit(1);
+            }
         }
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    public static void Recuperarmensajes(POP3MessageInfo[] men,POP3SClient pop3) throws IOException{
+        for(int i=0;i<men.length;i++){
+            System.out.println("Mensaje: "+(i+1));
+            POP3MessageInfo msginfo= men[i]; //lista de mensajes
+            //Recuperamos la cabecera del mensaje
+
+            BufferedReader reader = (BufferedReader)pop3.retrieveMessage(msginfo.number);
+            String linea;
+            while((linea=reader.readLine()) !=null){
+                System.out.println(linea.toString());
+                reader.close();
+            }
+        }
+
+    }
 
 }

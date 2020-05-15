@@ -26,7 +26,7 @@ public class ClienteSMTP {
 
 
 
-    public void enviarCorreo(String asunto, String mensaje, String destinatario) {
+    public void enviarCorreo(String asunto, String mensaje, String destinatario,String destinatario2) {
 
         try {
             int respuesta;
@@ -66,6 +66,7 @@ public class ClienteSMTP {
 
                     // se crea la cabecera
                     SimpleSMTPHeader cabecera = new SimpleSMTPHeader(remitente, destinatario, asunto);
+                    cabecera.addCC(destinatario2);
 
                     // el nombre de usuario y el email de origen coinciden
                     client.setSender(remitente);

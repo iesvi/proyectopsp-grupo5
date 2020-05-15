@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1126c0dd-4602-4776-b4fe-eabef839ccc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/servidor/clienteFicheros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SMTP/ClienteSMTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTP/ClienteSMTP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/productor_consumidor/Cola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/productor_consumidor/Cola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servidor/EstructuraFicheros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servidor/EstructuraFicheros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/VistaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VistaMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/VistaMenuAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VistaMenuAdmin.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582655809394" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -229,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588334097718</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Actualizacion">
+      <created>1588672291403</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588672291403</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +270,7 @@
     <MESSAGE value="Implementado ServidorTCP" />
     <MESSAGE value="Modificaciones Productor-Consumidor" />
     <MESSAGE value="Productor-Consumidor operativo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Productor-Consumidor operativo" />
+    <MESSAGE value="Actualizacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion" />
   </component>
 </project>
