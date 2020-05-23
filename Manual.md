@@ -1,13 +1,13 @@
 <h1>Manual de usuario</h1>
 
-<p>Para poder utilizar nuestra aplicación será necesario tener una serie de programas instalados<br>
-  los cuales son:  IntelliJ IDE, WampServer y Filezilla Server.</p>
+<p>Para poder utilizar nuestra aplicación será necesario tener una serie de programas instalados
+  los cuales son: IntelliJ IDE, WampServer y Filezilla Server.</p>
   
   <b>IntelliJ IDE</b><br>
   <p>En este programa clonaremos el código de nuestro repositorio Github. Le daremos a New->Project<br>
   from Version Control->Git.</p>
   <img src="/Recursos/img1.png" height="450" width="800"/><br>
-  <p>Nos saldrá una pestaña como esta y pondremos la URL de nuestro repositorio<br>
+  <p>Nos saldrá una pestaña como esta y pondremos la URL de nuestro repositorio.</p>
   ("https://github.com/victorlopez00/proyectopsp-grupo5.git")</p>
   <img src="/Recursos/img2.PNG" height="450" width="800"/><br>
   <p>Ahora tendremos que configurar nuestro proyecto en IntelliJ para ello presionaremos Ctrl+Alt+Shift+S,
@@ -15,10 +15,10 @@
   a Project language level: "8 - Lambdas, type annotations etc". </p>
   <img src="/Recursos/img3.PNG" height="450" width="800"/><br>
   <p>Además debemos configurar los módulos de nuestro proyecto, asignandole source a la carpeta src y Excluded a
-  la carpeta out</p> 
+  la carpeta out.</p> 
   <img src="/Recursos/img4.PNG" height="450" width="800"/><br>
   <p>Por último debemos añadir las librerias a nuestro proyecto, estas se encuentran en la carpeta lib, tan solo
-  vamosa  la pestaña libraries, pulsamos el signo + y añadiremos commons-net-3.6 y mysql-connector-java-8.0.12</p>
+  vamosa  la pestaña libraries, pulsamos el signo + y añadiremos commons-net-3.6 y mysql-connector-java-8.0.12.</p>
   <img src="/Recursos/img5.PNG" height="450" width="800"/><br>
   
   <b>WampServer</b><br>
@@ -26,7 +26,7 @@
   de descargar. Una vez lo tenemos instalado tan solo hay que crear una base de datos con el nombre "videoclub", para ello
   abriremos Wamp  y pulsaremos phpMyAdmin, ahora le daremos a "Nueva".</p>
   <img src="/Recursos/img6.PNG" height="450" width="800"/><br>
-  <p>A continuación introduciremos el nombre "videoclub"</p>
+  <p>A continuación introduciremos el nombre "videoclub".</p>
   <img src="/Recursos/img7.PNG" height="250" width="600"/><br>
   <p>Por último importaremos los datos a la base de datos dándole a "Importar", despúes de damos a examinar y seleccionamos el
   archivo .SQL de nuestro repositorio.</p>
@@ -34,7 +34,7 @@
   
   <b>FileZilla Server</b><br>
   <p>Para descargar FileZilla Server pulsa <a href="https://filezilla-project.org/download.php?type=server">aquí.</a> y dale
-  al botón de descargar. Una vez instalado pulsamos en "Edit" y después en "Users"</p>
+  al botón de descargar. Una vez instalado pulsamos en "Edit" y después en "Users".</p>
   <img src="/Recursos/img9.png" height="450" width="800"/><br> 
   <p>Ahora le damos a "Add" y creamos un usuario con nombre "usuario" y contraseña "usuario"</p>
   <img src="/Recursos/img10.PNG" height="450" width="800"/><br>
