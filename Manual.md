@@ -22,5 +22,12 @@
   <img src="/Recursos/img5.PNG" height="450" width="800"/><br>
   
   <b>WampServer</b><br>
-  <p>Para descargar WampServer pulsa <a href="https://sourceforge.net/projects/wampserver/">aquí</a></p>
-
+  <p>Para descargar WampServer pulsa <a href="https://sourceforge.net/projects/wampserver/">aquí</a> y dale al botón<br>
+  de descargar. Una vez lo tenemos instalado tan solo hay que crear una base de datos con el nombre "videoclub", para ello<br>
+  abriremos Wamp  y pulsaremos phpMyAdmin, ahora le daremos a "Nueva".<br></p>
+  <img src="/Recursos/img6.PNG" height="450" width="800"/><br>
+  <p>A continuación introduciremos el nombre "videoclub"</p>
+  <img src="/Recursos/img7.PNG" height="450" width="800"/><br>
+  <p>Por último importaremos los datos a la base de datos dándole a "Importar", despúes de damos a examinar y seleccionamos el<br>
+  archivo .SQL de nuestro repositorio.</p>
+  <img src="/Recursos/img8.PNG" height="450" width="800"/><br>  
