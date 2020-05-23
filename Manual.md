@@ -31,3 +31,14 @@
   <p>Por último importaremos los datos a la base de datos dándole a "Importar", despúes de damos a examinar y seleccionamos el<br>
   archivo .SQL de nuestro repositorio.</p>
   <img src="/Recursos/img8.PNG" height="450" width="800"/><br>  
+  
+  <b>FileZilla Server</b><br>
+  <p>Para descargar FileZilla Server pulsa <a href="https://filezilla-project.org/download.php?type=server">aquí.</a> y dale<br>
+  al botón de descargar. Una vez instalado pulsamos en "Edit" y después en "Users"</p>
+  <img src="/Recursos/img9.PNG" height="450" width="800"/><br> 
+  <p>Ahora le damos a "Add" y creamos un usuario con nombre "usuario" y contraseña "usuario"</p>
+  <img src="/Recursos/img10.PNG" height="450" width="800"/><br>
+  <p>Por último iremos a la pestaña Shared folders, y le daremos a "Add", este será el directorio donde se iniciará el serivdor<br>
+   en nuestro caso hemos elegido Documents. Además debemos asegurarnos de darle todos los permisos, lo haremos marcando todos los<br>
+  checkboxs que nos aparecen.<br>
+   <img src="/Recursos/img11.PNG" height="450" width="800"/><br>
