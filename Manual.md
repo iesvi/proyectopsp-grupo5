@@ -1,5 +1,6 @@
 <h1>Manual de usuario</h1>
 
+<h2>Componentes Software</h2>
 <p>Para poder utilizar nuestra aplicación será necesario tener una serie de programas instalados
   los cuales son: IntelliJ IDE, WampServer y Filezilla Server.</p>
   
@@ -42,3 +43,9 @@
    en nuestro caso hemos elegido Documents. Además debemos asegurarnos de darle todos los permisos, lo haremos marcando todos los
   checkboxs que nos aparecen.</p>
    <img src="/Recursos/img11.PNG" height="450" width="800"/><br>
+   
+   <p>Tras estas instalaciones nuestro proyecto está listo para ser ejecutado.</p>
+   
+   <h2>Funcionalidades no operativas</h2>
+   <p>La única funcionalidad no operativa en nuestro proyecto sería "Leer Correo" ya que no fuimos capaces de configurar el servidor
+   POP3 de Mercury de forma correcta ya que nos muestra un correo de ejemplo y no es capaz de leer los correos de nuestro Gmail.</p>
