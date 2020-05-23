@@ -9,5 +9,5 @@
   <img src="/Recursos/img1.png" height="450" width="800"/><br>
   <p>Nos saldrá una pestaña como esta y pondremos la URL de nuestro repositorio<br>
   ("https://github.com/victorlopez00/proyectopsp-grupo5.git")</p>
-  <img src="/Recursos/img2.png" height="450" width="800"/><br>
+  <img src="/Recursos/img2.PNG" height="450" width="800"/><br>
 
