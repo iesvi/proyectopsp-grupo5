@@ -27,7 +27,7 @@
   abriremos Wamp  y pulsaremos phpMyAdmin, ahora le daremos a "Nueva".<br></p>
   <img src="/Recursos/img6.PNG" height="450" width="800"/><br>
   <p>A continuación introduciremos el nombre "videoclub"</p>
-  <img src="/Recursos/img7.PNG" height="450" width="800"/><br>
+  <img src="/Recursos/img7.PNG" height="250" width="300"/><br>
   <p>Por último importaremos los datos a la base de datos dándole a "Importar", despúes de damos a examinar y seleccionamos el<br>
   archivo .SQL de nuestro repositorio.</p>
   <img src="/Recursos/img8.PNG" height="450" width="800"/><br>  
