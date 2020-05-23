@@ -20,4 +20,7 @@
   <p>Por último debemos añadir las librerias a nuestro proyecto, estas se encuentran en la carpeta lib, tan solo<br>
   vamosa  la pestaña libraries, pulsamos el signo + y añadiremos commons-net-3.6 y mysql-connector-java-8.0.12</p>
   <img src="/Recursos/img5.PNG" height="450" width="800"/><br>
+  
+  <b>WampServer</b><br>
+  <p>Para descargar WampServer pulsa <a href="https://sourceforge.net/projects/wampserver/">aquí</a></p>
 
