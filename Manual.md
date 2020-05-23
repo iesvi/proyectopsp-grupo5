@@ -10,4 +10,14 @@
   <p>Nos saldrá una pestaña como esta y pondremos la URL de nuestro repositorio<br>
   ("https://github.com/victorlopez00/proyectopsp-grupo5.git")</p>
   <img src="/Recursos/img2.PNG" height="450" width="800"/><br>
+  <p>Ahora tendremos que configurar nuestro proyecto en IntelliJ para ello presionaremos Ctrl+Alt+Shift+S,<br>
+  debemos asegurarnos de que le asignamos el SDK que tenemos en nuestro equipo, en nuestro caso 11 y asignamos<br>
+  a Project language level: "8 - Lambdas, type annotations etc". </p>
+  <img src="/Recursos/img3.PNG" height="450" width="800"/><br>
+  <p>Además debemos configurar los módulos de nuestro proyecto, asignandole source a la carpeta src y Excluded a<br>
+  la carpeta out</p> 
+  <img src="/Recursos/img4.PNG" height="450" width="800"/><br>
+  <p>Por último debemos añadir las librerias a nuestro proyecto, estas se encuentran en la carpeta lib, tan solo<br>
+  vamosa  la pestaña libraries, pulsamos el signo + y añadiremos commons-net-3.6 y mysql-connector-java-8.0.12</p>
+  <img src="/Recursos/img5.PNG" height="450" width="800"/><br>
 
