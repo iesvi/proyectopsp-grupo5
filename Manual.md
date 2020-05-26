@@ -50,4 +50,4 @@
    <p>La única funcionalidad no operativa en nuestro proyecto sería "Leer Correo" ya que no fuimos capaces de configurar el servidor
    POP3 de Mercury de forma correcta ya que nos muestra un correo de ejemplo y no es capaz de leer los correos de nuestro Gmail.</p>
    
-   <p>Para ver el video sobre nuestra apliación pulse aquí <a href="https://www.youtube.com/watch?v=wJ8z72qiwPg&feature=youtu.be">aquí</a>.</p>
+   <p>Para ver el video sobre nuestra apliación pulse <a href="https://www.youtube.com/watch?v=wJ8z72qiwPg&feature=youtu.be">aquí</a>.</p>
